@@ -1,5 +1,6 @@
 import React from 'react'
 import './header.css'
+import CTA from './CTA'
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
       <h5 className="text-light">
         Fullstack Developer
       </h5>
+      <CTA />
     </header>
   )
 }
