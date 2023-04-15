@@ -10,4 +10,9 @@
         /* @apply bg-gray-600 text-white; */
         font-family: 'Dosis','Roboto', sans-serif;
     }
+    .intro-button{
+        @apply transition text-xl bg-sakura-light h-10 shadow-inner shadow-sakura 
+        border-b-2 w-full rounded-r-xl m-1 font-semibold skew-y-6 scale-75 hover:skew-y-0 opacity-90
+        dark:bg-sakura dark:text-black;
+    }
 }

@@ -1,27 +1,69 @@
+import { Certificates } from "./_icons/certificates";
+import { Education } from "./_icons/education";
+import { Hobbies } from "./_icons/hobbies";
+import { Info } from "./_icons/info";
+import { Links } from "./_icons/links";
+import { Work } from "./_icons/work";
+
 export default function Intro(){
     return(
         <div className="grid grid-cols-4 gap-2">
             <div className="container mx-auto items-center divide-y divide-black">
-                <button className="transition text-xl bg-sakura-light h-10 shadow-inner-2xl shadow-black border-b-2 
-                w-full rounded-r-xl m-1 font-semibold skew-y-6 scale-75 hover:skew-y-0
-                ">
-                    Design Me
-                </button>
-                <button className="bg-sakura-light h-10 w-full rounded-xl m-1 font-semibold skew-y-3">
-                    Design Me
-                </button>
-                <button className="bg-sakura-light h-10 w-full rounded-xl m-1 font-semibold skew-y-3">
-                    Design Me
+                <button className="intro-button flex">
+                    <div className="flex items-center justify-center">
+                        <Info className="m-1" />
+                    </div>
+                    <span className="flex text-center items-center justify-center flex-grow">About Me</span>
                 </button>
 
+                <button className="intro-button flex">
+                    <div className="flex items-center justify-center">
+                        <Work className="m-1" />
+                    </div>
+                    <span className="flex text-center items-center justify-center flex-grow">Work Experience</span>
+                </button>
+
+                <button className="intro-button flex">
+                    <div className="flex items-center justify-center">
+                        <Education className="m-1" />
+                    </div>
+                    <span className="flex text-center items-center justify-center flex-grow">Education</span>
+                </button>
+
+                <button className="intro-button flex">
+                    <div className="flex items-center justify-center">
+                        <Certificates className="m-1" />
+                    </div>
+                    <span className="flex text-center items-center justify-center flex-grow">Certifications</span>
+                </button>
+
+                <button className="intro-button flex">
+                    <div className="flex items-center justify-center">
+                        <Hobbies className="m-1" />
+                    </div>
+                    <span className="flex text-center items-center justify-center flex-grow">Interests & Hobbies</span>
+                </button>
+
+                <button className="intro-button flex">
+                    <div className="flex items-center justify-center">
+                        <Links className="m-1" />
+                    </div>
+                    <span className="flex text-center items-center justify-center flex-grow">Links</span>
+                </button>
+
+                
+
             </div>
-            <div className="col-span-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia id ullamcorper 
-            nulla sit laoreet euismod aenean neque. Ullamcorper ac est lectus nam sociis 
-            consectetur senectus justo. Sociis natoque mollis ultricies massa integer molestie 
-            habitant eget. Porta quis proin pulvinar felis rutrum faucibus sed eu. Aenean est 
-            in viverra porttitor vehicula imperdiet volutpat sagittis. Placerat quisque elementum 
-            etiam adipiscing sit tempus erat cum.
+            <div className="col-span-2 text-justify text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan lorem placerat vulputate 
+            lorem aliquet magna cubilia auctor non. Nisl etiam blandit euismod curabitur praesent lacus 
+            eu iaculis purus. Eros volutpat molestie orci conubia pretium convallis nisl blandit sapien. 
+            Amet metus risus vivamus varius euismod feugiat eu penatibus semper. Iaculis sem litora 
+            condimentum amet per vehicula hendrerit massa platea. Nam et himenaeos varius nisi interdum 
+            parturient mattis cum a. Cubilia eros vulputate luctus tellus condimentum aliquam ridiculus 
+            penatibus sollicitudin. Magnis lectus interdum faucibus tempor facilisi mollis mauris velit 
+            vestibulum. Leo turpis dui proin dui leo potenti consequat lorem tempor. Phasellus tincidunt 
+            turpis dapibus sapien netus sit dapibus porttitor sagittis.
             </div>
         </div>
     )
