@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
 
-      <div className='text-xl grid grid-cols-6 gap-2'>
+      {/* <div className='text-xl grid grid-cols-6 gap-2'>
         <span className='col-start-2 col-span-2 items-center justify-start text-3xl'>
           {value}
         </span>
@@ -25,7 +25,7 @@ export default function Home() {
         <button onClick={handleValue} className='rounded-lg w-24 h-10 bg-blue-600 m-1 row-start-2'>
           Add
         </button>
-      </div>
+      </div> */}
       
     </div>
   )

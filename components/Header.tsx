@@ -29,10 +29,14 @@ export default function Header(){
     }, [darkMode]);
 
     return(
-        <header className="flex items-center justify-end w-full p-4">
-            <div className="transition cursor-pointer hover:text-blue-600 ">
+        <div className="flex flex-row">
+            <div className="flex basis-3/4 justify-center text-4xl font-extrabold">
+                Albert Banda<span className="font-thin italic text-xl ml-5">president</span>
+            </div>
+            <div className="flex basis-1/4 transition cursor-pointer hover:text-blue-600 justify-end m-2">
                 {darkMode?<Sun onClick={switchMode} />:<Moon onClick={switchMode} />}
             </div>
-        </header>
+        </div>    
+        
     )
 }

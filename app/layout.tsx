@@ -1,6 +1,7 @@
 'use client';
 import './globals.css'
 import Header from '../components/Header';
+import Intro from '../components/Intro';
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     >
       <body className='dark:bg-slate-900 dark:text-white'>
         <Header />
+        <Intro />
         {children}
       </body>
     </html>
