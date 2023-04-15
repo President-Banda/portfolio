@@ -31,7 +31,7 @@ export default function Header(){
     return(
         <header className="flex items-center justify-end w-full p-4">
             <div className="transition cursor-pointer hover:text-blue-600 ">
-                {darkMode?<Moon onClick={switchMode} />:<Sun onClick={switchMode} />}
+                {darkMode?<Sun onClick={switchMode} />:<Moon onClick={switchMode} />}
             </div>
         </header>
     )
