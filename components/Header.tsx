@@ -31,9 +31,9 @@ export default function Header(){
     return(
         <div className="flex flex-row">
             <div className="flex basis-3/4 justify-center text-4xl font-extrabold">
-                Albert Banda<span className="font-thin italic text-xl ml-5">president</span>
+                Albert Banda<span className="font-thin italic text-xl ml-5 ">president</span>
             </div>
-            <div className="flex basis-1/4 transition cursor-pointer hover:text-blue-600 justify-end m-2">
+            <div className="flex basis-1/4 transition cursor-pointer hover:text-blue-600 justify-end m-2 animate-bounce">
                 {darkMode?<Sun onClick={switchMode} />:<Moon onClick={switchMode} />}
             </div>
         </div>    
