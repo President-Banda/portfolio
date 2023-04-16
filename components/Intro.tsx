@@ -68,9 +68,9 @@ export default function Intro(){
                 turpis dapibus sapien netus sit dapibus porttitor sagittis.
             </div>
 
-            <div className="bg-sakura rounded-xl scale-90 row-span-1 h-auto">
-                <div className="bg-sakura-light rounded-xl -rotate-6">
-                    <Image className="transition duration-100 rounded-xl shadow-inner saturate-150 scale-90 origin-center -rotate-12 hover:rotate-45 hover:origin-top"
+            <div className="bg-sakura rounded-xl scale-90 row-span-1 h-auto bg-opacity-50">
+                <div className="bg-sakura-light rounded-xl -rotate-6 bg-opacity-50">
+                    <Image className="transition duration-100 rounded-xl shadow-inner saturate-150 scale-90 origin-center -rotate-12 hover:rotate-45 hover:origin-top "
                         src={"/images/albert_banda_image.jpg"}
                         alt="my_intro_image"
                         width={500}
