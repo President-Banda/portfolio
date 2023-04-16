@@ -9,7 +9,7 @@ import { AlbertBandaIntro } from "./images/Intro_image";
 
 export default function Intro(){
     return(
-        <div className="grid grid-cols-4 gap-2 m-2">
+        <div className="grid grid-cols-4 gap-2 m-2 max-w-100% overflow-hidden">
             <div className="container mx-auto items-center divide-y divide-black">
                 <button className="intro-button flex">
                     <div className="flex items-center justify-center">
@@ -56,7 +56,7 @@ export default function Intro(){
             </div>
 
 
-            <div className="col-span-2 text-justify text-lg">
+            <div className="col-span-2 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan lorem placerat vulputate 
                 lorem aliquet magna cubilia auctor non. Nisl etiam blandit euismod curabitur praesent lacus 
                 eu iaculis purus. Eros volutpat molestie orci conubia pretium convallis nisl blandit sapien. 
@@ -68,17 +68,19 @@ export default function Intro(){
                 turpis dapibus sapien netus sit dapibus porttitor sagittis.
             </div>
 
-            <div className="bg-sakura rounded-xl">
-                <Image className="transition duration-100 rounded-xl shadow-inner saturate-150 scale-90 origin-center -rotate-12 hover:rotate-45 hover:origin-top"
-                    src={"/images/albert_banda_image.jpg"}
-                    alt="my_intro_image"
-                    width={500}
-                    height={500}
+            <div className="bg-sakura rounded-xl scale-90 max-h-fit">
+                <div className="bg-sakura-light rounded-xl -rotate-6">
+                    <Image className="transition duration-100 rounded-xl shadow-inner saturate-150 scale-90 origin-center -rotate-12 hover:rotate-45 hover:origin-top"
+                        src={"/images/albert_banda_image.jpg"}
+                        alt="my_intro_image"
+                        width={500}
+                        height={500}
 
-                    sizes="(max-width: 768px) 100vw,
-                    (max-width: 1200px) 50vw,
-                    33vw"
-                />
+                        sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
+                    />
+                </div>
             </div>
 
         </div>
