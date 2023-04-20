@@ -2,6 +2,7 @@
 import './globals.css'
 import Header from '../components/Header';
 import Intro from '../components/Intro';
+import Wrapper from '../components/Wrapper'
 
 export const metadata = {
   title: 'Create Next App',
@@ -16,8 +17,10 @@ export default function RootLayout({ children }) {
     >
       <body className='dark:bg-dark-color dark:text-white'>
         <Header />
-        <Intro />
-        {children}
+        <Wrapper>
+          <Intro />
+          {children}
+        </Wrapper>
       </body>
     </html>
   )

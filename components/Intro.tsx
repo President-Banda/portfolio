@@ -9,7 +9,7 @@ import { AlbertBandaIntro } from "./images/Intro_image";
 
 export default function Intro(){
     return(
-        <div className="grid grid-cols-4 gap-2 m-2 max-w-100% overflow-hidden">
+        <>
             <div className="container mx-auto items-center divide-y divide-black">
                 <button className="intro-button flex w-10 md:w-full">
                     <div className="flex items-center justify-center">
@@ -83,6 +83,6 @@ export default function Intro(){
                 </div>
             </div>
 
-        </div>
+        </>
     )
 }
