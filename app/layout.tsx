@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     lang="en"
     className={localStorage.getItem("darkMode")=== "true" ? "dark" : "light"}
     >
-      <body className='dark:bg-slate-900 dark:text-white'>
+      <body className='dark:bg-dark-color dark:text-white'>
         <Header />
         <Intro />
         {children}

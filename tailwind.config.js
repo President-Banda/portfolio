@@ -16,7 +16,9 @@ module.exports = {
     extend: {
       colors:{
         'sakura': "#FFC8D0",
-        'sakura-light': "#FFE6EA"
+        'sakura-light': "#FFE6EA",
+		    'white': "#f7fbff",
+        'dark-color': "#15192c",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
