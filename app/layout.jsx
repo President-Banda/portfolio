@@ -20,7 +20,6 @@ export default function RootLayout({ children }) {
         <Header />
         <Wrapper>
           <Menu />
-          <Intro />
           {children}
         </Wrapper>
       </body>
