@@ -15,8 +15,8 @@ const LinkComponent = () => {
         Link Element 3
       </div>
 
-      <div className="col-span-4 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
-        Link Element 4
+      <div className="col-span-4 text-justify text-center m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed bg-gradient-to-r from-sakura to-sakura-light h-60">
+        <h1 className='text-center text-4xl'>Connect with me via:</h1>Link Element 4
       </div>
 
     </>
