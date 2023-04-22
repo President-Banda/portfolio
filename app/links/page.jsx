@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import Image from 'next/image'
 import { Linkedin } from '../../components/_icons/linkedin'
 import { Githubk } from '../../components/_icons/github'
 import { Twitter } from '../../components/_icons/twitter'
@@ -11,7 +11,7 @@ const LinkComponent = () => {
   return (
     <>
       <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
-        LinkComponent 1
+        Connecting with me will not do you much good, but you may proceed if you wish to do so...
       </div>
 
       <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
@@ -77,6 +77,19 @@ const LinkComponent = () => {
 
 
         </div>
+      </div>
+      <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
+      <Image className="transition duration-100 rounded-xl shadow-inner saturate-150 origin-center -rotate-12 "
+                        src={"/images/Networking.png"}
+                        alt="my_intro_image"
+                        width={500}
+                        height={500}
+                        loading="lazy"
+
+                        sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
+                    />
       </div>
 
     </>
