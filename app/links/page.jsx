@@ -22,8 +22,23 @@ const LinkComponent = () => {
         Link Element 3
       </div>
 
-      <div className="col-span-4 text-justify text-center m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed bg-gradient-to-r from-sakura to-sakura-light h-60">
+      <div className="col-span-4 text-center m-2 border border-solid border-sakura-light rounded-lg p-2 leading-relaxed bg-gradient-to-r from-sakura to-sakura-light h-fit">
         <h1 className='text-center text-4xl mb-10'>Connect with me via:</h1>
+
+        <div className='text-center justify-center align-middle items-center flex'>
+          <Image className="rounded-xl shadow-inner saturate-150 origin-center rotate-12"
+                        src={"/images/Networking.png"}
+                        alt="my_intro_image"
+                        width={200}
+                        height={80}
+                        loading="lazy"
+
+                        sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
+                    />
+        </div>
+
         <div className='text-center'>
             <Link href='http://www.linkedin.com/in/albertbanda-tech' target='blank'
             className='font-semibold border border-solid  border-black rounded-md 
@@ -77,19 +92,7 @@ const LinkComponent = () => {
 
 
         </div>
-      </div>
-      <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
-      <Image className="transition duration-100 rounded-xl shadow-inner saturate-150 origin-center -rotate-12 "
-                        src={"/images/Networking.png"}
-                        alt="my_intro_image"
-                        width={500}
-                        height={500}
-                        loading="lazy"
 
-                        sizes="(max-width: 768px) 100vw,
-                        (max-width: 1200px) 50vw,
-                        33vw"
-                    />
       </div>
 
     </>
