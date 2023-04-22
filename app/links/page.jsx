@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
+import { Linkedin } from '../../components/_icons/linkedin'
+import { Githubk } from '../../components/_icons/github'
 
 const LinkComponent = () => {
   return (
@@ -22,12 +24,14 @@ const LinkComponent = () => {
             <Link href='http://www.linkedin.com/in/albertbanda-tech' target='blank'
             className='font-semibold border border-solid  border-black rounded-md m-1 p-4 h-10 w-28 inline-flex text-lg text-center justify-center align-middle items-center'
             >
+              <Linkedin className='mr-1 scale-150' />
               LinkedIn
             </Link>
 
             <Link href='https://github.com/President-Banda' target='blank'
             className='font-semibold border border-solid  border-black rounded-md m-1 p-4 h-10 w-28 inline-flex text-lg text-center justify-center align-middle items-center'
             >
+              <Githubk className='mr-1 scale-150' />
               GitHub
             </Link>
 
