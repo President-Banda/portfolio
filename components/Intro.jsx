@@ -4,6 +4,7 @@ export default function Intro(){
     return(
         <>
             <div className="col-span-2 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
+                <p className="p-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan lorem placerat vulputate 
                 lorem aliquet magna cubilia auctor non. Nisl etiam blandit euismod curabitur praesent lacus 
                 eu iaculis purus. Eros volutpat molestie orci conubia pretium convallis nisl blandit sapien. 
@@ -13,6 +14,7 @@ export default function Intro(){
                 penatibus sollicitudin. Magnis lectus interdum faucibus tempor facilisi mollis mauris velit 
                 vestibulum. Leo turpis dui proin dui leo potenti consequat lorem tempor. Phasellus tincidunt 
                 turpis dapibus sapien netus sit dapibus porttitor sagittis.
+                </p>
             </div>
 
             <div className="bg-sakura rounded-xl scale-90 row-span-1 h-auto bg-opacity-50">
@@ -22,6 +24,7 @@ export default function Intro(){
                         alt="my_intro_image"
                         width={500}
                         height={500}
+                        loading="lazy"
 
                         sizes="(max-width: 768px) 100vw,
                         (max-width: 1200px) 50vw,
