@@ -21,12 +21,27 @@ const LinkComponent = () => {
       <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
         Link Element 3
       </div>
+      <div className='text-center justify-center align-middle items-center flex'>
+          <Image className="rounded-xl shadow-inner"
+                        src={"/images/Integrations.png"}
+                        alt="my_intro_image"
+                        width={500}
+                        height={500}
+                        loading="lazy"
 
-      <div className="col-span-4 text-center m-2 border border-solid border-sakura-light rounded-lg p-2 leading-relaxed bg-gradient-to-r from-sakura to-sakura-light h-fit">
+                        sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
+                    />
+        </div>
+
+      <div className="col-span-3 text-center m-2 
+      border border-solid border-sakura-light rounded-lg p-2 leading-relaxed 
+      bg-gradient-to-r from-sakura to-sakura-light h-fit dark:text-black">
         <h1 className='text-center text-4xl mb-10'>Connect with me via:</h1>
 
         <div className='text-center justify-center align-middle items-center flex'>
-          <Image className="rounded-xl shadow-inner saturate-150 origin-center rotate-12"
+          <Image className="rounded-xl shadow-inner"
                         src={"/images/Networking.png"}
                         alt="my_intro_image"
                         width={200}
@@ -86,7 +101,7 @@ const LinkComponent = () => {
              text-center justify-center align-middle items-center 
              animate-pulse hover:scale-150 transition'
             >
-              <Tinder className='mr-1 scale-150 animate-ping' />
+              <Tinder className='mr-1 scale-150 animate-ping transition' />
               Tinder
             </Link>
 
