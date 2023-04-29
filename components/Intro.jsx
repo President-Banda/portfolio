@@ -5,6 +5,8 @@ export default function Intro(){
         <>
             <div className="col-span-2 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
                 <p className="p-2">
+				Albert Banda is...
+				
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan lorem placerat vulputate 
                 lorem aliquet magna cubilia auctor non. Nisl etiam blandit euismod curabitur praesent lacus 
                 eu iaculis purus. Eros volutpat molestie orci conubia pretium convallis nisl blandit sapien. 
