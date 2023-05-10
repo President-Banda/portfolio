@@ -9,8 +9,12 @@ export default function Intro(){
 				
                 First and foremost, I am a tech enthusiast, I love technology, I love tweaking, creating, I love advancements 
                 in technology. I love when hardware makes small leaps and bounds, I love when software improves, from rugged, unusable
-                car infotainment systems to the smooth ones we have now. 
+                messes that were car infotainment systems to the smooth ones we have now. I love technology across a large spectrum 
+                [linux, gaming, hardware, web applications, programming [ PHP, Laravel, Javascript, HTML, CSS, React, Next.js, Tailwind, MySQL ], 
+                android, ios, cloud, database, containerization] so I am still learning and finding my footing, but I also mention technologies
+                I frequently play around with.
                 <br />
+                I
                 </p>
             </div>
 
