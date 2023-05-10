@@ -7,15 +7,10 @@ export default function Intro(){
                 <p className="p-2">
 				Albert Banda is...
 				
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan lorem placerat vulputate 
-                lorem aliquet magna cubilia auctor non. Nisl etiam blandit euismod curabitur praesent lacus 
-                eu iaculis purus. Eros volutpat molestie orci conubia pretium convallis nisl blandit sapien. 
-                Amet metus risus vivamus varius euismod feugiat eu penatibus semper. Iaculis sem litora 
-                condimentum amet per vehicula hendrerit massa platea. Nam et himenaeos varius nisi interdum 
-                parturient mattis cum a. Cubilia eros vulputate luctus tellus condimentum aliquam ridiculus 
-                penatibus sollicitudin. Magnis lectus interdum faucibus tempor facilisi mollis mauris velit 
-                vestibulum. Leo turpis dui proin dui leo potenti consequat lorem tempor. Phasellus tincidunt 
-                turpis dapibus sapien netus sit dapibus porttitor sagittis.
+                First and foremost, I am a tech enthusiast, I love technology, I love tweaking, creating, I love advancements 
+                in technology. I love when hardware makes small leaps and bounds, I love when software improves, from rugged, unusable
+                car infotainment systems to the smooth ones we have now. 
+                <br />
                 </p>
             </div>
 
