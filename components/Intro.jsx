@@ -18,6 +18,7 @@ export default function Intro(){
                 stress of system administration is much more bearable. I am growing, even as you read this.
                 I am a web developer by need, I need money, mostly self taught but I have built some interesting projects over the years like this one,
                 some big, some small... But I am a pretty competent developer.
+				<br />
                 I am an AWS Cloud specialist by passion, we all need something to impress two out of five people in the room and my chosen
                 passion is Cloud technology, AWS cloud to be specific, a never ending learning journey I have come to love and specialize in.
                 I am a teacher by blood, both parents are teachers, my mother teaches nursery school kids, my father teaches primary school kids, 
