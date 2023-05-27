@@ -32,7 +32,7 @@ export default function Header(){
     }, [darkMode]);
 
     return(
-        <div className="flex flex-row">
+        <div className="flex flex-row mt-5">
             <Link href='/' className="flex justify-center align-middle m-1">
                 <Image className="rounded-xl shadow-inner"
                         src={"/images/animated.png"}
