@@ -10,16 +10,20 @@ export default function Intro(){
                 <p className="col-span-1 p-2 text-lg glassmorphic-container">
                     First and foremost, I am a tech enthusiast, I love technology, I love tweaking/customizing, creating, I love advancements 
                     in technology. I love when hardware makes small leaps and bounds, I love when software improves, from rugged, unusable
-                    messes that were car infotainment systems to the smooth ones we have now. I love technology across a large spectrum 
+                    messes that were car infotainment systems to the smooth ones we have now. 
+                    <br />
+                    
+                    I love technology across a large spectrum <span className="scale-125 text-black font-bold">
                     [linux, gaming, hardware, web applications, programming [ PHP, Laravel, Javascript, HTML, CSS, React, Next.js, Tailwind, MySQL ], 
-                    android, ios, cloud, database, containerization, orchestration, automation, scripting, version control, A.I, Robotics, IoT] so I am still 
-                    learning and finding my footing, but I also mention technologies I frequently play around with!
+                    android, ios, cloud, database, containerization, orchestration, automation, scripting, version control, A.I, Robotics, IoT]
+                    </span>
+                     so I am still learning and finding my footing, but I also mention technologies I frequently play around with!
                 </p>
                 <br />
 
                 <p className="col-span-1 p-2 text-lg glassmorphic-container">
-                    I am a Linux System Administrator by heart, managing complex hosting infrastructure and I love and enjoy learning about Linux, the 
-                    stress of system administration is much more bearable. I am growing, even as you read this.
+                    I am a Linux System Administrator by heart, managing complex hosting infrastructure; I love and enjoy learning about Linux, the 
+                    stress of system administration is much more bearable. I am growing, even as you read this. <br />
                     I am a web developer by need, I need money, mostly self taught but I have built some interesting projects over the years like this one,
                     some big, some small... But I am a pretty competent developer.
                 </p>
@@ -27,6 +31,7 @@ export default function Intro(){
                 <p className="col-span-1 p-2 text-lg glassmorphic-container">
                     I am an AWS Cloud specialist by passion, we all need something to impress two out of five people in the room and my chosen
                     passion is Cloud technology, AWS cloud to be specific, a never ending learning journey I have come to love and specialize in.
+                    <br />
                     I am a teacher by blood, both parents are teachers, my mother teaches nursery school kids, my father teaches primary school kids, 
                     not that they wanted me to be one but I do love what they do so much i just started teaching about... drum roll ... technology!
                 </p>

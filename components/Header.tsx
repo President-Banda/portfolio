@@ -33,6 +33,8 @@ export default function Header(){
 
     return(
         <div className="flex flex-row mt-5">
+            
+            <div className="flex basis-3/4 justify-center text-5xl font-light tracking-wide">
             <Link href='/' className="flex justify-center align-middle m-1">
                 <Image className="rounded-xl shadow-inner"
                         src={"/images/animated.png"}
@@ -46,7 +48,6 @@ export default function Header(){
                         33vw"
                     />
             </Link>
-            <div className="flex basis-3/4 justify-center text-5xl font-light tracking-wide">
                 Albert Banda<span className="font-thin italic text-xl ml-5 ">president</span>
             </div>
             <div className="flex basis-1/4 transition cursor-pointer hover:text-blue-600 justify-end m-2 animate-bounce">
