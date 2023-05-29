@@ -3,7 +3,7 @@ import React from 'react'
 const Interests = () => {
   return (
     <>
-       <div className="col-span-1 row-span-7 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full">
+       <div className="col-span-1 row-span-7 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full background-image-div-one">
         <div className='glassmorphic-container'>
           <div className='text-xl text-black font-bold text-center'>Intellectual</div>
         </div>
@@ -20,7 +20,7 @@ const Interests = () => {
           <li>Research</li>
         </div>
       </div>
-      <div className="col-span-1 row-span-6 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full">
+      <div className="col-span-1 row-span-6 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full background-image-div-three">
         <div className='glassmorphic-container'>
           <div className='text-xl text-black font-bold text-center'>Casual</div>
         </div>
@@ -52,7 +52,7 @@ const Interests = () => {
           <li>Customization/Configuration</li>
         </div>
       </div>
-      <div className="col-span-1 row-span-8 col-start-2 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-72">
+      <div className="col-span-1 row-span-8 col-start-2 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-72 background-image-div-two">
         <div className='glassmorphic-container'>
           <div className='text-xl text-black font-bold text-center'>Physical</div>
         </div>

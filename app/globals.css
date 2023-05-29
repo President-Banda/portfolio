@@ -25,5 +25,21 @@
         margin: 20px;
       }
 
-      
+      .background-image-div-one {
+        background-image: url('/images/system.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .background-image-div-two {
+        background-image: url('/images/physical.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .background-image-div-three {
+        background-image: url('/images/casual.jpg');
+        background-size: cover;
+        background-position: center;
+      }
 }
