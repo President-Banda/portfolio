@@ -1,43 +1,57 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Info } from "./_icons/info";
 
 export default function Intro(){
     return(
         <>
-            <div className="col-span-2 text-justify m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
-                 <span className="text-3xl flex-wrap">
-                  Things I cannnot express on my CV...
+            <div className="col-span-3 text-justify m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed border-b-0">
+                 <span className=" font-medium text-6xl flex-wrap">
+                 Tech Enthusiast, System Admin, Web Developer, AWS Cloud Specialist, and Trainer
                  </span>
-                <p className="col-span-1 p-2 text-lg glassmorphic-container">
-                    First and foremost, I am a tech enthusiast, I love technology, I love tweaking/customizing, creating, I love advancements 
-                    in technology. I love when hardware makes small leaps and bounds, I love when software improves, from rugged, unusable
-                    messes that were car infotainment systems to the smooth ones we have now. 
+                <br />
+                <hr class="border-t border-t-4 border-gray-700 my-10 w-52 h-10 ml-5"></hr>
+                
+            </div>
+            <div className="col-start-2 col-span-2 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 -mt-20 font-['Roboto']">
+                 <span className=" text-lg flex-wrap">
+                  <p>
+                    I am a tech enthusiast with a passion for learning and teaching about technology. I have a
+                   wide range of skills and experience in the tech industry, including Linux system administration, 
+                   web development, and AWS cloud computing. I am also a certified teacher and enjoy sharing my knowledge 
+                   of technology with others.
+                   <br />
+                   <br />
+
+                    I am a highly motivated and results-oriented individual with a strong work ethic. I am always willing 
+                    to go the extra mile and I am always looking for new challenges. I am confident that I can make a significant 
+                    contribution to any team or organization.
                     <br />
-                    
-                    I love technology across a large spectrum <span className="scale-125 text-black font-bold">
-                    [linux, gaming, hardware, web applications, programming [ PHP, Laravel, Javascript, HTML, CSS, React, Next.js, Tailwind, MySQL ], 
-                    android, ios, cloud, database, containerization, orchestration, automation, scripting, version control, A.I, Robotics, IoT]
-                    </span>
-                     so I am still learning and finding my footing, but I also mention technologies I frequently play around with!
-                </p>
+                    <br />
+
+                    I am looking for a position where I can use my skills and experience to make a positive impact on the world. 
+                    I am excited about the future of technology and I am eager to be a part of it.
+                  </p>
+
+
+                    <div className=" w-48 grid justify-self-start">
+                        <Link href='/' className="intro-button flex md:w-full skew-y-0 ">
+                            <div className="flex items-center justify-center">
+                                <Info className="m-1" />
+                            </div>
+                            <span className="hidden md:flex text-center items-center justify-center flex-grow">Curriculum Vitae</span>
+                        </Link>
+                    </div>
+                 </span>
+                
                 <br />
 
-                <p className="col-span-1 p-2 text-lg glassmorphic-container">
-                    I am a Linux System Administrator by heart, managing complex hosting infrastructure; I love and enjoy learning about Linux, the 
-                    stress of system administration is much more bearable. I am growing, even as you read this. <br />
-                    I am a web developer by need, I need money, mostly self taught but I have built some interesting projects over the years like this one,
-                    some big, some small... But I am a pretty competent developer.
-                </p>
+                
 				<br />
-                <p className="col-span-1 p-2 text-lg glassmorphic-container">
-                    I am an AWS Cloud specialist by passion, we all need something to impress two out of five people in the room and my chosen
-                    passion is Cloud technology, AWS cloud to be specific, a never ending learning journey I have come to love and specialize in.
-                    <br />
-                    I am a teacher by blood, both parents are teachers, my mother teaches nursery school kids, my father teaches primary school kids, 
-                    not that they wanted me to be one but I do love what they do so much i just started teaching about... drum roll ... technology!
-                </p>
+                
             </div>
 
-            <div className="col-start-4">
+            <div className="col-start-4 col-span-1 -mt-48">
             <div className="bg-sakura rounded-xl scale-90 bg-opacity-50">
                 <div className="bg-sakura-light rounded-xl -rotate-6 bg-opacity-50">
                     <Image className="transition duration-100 rounded-xl shadow-inner scale-90 origin-center -rotate-12 hover:rotate-45 hover:origin-top "

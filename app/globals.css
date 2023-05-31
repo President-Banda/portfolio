@@ -26,19 +26,21 @@
       }
 
       .background-image-div-one {
-        background-image: url('/images/system.png');
+        background-image: url('/images/code.png');
         background-size: cover;
         background-position: center;
       }
 
+      
+
       .background-image-div-two {
-        background-image: url('/images/physical.png');
+        background-image: url('/images/gym.png');
         background-size: cover;
         background-position: center;
       }
 
       .background-image-div-three {
-        background-image: url('/images/casual.jpg');
+        background-image: url('/images/casual.png');
         background-size: cover;
         background-position: center;
       }

@@ -4,7 +4,7 @@ const Interests = () => {
   return (
     <>
        <div className="col-span-1 row-span-7 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full background-image-div-one">
-        <div className='glassmorphic-container'>
+        <div className='glassmorphic-container blur-none'>
           <div className='text-xl text-black font-bold text-center'>Intellectual</div>
         </div>
         <div className='glassmorphic-container'>
