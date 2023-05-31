@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Info } from "./_icons/info";
 
 export default function Intro(){
@@ -31,23 +30,24 @@ export default function Intro(){
 
                     I am looking for a position where I can use my skills and experience to make a positive impact on the world. 
                     I am excited about the future of technology and I am eager to be a part of it.
+
+                    
                   </p>
+                  <br />
 
 
-                    <div className=" w-48 grid justify-self-start">
-                        <Link href='/' className="intro-button flex md:w-full skew-y-0 ">
-                            <div className="flex items-center justify-center">
+                    <div className=" w-48 grid -ml-7 h-16">
+                        <button className="cv-button flex md:w-full skew-y-0 ">
+                            <div className="hidden items-center justify-center">
                                 <Info className="m-1" />
                             </div>
-                            <span className="hidden md:flex text-center items-center justify-center flex-grow">Curriculum Vitae</span>
-                        </Link>
+                            <span className="hidden text-2xl font-light md:flex text-center items-center justify-center flex-grow">
+                                Curriculum Vitae
+                            </span>
+                        </button>
                     </div>
                  </span>
                 
-                <br />
-
-                
-				<br />
                 
             </div>
 
