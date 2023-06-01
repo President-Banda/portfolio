@@ -71,7 +71,14 @@ export default function Intro(){
             </div>
             </div>
 
+            <div className="grid grid-cols-4 col-start-2 col-span-2 text-center text-2xl font-extrabold">
+                <span>
+                    My Core Values
+                </span>
+            </div>
+
             <div className="grid grid-cols-5 col-start-2 col-span-2 h-24 text-center text-2xl font-medium">
+                
 
                 <div className="grid m-1 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
                     <span class="quote text-center items-center self-center">‘Respect’</span>
