@@ -32,7 +32,7 @@ export default function Header(){
     }, [darkMode]);
 
     return(
-        <div className="flex flex-row mt-5">
+        <div className="flex flex-row pt-5 bg-sakura">
             
             <div className="flex basis-3/4 justify-center text-5xl font-light tracking-wide">
             <Link href='/' className="flex justify-center align-middle m-1">
