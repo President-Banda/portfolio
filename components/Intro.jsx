@@ -11,7 +11,7 @@ export default function Intro(){
                  Tech Enthusiast, System Admin, Web Developer, AWS Cloud Specialist, and Trainer
                  </span>
                 <br />
-                <hr class="border-t border-t-4 border-gray-700 my-10 w-52 h-10 ml-5"></hr>
+                <hr class="border-t-4 border-gray-700 my-10 w-52 h-10 ml-5"></hr>
                 
             </div>
             <div className="col-start-2 col-span-2 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 -mt-20 font-['Roboto']">

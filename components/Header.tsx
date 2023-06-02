@@ -34,7 +34,7 @@ export default function Header(){
     return(
         <div className="flex flex-row pt-5 bg-sakura">
             
-            <div className="flex basis-3/4 justify-center text-5xl font-light tracking-wide">
+            <div className="flex basis-3/4 justify-start text-5xl font-light tracking-wide">
             <Link href='/' className="flex justify-center align-middle m-1">
                 <Image className="rounded-xl shadow-inner"
                         src={"/images/animated.png"}
@@ -48,9 +48,14 @@ export default function Header(){
                         33vw"
                     />
             </Link>
-                Albert Banda<span className="font-thin italic text-xl ml-5 ">president</span>
+                Albert Banda<span className="font-thin italic text-xl ml-5 dark:text-white">president</span>
             </div>
-            <div className="flex basis-1/4 transition cursor-pointer hover:text-blue-600 justify-end m-2 animate-bounce">
+
+            <div className="flex basis-3/4 justify-end text- font-light tracking-wide">
+                AWS AWS AWS
+            </div>
+
+            <div className="flex basis-1/4 transition cursor-pointer hover:text-blue-600 justify-end mr-10 mt-3 animate-bounce">
                 {darkMode?<Sun onClick={switchMode} />:<Moon onClick={switchMode} />}
             </div>
         </div>    
