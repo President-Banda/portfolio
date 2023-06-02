@@ -8,7 +8,8 @@ export default function Intro(){
         <>
             <div className="col-span-3 text-justify m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed border-b-0">
                  <span className=" font-medium text-6xl flex-wrap">
-                 Tech Enthusiast, System Admin, Web Developer, AWS Cloud Specialist, and Trainer
+                 Tech Enthusiast, System <span className=" text-red-700">Admin</span>, Web <span className=" text-red-700">Developer</span>, 
+                 AWS Cloud Specialist, and <span className=" text-red-700">Trainer</span>
                  </span>
                 <br />
                 <hr class="border-t-4 border-gray-700 my-10 w-52 h-10 ml-5"></hr>

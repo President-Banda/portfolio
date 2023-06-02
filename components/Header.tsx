@@ -48,7 +48,7 @@ export default function Header(){
                         33vw"
                     />
             </Link>
-                Albert Banda<span className="font-thin italic text-xl ml-5 dark:text-white">president</span>
+                <span className=" text-red-700">A</span>lbert Banda<span className="font-thin italic text-xl ml-5 dark:text-white">president</span>
             </div>
 
             <div className="flex basis-3/4 justify-end text- font-light tracking-wide">
