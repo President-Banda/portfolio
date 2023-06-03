@@ -5,6 +5,9 @@ import { Moon } from "./_icons/moon";
 import { Sun } from "./_icons/sun";
 import Image from "next/image";
 import Link from "next/link";
+import { Linkedin } from "./_icons/linkedin";
+import { Githubk } from "./_icons/github";
+import { Aws } from "./_icons/aws";
 
 export default function Header(){
     const size = "24px";
@@ -51,8 +54,10 @@ export default function Header(){
                 <span className=" text-red-700">A</span>lbert Banda<span className="font-thin italic text-xl ml-5 dark:text-white">president</span>
             </div>
 
-            <div className="flex basis-3/4 justify-end text- font-light tracking-wide">
-                AWS AWS AWS
+            <div className="flex basis-3/4 justify-end font-light tracking-wide ">
+                <Aws className='m-5 scale-150' />
+                <Githubk className='m-5 scale-150' />
+                <Linkedin className='m-5 scale-150' />
             </div>
 
             <div className="flex basis-1/4 transition cursor-pointer hover:text-blue-600 justify-end mr-10 mt-3 animate-bounce">

@@ -17,8 +17,8 @@
     }
 
     .cv-button{
-      @apply transition text-xl bg-sakura-light h-16 shadow-inner shadow-sakura 
-      border-b-2 w-full rounded-r-xl m-1 font-semibold scale-75 hover:opacity-90
+      @apply transition text-xl bg-red-700 h-16 shadow-inner shadow-sakura 
+      border-b-2 w-full rounded-r-xl m-1 font-semibold scale-75 hover:opacity-90 hover:scale-150
       dark:bg-sakura dark:text-black;
   }
 
