@@ -3,7 +3,7 @@ import React from 'react'
 const Interests = () => {
   return (
     <>
-       <div className="col-span-1 row-span-7 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full ">
+       <div className="col-span-1 row-span-7 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full bg-sakura">
         <div className='glassmorphic-container background-image-div-one'>
           <div className='text-2xl text-black font-bold text-center'>Intellectual</div>
         </div>
@@ -20,7 +20,9 @@ const Interests = () => {
           <li>Research</li>
         </div>
       </div>
-      <div className="col-span-1 row-span-6 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full ">
+
+
+      <div className="col-span-1 row-span-6 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full bg-sakura">
         <div className='glassmorphic-container background-image-div-three'>
           <div className='text-2xl text-black font-bold text-center'>Casual</div>
         </div>
@@ -52,7 +54,11 @@ const Interests = () => {
           <li>Customization/Configuration</li>
         </div>
       </div>
-      <div className="col-span-1 row-span-8 col-start-2 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-72">
+
+
+      
+
+      <div className="col-span-1 row-span-8 col-start-2 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-72 bg-sakura">
         <div className='glassmorphic-container background-image-div-two'>
           <div className='text-2xl text-black font-bold text-center'>Physical</div>
         </div>
@@ -66,6 +72,19 @@ const Interests = () => {
           <li>Football</li>
         </div>
       </div>
+
+      <div className="col-span-1 col-start-3 row-span-4 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full bg-sakura">
+    <div className='glassmorphic-container background-image-div-three'>
+      <div className='text-2xl text-black font-bold text-center'>Fourth Div</div>
+    </div>
+    <div className='glassmorphic-container scale-90'>
+      <li>Content 1</li>
+    </div>
+    <div className='glassmorphic-container scale-90'>
+      <li>Content 2</li>
+    </div>
+    {/* Add more content here */}
+  </div>
     
       
     </>
