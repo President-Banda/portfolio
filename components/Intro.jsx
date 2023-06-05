@@ -82,7 +82,11 @@ export default function Intro(){
                 
 
                 <div className="grid m-1 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
-                    <span class="quote text-red-700 text-center items-center self-center">‘Respect’</span>
+                    <span class="quote text-center items-center self-center">
+                        <span className="text-red-700">‘</span>
+                        Respect
+                        <span className="text-red-700">’</span>
+                    </span>
                 </div>
 
                 <div className="grid text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
