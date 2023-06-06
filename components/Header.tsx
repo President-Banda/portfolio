@@ -8,6 +8,9 @@ import Link from "next/link";
 import { Linkedin } from "./_icons/linkedin";
 import { Githubk } from "./_icons/github";
 import { Aws } from "./_icons/aws";
+import dynamic from 'next/dynamic';
+
+const NoSSRComponent = dynamic(() => import('./Header'), { ssr: false });
 
 export default function Header(){
     const size = "24px";
