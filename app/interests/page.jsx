@@ -3,7 +3,9 @@ import React from 'react'
 const Interests = () => {
   return (
     <>
-       <div className="col-span-1 row-span-7 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full bg-sakura">
+      <div className="grid grid-cols-2 gap-x-5 col-span-3 justify-center m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto'] glassmorphic-container">
+
+      <div className="col-span-1 row-span-7 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-fit bg-sakura mr-20">
         <div className='glassmorphic-container background-image-div-one scale-110 rounded-md'>
           <div className='text-2xl text-black font-bold text-center'>Intellectual</div>
         </div>
@@ -22,7 +24,7 @@ const Interests = () => {
       </div>
 
 
-      <div className="col-span-1 row-span-4 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed bg-sakura h-3/4">
+      <div className="col-span-1 row-span-8 h-fit text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed bg-sakura ml-20">
         <div className='glassmorphic-container background-image-div-three scale-110 rounded-md'>
           <div className='text-2xl text-black font-bold text-center'>Casual</div>
         </div>
@@ -47,7 +49,7 @@ const Interests = () => {
 
       
 
-      <div className="col-span-1 row-span-8 col-start-2 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-72 bg-sakura mr-32">
+      <div className="col-span-1 row-span-8 col-start-1 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-72 bg-sakura -mt-14 mr-52">
         <div className='glassmorphic-container background-image-div-two scale-110 rounded-md'>
           <div className='text-2xl text-black font-bold text-center'>Physical</div>
         </div>
@@ -62,7 +64,7 @@ const Interests = () => {
         </div>
       </div>
 
-      <div className="col-span-1 col-start-3 row-span-8 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed bg-sakura -mt-44 ml-32">
+      <div className="col-span-1 col-start-2 row-span-8 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed bg-sakura mt-2 mr-52">
         <div className='glassmorphic-container background-image-div-three scale-110 rounded-md'>
           <div className='text-2xl text-black font-bold text-center'>Misc.</div>
         </div>
@@ -81,6 +83,8 @@ const Interests = () => {
         
     {/* Add more content here */}
       </div>
+      </div>
+       
     
       
     </>
