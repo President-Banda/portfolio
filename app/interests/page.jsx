@@ -4,7 +4,7 @@ const Interests = () => {
   return (
     <>
        <div className="col-span-1 row-span-7 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full bg-sakura">
-        <div className='glassmorphic-container background-image-div-one'>
+        <div className='glassmorphic-container background-image-div-one scale-110 rounded-md'>
           <div className='text-2xl text-black font-bold text-center'>Intellectual</div>
         </div>
         <div className='glassmorphic-container scale-90'>
@@ -23,7 +23,7 @@ const Interests = () => {
 
 
       <div className="col-span-1 row-span-6 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full bg-sakura">
-        <div className='glassmorphic-container background-image-div-three'>
+        <div className='glassmorphic-container background-image-div-three scale-110 rounded-md'>
           <div className='text-2xl text-black font-bold text-center'>Casual</div>
         </div>
         <div className='glassmorphic-container scale-90'>
@@ -59,7 +59,7 @@ const Interests = () => {
       
 
       <div className="col-span-1 row-span-8 col-start-2 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-72 bg-sakura">
-        <div className='glassmorphic-container background-image-div-two'>
+        <div className='glassmorphic-container background-image-div-two scale-110 rounded-md'>
           <div className='text-2xl text-black font-bold text-center'>Physical</div>
         </div>
         <div className='glassmorphic-container scale-90'>
@@ -74,7 +74,7 @@ const Interests = () => {
       </div>
 
       <div className="col-span-1 col-start-3 row-span-4 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full bg-sakura">
-    <div className='glassmorphic-container background-image-div-three'>
+    <div className='glassmorphic-container background-image-div-three scale-110 rounded-md'>
       <div className='text-2xl text-black font-bold text-center'>Fourth Div</div>
     </div>
     <div className='glassmorphic-container scale-90'>
