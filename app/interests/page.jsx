@@ -22,7 +22,7 @@ const Interests = () => {
       </div>
 
 
-      <div className="col-span-1 row-span-6 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full bg-sakura">
+      <div className="col-span-1 row-span-4 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed bg-sakura h-3/4">
         <div className='glassmorphic-container background-image-div-three scale-110 rounded-md'>
           <div className='text-2xl text-black font-bold text-center'>Casual</div>
         </div>
@@ -39,26 +39,15 @@ const Interests = () => {
           <li>Music?</li>
         </div>
         <div className='glassmorphic-container scale-90'>
-          <li>Twitter</li>
-        </div>
-        <div className='glassmorphic-container scale-90'>
-          <li>Cleaning</li>
-        </div>
-        <div className='glassmorphic-container scale-90'>
-          <li>SLEEP</li>
-        </div>
-        <div className='glassmorphic-container scale-90'>
-          <li>Tweaking</li>
-        </div>
-        <div className='glassmorphic-container scale-90'>
           <li>Customization/Configuration</li>
         </div>
+        
       </div>
 
 
       
 
-      <div className="col-span-1 row-span-8 col-start-2 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-72 bg-sakura">
+      <div className="col-span-1 row-span-8 col-start-2 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-72 bg-sakura mr-32">
         <div className='glassmorphic-container background-image-div-two scale-110 rounded-md'>
           <div className='text-2xl text-black font-bold text-center'>Physical</div>
         </div>
@@ -73,18 +62,25 @@ const Interests = () => {
         </div>
       </div>
 
-      <div className="col-span-1 col-start-3 row-span-4 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-full bg-sakura">
-    <div className='glassmorphic-container background-image-div-three scale-110 rounded-md'>
-      <div className='text-2xl text-black font-bold text-center'>Fourth Div</div>
-    </div>
-    <div className='glassmorphic-container scale-90'>
-      <li>Content 1</li>
-    </div>
-    <div className='glassmorphic-container scale-90'>
-      <li>Content 2</li>
-    </div>
+      <div className="col-span-1 col-start-3 row-span-8 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed bg-sakura -mt-44 ml-32">
+        <div className='glassmorphic-container background-image-div-three scale-110 rounded-md'>
+          <div className='text-2xl text-black font-bold text-center'>Misc.</div>
+        </div>
+        <div className='glassmorphic-container scale-90'>
+          <li>Twitter</li>
+        </div>
+        <div className='glassmorphic-container scale-90'>
+          <li>Cleaning</li>
+        </div>
+        <div className='glassmorphic-container scale-90'>
+          <li>SLEEP</li>
+        </div>
+        <div className='glassmorphic-container scale-90'>
+          <li>Tweaking</li>
+        </div>
+        
     {/* Add more content here */}
-  </div>
+      </div>
     
       
     </>
