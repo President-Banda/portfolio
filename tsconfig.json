@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/_icons/work.jsx", "components/_icons/twitter.jsx", "components/_icons/tinder.jsx", "components/_icons/sun.jsx", "components/_icons/moon.jsx", "components/_icons/mail.jsx", "components/_icons/links.jsx", "components/_icons/linkedin.jsx", "components/_icons/info.jsx", "components/_icons/hobbies.jsx", "components/_icons/github.jsx", "components/_icons/education.jsx", "components/_icons/certificates.jsx", "components/_icons/aws.jsx"  ],
   "exclude": [
     "node_modules"
   ]

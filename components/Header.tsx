@@ -18,19 +18,21 @@ export default function Header(){
     }
 
     useEffect(()=>{
-        if(darkMode){
-            localStorage.setItem("darkMode", "true");
-            window.document.documentElement.classList.add('dark');
-
-        }
-
-        else if( darkMode == false ){
-            localStorage.setItem("darkMode", "false");
-            window.document.documentElement.classList.remove('dark');
-        }
-
-        else{
-            setDarkMode(localStorage.getItem('darkMode') === "true");
+        if (typeof window !== 'undefined') {
+            if(darkMode){
+                localStorage.setItem("darkMode", "true");
+                window.document.documentElement.classList.add('dark');
+    
+            }
+    
+            else if( darkMode == false ){
+                localStorage.setItem("darkMode", "false");
+                window.document.documentElement.classList.remove('dark');
+            }
+    
+            else{
+                setDarkMode(localStorage.getItem('darkMode') === "true");
+            }
         }
     }, [darkMode]);
 
