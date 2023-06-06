@@ -31,7 +31,7 @@ const Work = () => {
                 <div className="bg-sakura rounded-xl bg-opacity-50">
                     <Image className="transition duration-100 rounded-xl shadow-inner scale-90 origin-center hover:rotate-45 hover:origin-top "
                         src={"/images/albert_banda_image.jpg"}
-                        alt="my_intro_image"
+                        alt="my_projects_image"
                         width={500}
                         height={500}
                         loading="lazy"
@@ -60,17 +60,17 @@ const Work = () => {
                   </time>
                 </div>
 
-                <div className="hidden sm:block sm:basis-56">
+                <div className="hidden sm:block sm:basis-56 mt-14">
                   <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
-                      src={"/images/albert_banda_image.jpg"}
-                      alt="my_intro_image"
-                      width={500}
-                      height={500}
+                      src={"/images/innovate.png"}
+                      alt="innovate 265 interface"
+                      width={1280}
+                      height={720}
                       loading="lazy"
 
-                      sizes="(max-width: 768px) 100vw,
-                      (max-width: 1200px) 50vw,
-                      33vw"
+                      // sizes="(max-width: 768px) 100vw,
+                      // (max-width: 1200px) 50vw,
+                      // 33vw"
                   />
                 </div>
 
@@ -115,10 +115,10 @@ const Work = () => {
                   </time>
                 </div>
 
-                <div className="hidden sm:block sm:basis-56">
+                <div className="hidden sm:block sm:basis-56 mt-14">
                   <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
-                      src={"/images/albert_banda_image.jpg"}
-                      alt="my_intro_image"
+                      src={"/images/sms_platform.png"}
+                      alt="sms platform interface"
                       width={500}
                       height={500}
                       loading="lazy"
@@ -171,10 +171,10 @@ const Work = () => {
                   </time>
                 </div>
 
-                <div className="hidden sm:block sm:basis-56">
+                <div className="hidden sm:block sm:basis-56 mt-14">
                   <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150"
-                      src={"/images/albert_banda_image.jpg"}
-                      alt="my_intro_image"
+                      src={"/images/portfolio.png"}
+                      alt="this portforlio interface"
                       width={500}
                       height={500}
                       loading="lazy"
