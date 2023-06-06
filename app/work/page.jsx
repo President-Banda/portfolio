@@ -93,7 +93,7 @@ const Work = () => {
                   <div className="sm:flex sm:items-end sm:justify-end">
                     <a
                       href="#"
-                      className="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
+                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110"
                     >
                       Visit
                     </a>
@@ -147,7 +147,7 @@ const Work = () => {
                   <div className="sm:flex sm:items-end sm:justify-end">
                     <Link
                       href="#"
-                      className="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
+                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110"
                     >
                       Visit
                     </Link>
@@ -201,7 +201,7 @@ const Work = () => {
                   <div className="sm:flex sm:items-end sm:justify-end">
                     <Link
                       href="#"
-                      className="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
+                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110"
                     >
                       Visit
                     </Link>
