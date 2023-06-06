@@ -14,7 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html 
     lang="en"
-    className={localStorage.getItem("darkMode")=== "true" ? "dark" : "light"}
+    //className={localStorage.getItem("darkMode")=== "true" ? "dark" : "light"}
+    //className={typeof window !== 'undefined' && localStorage.getItem("darkMode") === "true" ? "dark" : "light"}
     >
       <body className='dark:bg-dark-color dark:text-white'>
         <Header />

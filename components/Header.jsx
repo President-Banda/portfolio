@@ -17,24 +17,24 @@ export default function Header(){
         setDarkMode(!darkMode);
     }
 
-    // useEffect(()=>{
-    //     if (typeof window !== 'undefined') {
-    //         if(darkMode){
-    //         localStorage.setItem("darkMode", "true");
-    //         window.document.documentElement.classList.add('dark');
+    useEffect(()=>{
+        if (typeof window !== 'undefined') {
+            if(darkMode){
+            localStorage.setItem("darkMode", "true");
+            window.document.documentElement.classList.add('dark');
 
-    //     }
+        }
 
-    //     else if( darkMode == false ){
-    //         localStorage.setItem("darkMode", "false");
-    //         window.document.documentElement.classList.remove('dark');
-    //     }
+        else if( darkMode == false ){
+            localStorage.setItem("darkMode", "false");
+            window.document.documentElement.classList.remove('dark');
+        }
 
-    //     else{
-    //         setDarkMode(localStorage.getItem('darkMode') === "true");
-    //     }
-    //     }
-    // }, [darkMode]);
+        else{
+            setDarkMode(localStorage.getItem('darkMode') === "true");
+        }
+        }
+    }, [darkMode]);
 
     return(
         <div className="flex flex-row pt-5 bg-sakura">
