@@ -13,10 +13,10 @@ const Work = () => {
                   <p className="mt-20">
                   I am a developer with three years of work experience, specializing in Laravel, MySQL, 
                   React, Next.js, MySQL, and Linux. I have honed my skills in building robust web applications
-                   using Laravels powerful framework and efficiently managing databases with MySQL. I am also 
-                   proficient in frontend development, leveraging React and Next.js to create dynamic user interfaces.
-                    With my solid understanding of Linux, I possess the expertise to deploy and maintain applications
-                     in a Linux environment.
+                  using Laravels powerful framework and efficiently managing databases with MySQL. I am also 
+                  proficient in frontend development, leveraging React and Next.js to create dynamic user interfaces.
+                  With my solid understanding of Linux, I possess the expertise to deploy and maintain applications
+                  in a Linux environment.
                    <br />
                   </p>
                   <br />
@@ -82,11 +82,11 @@ const Work = () => {
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-4 text-sm/relaxed text-gray-700 text-justify">
-                      UNDP Innovate 265 is an Android application that is used to collect, store
-                      and manage data about innovations at the grassroots level. Ofcourse the backend (APIs, database)
-                      as well as infrastructure on AWS were my main tasks but I later decided to add web interface as a 
-                      cherry on top for UNDP
+                    <p className="mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify">
+                    UNDP Innovate 265 is an Android app designed for gathering, storing, and overseeing grassroots-level 
+                    innovation data. I initially focused on backend development, including APIs, databases, and AWS 
+                    infrastructure, I later took the initiative to enhance it further by incorporating a web interface as
+                    an additional feature, serving as the icing on the cake for UNDP.
                     </p>
                   </div>
 
@@ -137,11 +137,12 @@ const Work = () => {
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-4 text-sm/relaxed text-gray-700 text-justify">
-                      SMS Platform, major update of an SMS based system for pushing out
-                      bulk messages, Q and A, in a neat and convenient web interface. This system
-                      was built in collaboration with Francis Ganya using too many technologies to mention, it 
-                      is the largest and most complex system I have worked on to date.
+                    <p className="mt-2 line-clamp-6 text-sm/relaxed text-gray-700 text-justify">
+                    SMS Platform represents a substantial upgrade to an SMS-based system dedicated to 
+                    disseminating bulk messages and facilitating Q&A interactions via a user-friendly 
+                    web interface. Developed in collaboration with Francis Ganya, this project employed a 
+                    plethora of technologies too numerous to enumerate. Notably, it stands as the most extensive 
+                    and intricate system I have had the opportunity to work on thus far.
                     </p>
                   </div>
 
