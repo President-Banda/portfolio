@@ -61,7 +61,7 @@ const Work = () => {
                 </div>
 
                 <div className="hidden sm:block sm:basis-56">
-                  <Image className="transition duration-100 rounded-xl shadow-inner scale-90 origin-center hover:rotate-45 hover:origin-top "
+                  <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
                       src={"/images/albert_banda_image.jpg"}
                       alt="my_intro_image"
                       width={500}
@@ -82,7 +82,7 @@ const Work = () => {
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-4 text-sm/relaxed text-gray-700">
+                    <p className="mt-2 line-clamp-4 text-sm/relaxed text-gray-700 text-justify">
                       UNDP Innovate 265 is an Android application that is used to collect, store
                       and manage data about innovations at the grassroots level. Ofcourse the backend (APIs, database)
                       as well as infrastructure on AWS were my main tasks but I later decided to add web interface as a 
@@ -91,12 +91,13 @@ const Work = () => {
                   </div>
 
                   <div className="sm:flex sm:items-end sm:justify-end">
-                    <a
-                      href="#"
+                    <Link
+                      href="https://chiweto.ch/undp"
+                      target="_blank"
                       className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110"
                     >
                       Visit
-                    </a>
+                    </Link>
                   </div>
                 </div>
             </article>
@@ -115,7 +116,7 @@ const Work = () => {
                 </div>
 
                 <div className="hidden sm:block sm:basis-56">
-                  <Image className="transition duration-100 rounded-xl shadow-inner scale-90 origin-center hover:rotate-45 hover:origin-top "
+                  <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
                       src={"/images/albert_banda_image.jpg"}
                       alt="my_intro_image"
                       width={500}
@@ -136,7 +137,7 @@ const Work = () => {
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-4 text-sm/relaxed text-gray-700">
+                    <p className="mt-2 line-clamp-4 text-sm/relaxed text-gray-700 text-justify">
                       SMS Platform, major update of an SMS based system for pushing out
                       bulk messages, Q and A, in a neat and convenient web interface. This system
                       was built in collaboration with Francis Ganya using too many technologies to mention, it 
@@ -146,7 +147,8 @@ const Work = () => {
 
                   <div className="sm:flex sm:items-end sm:justify-end">
                     <Link
-                      href="#"
+                      href="https://chiweto.ch/"
+                      target="_blank"
                       className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110"
                     >
                       Visit
@@ -169,7 +171,7 @@ const Work = () => {
                 </div>
 
                 <div className="hidden sm:block sm:basis-56">
-                  <Image className="transition duration-100 rounded-xl shadow-inner scale-90 origin-center hover:rotate-45 hover:origin-top "
+                  <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150"
                       src={"/images/albert_banda_image.jpg"}
                       alt="my_intro_image"
                       width={500}
@@ -182,7 +184,7 @@ const Work = () => {
                   />
                 </div>
 
-                <div className="flex flex-1 flex-col justify-between">
+                <div className="flex flex-1 flex-col justify-between" id="this">
                   <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
                     <a href="#">
                       <h3 className="font-bold uppercase text-gray-900">
@@ -190,7 +192,7 @@ const Work = () => {
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-5 text-sm/relaxed text-gray-700">
+                    <p className="mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify">
                     This Portfolio is a distinct showcase of my design techniques, featuring unconventional color choices. 
                     It embodies the concept of crafting an unparalleled creation, one that cannot be replicated elsewhere
                      online. Despite not being a front-end developer, I ventured into uncharted territory to experiment 
@@ -200,7 +202,7 @@ const Work = () => {
 
                   <div className="sm:flex sm:items-end sm:justify-end">
                     <Link
-                      href="#"
+                      href="#this"
                       className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110"
                     >
                       Visit
