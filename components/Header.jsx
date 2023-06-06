@@ -8,36 +8,33 @@ import Link from "next/link";
 import { Linkedin } from "./_icons/linkedin";
 import { Githubk } from "./_icons/github";
 import { Aws } from "./_icons/aws";
-import dynamic from 'next/dynamic';
-
-const NoSSRComponent = dynamic(() => import('./Header'), { ssr: false });
 
 export default function Header(){
     const size = "24px";
-    const [darkMode, setDarkMode] = useState<boolean | undefined>(undefined);
+    const [darkMode, setDarkMode] = useState('');
 
     const switchMode =() => {
         setDarkMode(!darkMode);
     }
 
-    useEffect(()=>{
-        if (typeof window !== 'undefined') {
-            if(darkMode){
-                localStorage.setItem("darkMode", "true");
-                window.document.documentElement.classList.add('dark');
-    
-            }
-    
-            else if( darkMode == false ){
-                localStorage.setItem("darkMode", "false");
-                window.document.documentElement.classList.remove('dark');
-            }
-    
-            else{
-                setDarkMode(localStorage.getItem('darkMode') === "true");
-            }
-        }
-    }, [darkMode]);
+    // useEffect(()=>{
+    //     if (typeof window !== 'undefined') {
+    //         if(darkMode){
+    //         localStorage.setItem("darkMode", "true");
+    //         window.document.documentElement.classList.add('dark');
+
+    //     }
+
+    //     else if( darkMode == false ){
+    //         localStorage.setItem("darkMode", "false");
+    //         window.document.documentElement.classList.remove('dark');
+    //     }
+
+    //     else{
+    //         setDarkMode(localStorage.getItem('darkMode') === "true");
+    //     }
+    //     }
+    // }, [darkMode]);
 
     return(
         <div className="flex flex-row pt-5 bg-sakura">
