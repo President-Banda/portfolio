@@ -41,7 +41,7 @@ export default function Header(){
             
             <div className="flex basis-3/4 justify-start text-5xl font-light tracking-wide">
             <Link href='/' className="flex justify-center align-middle m-1">
-                <Image className="rounded-xl shadow-inner"
+                <Image className="flex rounded-xl shadow-inner"
                         src={"/images/animated.png"}
                         alt="my_intro_image"
                         width={60}
@@ -53,7 +53,9 @@ export default function Header(){
                         33vw"
                     />
             </Link>
-                <span className=" text-red-700">A</span>lbert Banda<span className="font-thin italic text-xl ml-5 dark:text-white">president</span>
+                <span className=" text-red-700 align-top self-center">A</span>
+                <span className="align-top self-center">lbert Banda</span>
+                <span className="font-thin italic text-xl ml-5 dark:text-white">president</span>
             </div>
 
             <div className="flex basis-3/4 justify-end font-light tracking-wide ">

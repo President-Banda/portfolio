@@ -5,7 +5,7 @@ const Certification = () => {
     <>
       <div className="grid grid-cols-2 gap-1 col-start-2 col-span-3 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
         <div className="flex flex-col justify-center text-center mb-10">
-          <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:rotate-45 hover:origin-top "
+          <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center "
               src={"/images/authorized-instructor.png"}
               alt="aai_badge"
               width={500}
@@ -21,7 +21,7 @@ const Certification = () => {
         </div>
 
         <div className="flex flex-col justify-center text-center mb-10">
-          <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:rotate-45 hover:origin-top "
+          <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center  "
               src={"/images/solutions_architect.png"}
               alt="my_projects_image"
               width={500}
@@ -37,7 +37,7 @@ const Certification = () => {
         </div>
 
         <div className="flex flex-col justify-center text-center mb-10">
-          <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:rotate-45 hover:origin-top "
+          <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center "
               src={"/images/udacity-logo.png"}
               alt="my_projects_image"
               width={500}
@@ -53,7 +53,7 @@ const Certification = () => {
         </div>
 
         <div className="flex flex-col justify-center text-center mb-10">
-          <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:rotate-45 hover:origin-top "
+          <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center  "
               src={"/images/free_code_camp.png"}
               alt="my_projects_image"
               width={500}
