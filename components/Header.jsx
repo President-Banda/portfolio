@@ -59,9 +59,9 @@ export default function Header(){
             </div>
 
             <div className="flex basis-3/4 justify-end font-light tracking-wide ">
-                <Aws className='m-5 scale-150' />
-                <Githubk className='m-5 scale-150' />
-                <Linkedin className='m-5 scale-150' />
+                <Link href="https://www.credly.com/users/albert-banda/badges"><Aws className='m-5 scale-150' /></Link>
+                <Link href='http://www.linkedin.com/in/albertbanda-tech' target='blank'><Githubk className='m-5 scale-150' /></Link>
+                <Link href='https://github.com/President-Banda' target='blank'><Linkedin className='m-5 scale-150' /></Link>
             </div>
 
             <div className="flex basis-1/4 transition cursor-pointer hover:text-blue-600 justify-end mr-10 mt-3 animate-bounce">
