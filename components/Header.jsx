@@ -66,9 +66,9 @@ export default function Header(){
 
             <div className="flex basis-1/4  cursor-pointer hover:text-blue-600 justify-end mr-10 mt-3">
             <Link href="https://www.credly.com/users/albert-banda/badges"><Aws className='m-5 scale-150' /></Link>
-                <Link href='http://www.linkedin.com/in/albertbanda-tech' target='blank'><Githubk className='m-5 scale-150' /></Link>
-                <Link href='https://github.com/President-Banda' target='blank'><Linkedin className='m-5 scale-150' /></Link>
-                <div className="transition animate-bounce m-5">
+                <Link href='https://github.com/President-Banda' target='blank'><Githubk className='m-5 scale-150' /></Link>
+                <Link href='http://www.linkedin.com/in/albertbanda-tech' target='blank'><Linkedin className='m-5 scale-150' /></Link>
+                <div className="transition animate-bounce m-5 scale-150">
                 {darkMode?<Sun onClick={switchMode} />:<Moon onClick={switchMode} />}
                 </div>
                 
