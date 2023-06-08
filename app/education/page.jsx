@@ -5,26 +5,49 @@ const Education = () => {
     <>
     <div className="grid grid-cols-4 col-span-3 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
 
-        <div className="grid grid-cols-1 grid-rows-6 col-start-1 text-lg border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container w-0 ">
+        <div className="grid grid-cols-1 grid-rows-6 col-start-1 text-lg border border-solid border-sakura-light 
+        rounded-lg p-1 leading-relaxed glassmorphic-container w-0 row-span-6">
             <ol className="relative border-l border-gray-200 dark:border-gray-700 justify-end text-end row-span-6">                   
-                <div>
-                    <li className="mb-10 ml-6">
+                <div className='row-start-4'>
+                    <li className="mt-20 mb-60 ml-6">
                         <span class="absolute flex items-center justify-center w-6 h-6 bg-sakura rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg aria-hidden="true" className="w-3 h-3 text-red-700 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                         </span>
                         <time time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> 
-                            7th, 2021
+                            2023
                         </time>
                     </li>
                 </div>
 
                 <div className='row-start-4'>
+                    <li className=" mb-60 ml-6">
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-sakura rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                            <svg aria-hidden="true" className="w-3 h-3 text-red-700 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                        </span>
+                        <time time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> 
+                            2022
+                        </time>
+                    </li>
+                </div>
+
+                <div className='row-start-4'>
+                    <li className="mb-60 ml-6">
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-sakura rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                            <svg aria-hidden="true" className="w-3 h-3 text-red-700 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                        </span>
+                        <time time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> 
+                            2021
+                        </time>
+                    </li>
+                </div>
+
+                <div className='row-start-3'>
                     <li className="ml-6">
                         <span className="absolute flex items-center justify-center w-6 h-6 bg-sakura rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg aria-hidden="true" class="w-3 h-3 text-red-700 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                         </span>
                         <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                            December 2nd, 2021
+                            2020
                         </time>
                     </li>
                 </div>
@@ -48,6 +71,12 @@ const Education = () => {
                     </p>
                 </li>
 
+            </ol>
+
+        </div>
+
+        <div className="col-start-2 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
+            <ol className="relative border-l border-gray-200 dark:border-gray-700 p-5 h-fit"> 
                 <li class="mb-10">            
                     <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                         ICT Consultant 
@@ -60,7 +89,11 @@ const Education = () => {
                         management of hardware, software and network infrastructure.
                     </p>
                 </li>
+            </ol>
+        </div> 
 
+        <div className="col-start-2 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
+            <ol className="relative border-l border-gray-200 dark:border-gray-700 p-5 h-fit">
                 <li class="mb-10">            
                     <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                         System Admin/ Web Developer 
@@ -74,12 +107,10 @@ const Education = () => {
                         Automation and Programming etc.
                     </p>
                 </li>
-
             </ol>
+        </div> 
 
-        </div>
-
-        <div className=" row-start-2 col-start-3 -mt-48 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
+        <div className=" row-start-3 col-start-3 mt-32 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
             <ol className="relative border-l border-gray-200 dark:border-gray-700 p-5">      
 
                 <li class="mb-10 ml-6">            
@@ -98,7 +129,7 @@ const Education = () => {
 
         </div>
 
-        <div className="col-start-4 row-start-2 -mt-96 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
+        <div className="col-start-4 row-start-2 -mt-28 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
             <ol className="relative border-l border-gray-200 dark:border-gray-700 p-5">      
 
                 <li class="mb-10 ml-6">            
