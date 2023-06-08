@@ -39,7 +39,7 @@ export default function Header(){
     return(
         <div className="flex flex-row pt-5 bg-sakura">
             
-            <div className="flex basis-3/4 justify-start text-5xl font-light tracking-wide">
+            <div className="flex basis-3/4 justify-start text-5xl font-light tracking-wide ml-10">
             <Link href='/' className="flex justify-center align-middle m-1">
                 <Image className="flex rounded-xl shadow-inner"
                         src={"/images/animated.png"}
@@ -55,17 +55,23 @@ export default function Header(){
             </Link>
                 <span className=" text-red-700 align-top self-center">A</span>
                 <span className="align-top self-center">lbert Banda</span>
-                <span className="font-thin italic text-xl ml-5 dark:text-white">president</span>
+                <span className="font-thin italic text-xl ml-2 dark:text-white">president</span>
             </div>
 
-            <div className="flex basis-3/4 justify-end font-light tracking-wide ">
+            {/* <div className="flex basis-3/4 justify-end font-light tracking-wide -ml-40">
                 <Link href="https://www.credly.com/users/albert-banda/badges"><Aws className='m-5 scale-150' /></Link>
                 <Link href='http://www.linkedin.com/in/albertbanda-tech' target='blank'><Githubk className='m-5 scale-150' /></Link>
                 <Link href='https://github.com/President-Banda' target='blank'><Linkedin className='m-5 scale-150' /></Link>
-            </div>
+            </div> */}
 
-            <div className="flex basis-1/4 transition cursor-pointer hover:text-blue-600 justify-end mr-10 mt-3 animate-bounce">
+            <div className="flex basis-1/4  cursor-pointer hover:text-blue-600 justify-end mr-10 mt-3">
+            <Link href="https://www.credly.com/users/albert-banda/badges"><Aws className='m-5 scale-150' /></Link>
+                <Link href='http://www.linkedin.com/in/albertbanda-tech' target='blank'><Githubk className='m-5 scale-150' /></Link>
+                <Link href='https://github.com/President-Banda' target='blank'><Linkedin className='m-5 scale-150' /></Link>
+                <div className="transition animate-bounce m-5">
                 {darkMode?<Sun onClick={switchMode} />:<Moon onClick={switchMode} />}
+                </div>
+                
             </div>
         </div>    
         
