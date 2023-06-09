@@ -39,7 +39,7 @@ export default function Header(){
     return(
         <div className="flex flex-row pt-5 bg-sakura">
             
-            <div className="flex basis-3/4 justify-start text-5xl font-light tracking-wide ml-10">
+            <div className="flex basis-3/4 justify-start text-5xl font-light tracking-wide ml-10 font-[Merriweather]">
             <Link href='/' className="flex justify-center align-middle m-1">
                 <Image className="flex rounded-xl shadow-inner"
                         src={"/images/animated.png"}

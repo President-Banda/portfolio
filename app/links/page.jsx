@@ -10,7 +10,7 @@ import { Tinder } from '../../components/_icons/tinder'
 const LinkComponent = () => {
   return (
     <>
-      <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container">
+      <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
                 <p className="col-span-1 p-2 text-lg  h-full">
                     First and foremost, I am a tech enthusiast, I love technology, I love tweaking/customizing, creating, I love advancements 
                     in technology. I love when hardware makes small leaps and bounds, I love when software improves, from rugged, unusable

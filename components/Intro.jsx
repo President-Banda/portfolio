@@ -47,7 +47,7 @@ export default function Intro(){
                             <span className="hidden text-2xl font-light md:flex text-center items-center justify-center flex-grow">
                                 Curriculum Vitae
                             </span>
-                            <span className="flex text-center items-center justify-center flex-grow md:hidden">CV</span>
+                            <span className="flex text-center items-center justify-center self-center flex-grow md:hidden">CV</span>
                         </button>
                     </div>
                  </span>
@@ -73,13 +73,13 @@ export default function Intro(){
             </div>
             </div>
 
-            <div className="grid grid-cols-4 col-start-2 col-span-2 text-center text-2xl font-extrabold">
-                <span>
+            <div className="grid grid-cols-4 col-start-2 col-span-2 text-center text-2xl">
+                <span className="font-thin">
                     My Core Values
                 </span>
             </div>
 
-            <div className="flex flex-col lg:grid grid-cols-5 col-start-2 col-span-2 h-24 text-center text-2xl font-medium">
+            <div className="flex flex-col mb-5 md:grid grid-cols-5 col-start-2 col-span-2 h-24 text-center text-2xl font-medium">
                 
 
                 <div className="grid m-1 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">

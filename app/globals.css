@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,7 +13,7 @@
     }
     .intro-button{
         @apply transition text-xl bg-sakura-light h-10 shadow-inner shadow-sakura 
-        border-b-2 w-full rounded-r-xl m-1 font-semibold skew-y-6 scale-75 hover:skew-y-0 opacity-90
+        border-b-2 w-full rounded-r-xl m-1 p-5 font-semibold skew-y-6 scale-75 hover:skew-y-0 opacity-90
         dark:bg-sakura dark:text-black;
     }
 
