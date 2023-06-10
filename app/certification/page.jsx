@@ -1,6 +1,16 @@
-import Image from "next/image"
+import Image from "next/image"// Import your CSS module
+
 
 const Certification = () => {
+
+  const ImageOverlay = () => {
+    const [overlayVisible, setOverlayVisible] = useState(false);
+  
+    const toggleOverlay = () => {
+      setOverlayVisible(!overlayVisible);
+    };
+  }
+
   return (
     <>
       <div className="grid grid-cols-2 gap-1 col-start-2 col-span-3 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
@@ -11,11 +21,23 @@ const Certification = () => {
               width={500}
               height={500}
               loading="lazy"
+              onClick={toggleOverlay}
 
               sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
           />
+          {overlayVisible && (
+        <div className={styles.overlay} onClick={toggleOverlay}>
+          <Image  
+            src={"/images/solutions_architect.png"}
+            alt="my_projects_image"
+            width={500}
+            height={500}
+            loading="lazy"
+          />
+        </div>
+      )}
           <span className="text-lg font-bold self-start ml-14">Amazon Authorised Instructor</span>
           <span className=" text-xs italic self-start ml-14">17 May 2023</span>
         </div>
