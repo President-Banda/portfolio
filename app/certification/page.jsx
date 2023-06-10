@@ -1,15 +1,15 @@
+'use client'
+import { useState } from "react"
 import Image from "next/image"// Import your CSS module
+import styles from './styles.css'
 
 
 const Certification = () => {
 
-  const ImageOverlay = () => {
-    const [overlayVisible, setOverlayVisible] = useState(false);
-  
-    const toggleOverlay = () => {
-      setOverlayVisible(!overlayVisible);
-    };
-  }
+  const [overlayVisible, setOverlayVisible] = useState(false);
+
+  const toggleOverlay = () => {setOverlayVisible(!overlayVisible)};
+    
 
   return (
     <>
@@ -32,8 +32,8 @@ const Certification = () => {
           <Image  
             src={"/images/solutions_architect.png"}
             alt="my_projects_image"
-            width={500}
-            height={500}
+            width={1000}
+            height={1000}
             loading="lazy"
           />
         </div>
