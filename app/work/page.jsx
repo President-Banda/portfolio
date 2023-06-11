@@ -7,7 +7,7 @@ const Work = () => {
     <>
             <div className="col-start-2 col-span-2 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
                  <span className=" text-lg flex-wrap">
-                 <span className=" font-medium text-6xl flex-wrap mb-10 leading-snug font-[Inter]">
+                 <span className=" font-medium text-6xl flex-wrap mb-10 leading-snug font-[Dosis]">
                   Take a peek at my most <span className=" text-red-700">Recent</span> Projects
                  </span>
                   <p className="mt-20">

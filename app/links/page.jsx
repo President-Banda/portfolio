@@ -107,7 +107,7 @@ const LinkComponent = () => {
               Twitter
             </Link>
 
-            <Link href='#' target='blank'
+            <Link href='mailto:z71s2xiu@duck.com' target='blank'
             className='font-semibold border border-solid  border-black rounded-md
             m-1 p-4 h-10 w-28 inline-flex text-lg 
             text-center justify-center align-middle items-center
@@ -121,7 +121,7 @@ const LinkComponent = () => {
             className='transition font-semibold border border-solid  border-black rounded-md
              m-1 p-4 h-10 w-28 inline-flex text-lg 
              text-center justify-center align-middle items-center 
-             animate-pulse hover:scale-150 transition'
+             animate-pulse hover:scale-150 '
             >
               <Tinder className='mr-1 scale-150 animate-ping transition' />
               Tinder
