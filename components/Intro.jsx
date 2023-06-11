@@ -7,7 +7,7 @@ export default function Intro(){
     return(
         <>
             <div className="col-span-3 text-justify m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed border-b-0">
-                 <span className=" font-medium text-6xl flex-wrap">
+                 <span className="font-medium text-xl flex-wrap md:font-medium md:text-6xl md:flex-wrap">
                  Tech Enthusiast, System <span className=" text-red-700">Admin</span>, Web <span className=" text-red-700">Developer</span>, 
                  AWS Cloud Specialist, and <span className=" text-red-700">Trainer</span>
                  </span>
@@ -55,7 +55,7 @@ export default function Intro(){
                 
             </div>
 
-            <div className="col-start-4 col-span-1 -mt-48">
+            <div className="hidden col-start-4 col-span-1 md:inline -mt-48">
             <div className="bg-sakura rounded-xl scale-90 bg-opacity-50">
                 <div className="bg-sakura-light rounded-xl -rotate-6 bg-opacity-50">
                     <Image className="transition duration-100 rounded-xl shadow-inner scale-90 origin-center -rotate-12 hover:rotate-45 hover:origin-top "
