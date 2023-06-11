@@ -11,7 +11,7 @@ const Work = () => {
                   Take a peek at my most <span className=" text-red-700">Recent</span> Projects
                  </span>
                   <p className="mt-20">
-                  I am a developer with three years of work experience, specializing in Laravel, MySQL, 
+                  I am a developer, (amongst many things) with three years of work experience, specializing in Laravel, MySQL, 
                   React, Next.js, MySQL, and Linux. I have honed my skills in building robust web applications
                   using Laravels powerful framework and efficiently managing databases with MySQL. I am also 
                   proficient in frontend development, leveraging React and Next.js to create dynamic user interfaces.
