@@ -13,7 +13,7 @@ const Education = () => {
                         <span class="absolute flex items-center justify-center w-6 h-6 bg-sakura rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg aria-hidden="true" className="w-3 h-3 text-red-700 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                         </span>
-                        <time time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> 
+                        <time time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-white"> 
                             2023
                         </time>
                     </li>
@@ -24,7 +24,7 @@ const Education = () => {
                         <span class="absolute flex items-center justify-center w-6 h-6 bg-sakura rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg aria-hidden="true" className="w-3 h-3 text-red-700 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                         </span>
-                        <time time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> 
+                        <time time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-white"> 
                             2022
                         </time>
                     </li>
@@ -35,7 +35,7 @@ const Education = () => {
                         <span class="absolute flex items-center justify-center w-6 h-6 bg-sakura rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg aria-hidden="true" className="w-3 h-3 text-red-700 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                         </span>
-                        <time time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> 
+                        <time time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-white"> 
                             2021
                         </time>
                     </li>
@@ -46,7 +46,7 @@ const Education = () => {
                         <span className="absolute flex items-center justify-center w-6 h-6 bg-sakura rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg aria-hidden="true" class="w-3 h-3 text-red-700 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                         </span>
-                        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-white">
                             2020
                         </time>
                     </li>
@@ -61,10 +61,10 @@ const Education = () => {
                     <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                         AWS Trainer 
                     </h3>
-                    <time className="block mb-2 text-sm font-normal leading-relaxed text-gray-400 dark:text-gray-500">
+                    <time className="block mb-2 text-sm font-normal leading-relaxed text-gray-400 dark:text-white">
                         GIBT
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-justify">
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-white text-justify">
                         AWS Trainer for German Institute of business and Technology focusing on AWS
                         certifications (CCP, CSAA) and training including subtopics such as Linux, Database
                         Automation and Programming etc.
@@ -81,10 +81,10 @@ const Education = () => {
                     <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                         ICT Consultant 
                     </h3>
-                    <time className="block mb-2 text-sm font-normal leading-relaxed text-gray-400 dark:text-gray-500">
+                    <time className="block mb-2 text-sm font-normal leading-relaxed text-gray-400 dark:text-white">
                         Saidi
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-justify">
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-white text-justify">
                         Saidi Consulting engineering ICT consultant on an Ad-Hoc basis for installation, maintenance and 
                         management of hardware, software and network infrastructure.
                     </p>
@@ -98,10 +98,10 @@ const Education = () => {
                     <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                         System Admin/ Web Developer 
                     </h3>
-                    <time className="block mb-2 text-sm font-normal leading-relaxed text-gray-400 dark:text-gray-500">
+                    <time className="block mb-2 text-sm font-normal leading-relaxed text-gray-400 dark:text-white">
                         Chiweto
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-justify">
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-white text-justify">
                         AWS Trainer for German Institute of business and Technology focusing on AWS
                         certifications (CCP, CSAA) and training including subtopics such as Linux, Database
                         Automation and Programming etc.
@@ -117,10 +117,10 @@ const Education = () => {
                     <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                         BSc. Information Technology
                     </h3>
-                    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-white">
                         UNIMA
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-white">
                         Bachelors Degree in Information Technology obtained with second upper class
                     </p>
                 </li>
@@ -136,10 +136,10 @@ const Education = () => {
                     <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                         SQL Basic 
                     </h3>
-                    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-white">
                         HackerRank
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-white">
                         Attempted and passed the SQL basic challange on HackerRank.
                     </p>
                 </li>

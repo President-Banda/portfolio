@@ -5,7 +5,7 @@ const Interests = () => {
     <>
       <div className="grid grid-cols-2 gap-x-5 col-span-3 justify-center m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto'] glassmorphic-container">
 
-      <div className="col-span-1 row-span-7 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-fit bg-sakura mr-20">
+      <div className="col-span-1 row-span-7 text-justify border border-solid border-sakura-light rounded-lg p-1 leading-relaxed h-fit bg-sakura mr-20 ">
         <div className='glassmorphic-container background-image-div-one scale-110 rounded-md'>
           <div className='text-2xl text-black font-bold text-center'>Intellectual</div>
         </div>

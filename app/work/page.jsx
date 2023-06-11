@@ -49,10 +49,10 @@ const Work = () => {
               <hr class="border-t-4 border-red-700 my-5 w-10 h-10 ml-5"></hr>
 
               <article className="flex justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
-                <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                <div className="rotate-180 p-2 [writing-mode:_vertical-lr] ">
                   <time
                     datetime="2022-10-10"
-                    className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+                    className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900 dark:text-white"
                   >
                     <span>2023</span>
                     <span className="w-px flex-1 bg-gray-900/10"></span>
@@ -77,12 +77,12 @@ const Work = () => {
                 <div className="flex flex-1 flex-col justify-between">
                   <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
                     <a href="#">
-                      <h3 className="font-bold uppercase text-gray-900">
+                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
                         UNDP INNOVATE 265
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify">
+                    <p className="mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
                     UNDP Innovate 265 is an Android app designed for gathering, storing, and overseeing grassroots-level 
                     innovation data. I initially focused on backend development, including APIs, databases, and AWS 
                     infrastructure, I later took the initiative to enhance it further by incorporating a web interface as
@@ -94,7 +94,7 @@ const Work = () => {
                     <Link
                       href="https://chiweto.ch/undp"
                       target="_blank"
-                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110"
+                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
                     >
                       Visit
                     </Link>
@@ -107,7 +107,7 @@ const Work = () => {
                 <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
                   <time
                     datetime="2022-10-10"
-                    className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+                    className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900 dark:text-white"
                   >
                     <span>2021</span>
                     <span className="w-px flex-1 bg-gray-900/10"></span>
@@ -132,12 +132,12 @@ const Work = () => {
                 <div className="flex flex-1 flex-col justify-between">
                   <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
                     <a href="#">
-                      <h3 className="font-bold uppercase text-gray-900">
+                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
                         SMS Platform 2.0
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-6 text-sm/relaxed text-gray-700 text-justify">
+                    <p className="mt-2 line-clamp-6 text-sm/relaxed text-gray-700 text-justify dark:text-white">
                     SMS Platform represents a substantial upgrade to an SMS-based system dedicated to 
                     disseminating bulk messages and facilitating Q&A interactions via a user-friendly 
                     web interface. Developed in collaboration with Francis Ganya, this project employed a 
@@ -150,7 +150,7 @@ const Work = () => {
                     <Link
                       href="https://chiweto.ch/"
                       target="_blank"
-                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110"
+                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
                     >
                       Visit
                     </Link>
@@ -163,7 +163,7 @@ const Work = () => {
                 <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
                   <time
                     datetime="2022-10-10"
-                    className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+                    className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900 dark:text-white"
                   >
                     <span>2023</span>
                     <span className="w-px flex-1 bg-gray-900/10"></span>
@@ -172,7 +172,7 @@ const Work = () => {
                 </div>
 
                 <div className="hidden sm:block sm:basis-56 mt-14">
-                  <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150"
+                  <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
                       src={"/images/portfolio.png"}
                       alt="this portforlio interface"
                       width={500}
@@ -188,12 +188,12 @@ const Work = () => {
                 <div className="flex flex-1 flex-col justify-between" id="this">
                   <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
                     <a href="#">
-                      <h3 className="font-bold uppercase text-gray-900">
+                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
                         This Portfolio
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify">
+                    <p className="mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
                     This Portfolio is a distinct showcase of my design techniques, featuring unconventional color choices. 
                     It embodies the concept of crafting an unparalleled creation, one that cannot be replicated elsewhere
                      online. Despite not being a front-end developer, I ventured into uncharted territory to experiment 
@@ -204,7 +204,7 @@ const Work = () => {
                   <div className="sm:flex sm:items-end sm:justify-end">
                     <Link
                       href="#this"
-                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110"
+                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
                     >
                       Visit
                     </Link>

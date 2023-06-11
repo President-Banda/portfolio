@@ -21,7 +21,7 @@ const LinkComponent = () => {
                     messes that were car infotainment systems to the smooth ones we have now. 
                     <br />
                     
-                    I love technology across a large spectrum <span className="scale-125 text-black font-bold">
+                    I love technology across a large spectrum <span className="scale-125 text-black font-bold dark:text-red-700">
                     [linux, gaming, hardware, web applications, programming [ PHP, Laravel, Javascript, HTML, CSS, React, Next.js, Tailwind, MySQL ], 
                     android, ios, cloud, database, containerization, orchestration, automation, scripting, version control, A.I, Robotics, IoT]
                     </span>
