@@ -38,7 +38,7 @@ const LinkComponent = () => {
                 </p>
       </div>
 
-      <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container">
+      <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
                 <p className="col-span-1 p-2 text-lg h-full">
                     I am an AWS Cloud specialist by passion, we all need something to impress two out of five people in the room and my chosen
                     passion is Cloud technology, AWS cloud to be specific, a never ending learning journey I have come to love and specialize in.
