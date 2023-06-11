@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Linkedin } from '../../components/_icons/linkedin'
@@ -8,6 +9,9 @@ import { Tinder } from '../../components/_icons/tinder'
 
 
 const LinkComponent = () => {
+  const showAlert = () => {
+    alert('Hooray! You have just installed 250 GB of storage! ');
+  };
   return (
     <>
       <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
@@ -21,7 +25,7 @@ const LinkComponent = () => {
                     [linux, gaming, hardware, web applications, programming [ PHP, Laravel, Javascript, HTML, CSS, React, Next.js, Tailwind, MySQL ], 
                     android, ios, cloud, database, containerization, orchestration, automation, scripting, version control, A.I, Robotics, IoT]
                     </span>
-                     so I am still learning and finding my footing, but I also mention technologies I frequently play around with!
+                      so I am still learning and finding my footing, but I also mention technologies I frequently play around with!
                 </p>
       </div>
 
@@ -117,15 +121,17 @@ const LinkComponent = () => {
               Mail
             </Link>
 
-            <Link href='http://www.linkedin.com/in/albertbanda-tech' target='blank'
-            className='transition font-semibold border border-solid  border-black rounded-md
-             m-1 p-4 h-10 w-28 inline-flex text-lg 
-             text-center justify-center align-middle items-center 
-             animate-pulse hover:scale-150 '
-            >
-              <Tinder className='mr-1 scale-150 animate-ping transition' />
-              Tinder
-            </Link>
+            <div onClick={showAlert}>
+              <Link href='/links'
+              className='transition font-semibold border border-solid  border-black rounded-md
+              m-1 p-4 h-10 w-28 inline-flex text-lg 
+              text-center justify-center align-middle items-center 
+              animate-pulse hover:scale-150 '
+              >
+                <Tinder className='mr-1 scale-150 animate-ping transition' />
+                Tinder
+              </Link>
+            </div>
 
 
         </div>
