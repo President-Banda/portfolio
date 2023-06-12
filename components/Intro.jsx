@@ -73,13 +73,13 @@ export default function Intro(){
             </div>
             </div>
 
-            <div className="grid grid-cols-4 col-start-2 col-span-2 text-center text-2xl">
+            <div className="grid grid-cols-4 col-start-2 col-span-2 text-center md:text-2xl">
                 <span className="font-thin">
                     My Core Values
                 </span>
             </div>
 
-            <div className="flex flex-col mb-5 md:grid grid-cols-5 col-start-2 col-span-2 h-24 text-center text-2xl font-medium">
+            <div className="flex flex-col-reverse m-1 lg:grid grid-cols-5 col-start-2 col-span-2 text-center text-2xl font-medium md:h-24">
                 
 
                 <div className="grid m-1 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
@@ -90,7 +90,8 @@ export default function Intro(){
                     </span>
                 </div>
 
-                <div className="grid text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
+
+                <div className="grid m-1 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
                     <span className="quote text-center items-center self-center">
                         <span className="text-red-700">‘</span>
                             Integrity
@@ -98,7 +99,7 @@ export default function Intro(){
                     </span>
                 </div>
 
-                <div className="grid text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
+                <div className="grid m-1 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
                     <span className="quote text-center items-center self-center">
                         <span className="text-red-700">‘</span>
                             Humour
