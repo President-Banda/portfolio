@@ -5,12 +5,12 @@ import Link from "next/link";
 const Work = () => {
   return (
     <>
-            <div className="col-start-2 col-span-2 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
+            <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-2 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
                  <span className=" text-lg flex-wrap">
-                 <span className=" font-medium text-6xl flex-wrap mb-10 leading-snug font-[Dosis]">
+                 <span className="font-extrabold text-xl md:font-medium md:text-6xl flex-wrap mb-10 leading-snug font-[Dosis]">
                   Take a peek at my most <span className=" text-red-700">Recent</span> Projects
                  </span>
-                  <p className="mt-20">
+                  <p className="leading-tight mt-20">
                   I am a developer, (amongst many things) with three years of work experience, specializing in Laravel, MySQL, 
                   React, Next.js, MySQL, and Linux. I have honed my skills in building robust web applications
                   using Laravels powerful framework and efficiently managing databases with MySQL. I am also 
@@ -26,7 +26,7 @@ const Work = () => {
                 
             </div>
 
-            <div className="col-start-4 col-span-1">
+            <div className="hidden md:inline col-start-4 col-span-1">
             <div className="bg-sakura rounded-xl scale-90 bg-opacity-50">
                 <div className="bg-sakura rounded-xl bg-opacity-50">
                     <Image className="transition duration-100 rounded-xl shadow-inner scale-90 origin-center hover:rotate-45 hover:origin-top "
@@ -45,7 +45,7 @@ const Work = () => {
             </div>
             
             <div className="grid justify-center items-center col-start-2 col-span-4 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
-              <span className="grid font-medium text-4xl justify-start">Projects</span>
+              <span className="font-extrabold grid md:font-medium md:text-4xl justify-start">Projects</span>
               <hr class="border-t-4 border-red-700 my-5 w-10 h-10 ml-5"></hr>
 
               <article className="flex justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
@@ -82,7 +82,7 @@ const Work = () => {
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
+                    <p className="hidden md:inline mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
                     UNDP Innovate 265 is an Android app designed for gathering, storing, and overseeing grassroots-level 
                     innovation data. I initially focused on backend development, including APIs, databases, and AWS 
                     infrastructure, I later took the initiative to enhance it further by incorporating a web interface as
@@ -137,7 +137,7 @@ const Work = () => {
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-6 text-sm/relaxed text-gray-700 text-justify dark:text-white">
+                    <p className="hidden md:inline mt-2 line-clamp-6 text-sm/relaxed text-gray-700 text-justify dark:text-white">
                     SMS Platform represents a substantial upgrade to an SMS-based system dedicated to 
                     disseminating bulk messages and facilitating Q&A interactions via a user-friendly 
                     web interface. Developed in collaboration with Francis Ganya, this project employed a 
@@ -193,7 +193,7 @@ const Work = () => {
                       </h3>
                     </a>
 
-                    <p className="mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
+                    <p className="hidden md:inline mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
                     This Portfolio is a distinct showcase of my design techniques, featuring unconventional color choices. 
                     It embodies the concept of crafting an unparalleled creation, one that cannot be replicated elsewhere
                      online. Despite not being a front-end developer, I ventured into uncharted territory to experiment 
