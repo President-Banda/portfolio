@@ -57,14 +57,14 @@ const Education = () => {
         <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
             <ol className="relative border-l border-gray-200 dark:border-gray-700 p-5 h-fit">      
 
-                <li class="mb-10">            
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                <li class="m-0 p-0 md:mb-10">            
+                    <h3 className="text-xs flex items-center mb-1 font-semibold text-gray-900 dark:text-white md:text-lg">
                         AWS Trainer 
                     </h3>
                     <time className="block mb-2 text-sm font-normal leading-relaxed text-gray-400 dark:text-white">
                         GIBT
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-white text-justify">
+                    <p className="hidden md:inline mb-4 text-base font-normal text-gray-500 dark:text-white text-justify">
                         AWS Trainer for German Institute of business and Technology focusing on AWS
                         certifications (CCP, CSAA) and training including subtopics such as Linux, Database
                         Automation and Programming etc.
@@ -77,14 +77,14 @@ const Education = () => {
 
         <div className="col-start-2 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
             <ol className="relative border-l border-gray-200 dark:border-gray-700 p-5 h-fit"> 
-                <li class="mb-10">            
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                <li class="m-0 p-0 md:mb-10">            
+                    <h3 className="text-xs flex items-center mb-1 font-semibold text-gray-900 dark:text-white md:text-lg">
                         ICT Consultant 
                     </h3>
                     <time className="block mb-2 text-sm font-normal leading-relaxed text-gray-400 dark:text-white">
                         Saidi
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-white text-justify">
+                    <p className="hidden md:inline mb-4 text-base font-normal text-gray-500 dark:text-white text-justify">
                         Saidi Consulting engineering ICT consultant on an Ad-Hoc basis for installation, maintenance and 
                         management of hardware, software and network infrastructure.
                     </p>
@@ -94,14 +94,14 @@ const Education = () => {
 
         <div className="col-start-2 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
             <ol className="relative border-l border-gray-200 dark:border-gray-700 p-5 h-fit">
-                <li class="mb-10">            
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                <li class="m-0 p-0 md:mb-10">            
+                    <h3 className="text-xs flex items-center mb-1 font-semibold text-gray-900 dark:text-white md:text-lg">
                         System Admin/ Web Developer 
                     </h3>
                     <time className="block mb-2 text-sm font-normal leading-relaxed text-gray-400 dark:text-white">
                         Chiweto
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-white text-justify">
+                    <p className="hidden md:inline mb-4 text-base font-normal text-gray-500 dark:text-white text-justify">
                         AWS Trainer for German Institute of business and Technology focusing on AWS
                         certifications (CCP, CSAA) and training including subtopics such as Linux, Database
                         Automation and Programming etc.
@@ -113,14 +113,14 @@ const Education = () => {
         <div className=" row-start-3 col-start-3 mt-32 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
             <ol className="relative border-l border-gray-200 dark:border-gray-700 p-5">      
 
-                <li class="mb-10 ml-6">            
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                <li class="m-0 p-0 md:mb-10 md:ml-6">            
+                    <h3 className="text-xs flex items-center mb-1 font-semibold text-gray-900 dark:text-white md:text-lg">
                         BSc. Information Technology
                     </h3>
                     <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-white">
                         UNIMA
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-white">
+                    <p className="hidden md:inline mb-4 text-base font-normal text-gray-500 dark:text-white">
                         Bachelors Degree in Information Technology obtained with second upper class
                     </p>
                 </li>
@@ -132,14 +132,14 @@ const Education = () => {
         <div className="col-start-4 row-start-2 -mt-28 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container h-fit">
             <ol className="relative border-l border-gray-200 dark:border-gray-700 p-5">      
 
-                <li class="mb-10 ml-6">            
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                <li class="m-0 p-0 md:mb-10 md:ml-2">            
+                    <h3 className="text-xs flex items-center mb-1 font-semibold text-gray-900 dark:text-white md:text-lg">
                         SQL Basic 
                     </h3>
-                    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-white">
+                    <time className="hidden md:block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-white">
                         HackerRank
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-white">
+                    <p className="hidden md:inline mb-4 text-base font-normal text-gray-500 dark:text-white">
                         Attempted and passed the SQL basic challange on HackerRank.
                     </p>
                 </li>
