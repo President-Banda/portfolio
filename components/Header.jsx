@@ -41,7 +41,7 @@ export default function Header(){
             
             <div className="flex basis-3/4 justify-start text-5xl font-light tracking-wide ml-10 font-[Merriweather]">
             <Link href='/' className="flex justify-center align-middle m-1">
-                <Image className="md:flex rounded-xl shadow-inner"
+                <Image className="scale-50 md:flex rounded-xl shadow-inner md:scale-100"
                         src={"/images/animated.png"}
                         alt="my_intro_image"
                         width={60}

@@ -15,12 +15,12 @@ export default function Intro(){
                 <hr className="border-t-4 border-gray-700 my-10 w-52 h-10 ml-5"></hr>
                 
             </div>
-            <div className="col-span-4 col-start-2 md:col-start-2 md:text-justify md:m-2 md:border md:border-solid md:border-sakura-light md:rounded-lg md:leading-relaxed md:p-4 md:-mt-20 md:font-['Roboto'] md:col-span-2 ">
+            <div className="col-span-4 col-start-2 text-justify p-1 leading-tight md:col-start-2 md:text-justify md:m-2 md:border md:border-solid md:border-sakura-light md:rounded-lg md:leading-relaxed md:p-4 md:-mt-20 md:font-['Roboto'] md:col-span-2 text">
                  <span className=" text-lg flex-wrap">
                   <p>
                     I am a tech enthusiast with a passion for learning and teaching about technology. I have a
                    wide range of skills and experience in the tech industry, including Linux system administration, 
-                   web development, and AWS cloud computing. I am also a certified teacher and enjoy sharing my knowledge 
+                   web development, and AWS cloud computing. I am also a certified instructor and enjoy sharing my knowledge 
                    of technology with others.
                    <br />
                    <br />
@@ -31,7 +31,7 @@ export default function Intro(){
                     <br />
                     <br />
 
-                    I am looking for a position where I can use my skills and experience to make a positive impact on the world. 
+                    I love working in a position where I can use my arsenal of skills and experience to make a positive impact on the world. 
                     I am excited about the future of technology and I am eager to be a part of it.
 
                     

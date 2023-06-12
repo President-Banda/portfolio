@@ -45,7 +45,7 @@ const Menu = () => {
                     <span className="hidden md:flex text-center items-center justify-center flex-grow">Interests & Hobbies</span>
                 </Link>
 
-                <Link href='links' className="intro-button flex w-10 md:w-full">
+                <Link href='links' className="intro-button p-1 m-1 md:intro-button flex w-10 md:w-full">
                     <div className="flex items-center justify-center">
                         <Links className="m-1" />
                     </div>
