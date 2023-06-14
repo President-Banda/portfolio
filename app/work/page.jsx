@@ -10,7 +10,7 @@ const Work = () => {
                  <span className="font-extrabold text-xl md:font-medium md:text-6xl flex-wrap mb-10 leading-snug font-[Dosis]">
                   Take a peek at my most <span className=" text-red-700">Recent</span> Projects
                  </span>
-                  <p className="leading-tight mt-20 md:leading-relaxed">
+                  <p className="font-[Dosis] leading-tight mt-20 md:leading-relaxed md:font-['Roboto'] ">
                   I am a developer, (amongst many things) with three years of work experience, specializing in Laravel, MySQL, 
                   React, Next.js, MySQL, and Linux. I have honed my skills in building robust web applications
                   using Laravels powerful framework and efficiently managing databases with MySQL. I am also 

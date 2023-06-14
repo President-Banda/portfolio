@@ -15,7 +15,7 @@ export default function Intro(){
                 <hr className="border-t-4 border-gray-700 my-10 w-52 h-10 ml-5"></hr>
                 
             </div>
-            <div className="col-span-4 col-start-2 text-justify p-1 leading-tight md:col-start-2 md:text-justify md:m-2 md:border md:border-solid md:border-sakura-light md:rounded-lg md:leading-relaxed md:p-4 md:-mt-20 md:font-['Roboto'] md:col-span-2 text">
+            <div className="col-span-4 col-start-2 text-justify p-1 leading-tight md:col-start-2 md:text-justify md:m-2 md:border md:border-solid md:border-sakura-light md:rounded-lg md:leading-relaxed md:p-4 md:-mt-20 md:font-['Roboto'] md:col-span-2">
                  <span className=" text-lg flex-wrap">
                   <p>
                     I am a tech enthusiast with a passion for learning and teaching about technology. I have a
