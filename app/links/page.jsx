@@ -14,7 +14,7 @@ const LinkComponent = () => {
   };
   return (
     <>
-      <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
+      <div className="hidden md:inline text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
                 <p className="col-span-1 p-2 text-lg  h-full">
                     First and foremost, I am a tech enthusiast, I love technology, I love tweaking/customizing, creating, I love advancements 
                     in technology. I love when hardware makes small leaps and bounds, I love when software improves, from rugged, unusable
@@ -29,7 +29,7 @@ const LinkComponent = () => {
                 </p>
       </div>
 
-      <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container">
+      <div className="hidden md:inline text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed glassmorphic-container">
                 <p className="col-span-1 p-2 text-lg  h-full">
                     I am a Linux System Administrator by heart, managing complex hosting infrastructure; I love and enjoy learning about Linux, the 
                     stress of system administration is much more bearable. I am growing, even as you read this. <br />
@@ -38,7 +38,7 @@ const LinkComponent = () => {
                 </p>
       </div>
 
-      <div className="text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
+      <div className="hidden md:inline text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed">
                 <p className="col-span-1 p-2 text-lg h-full">
                     I am an AWS Cloud specialist by passion, we all need something to impress two out of five people in the room and my chosen
                     passion is Cloud technology, AWS cloud to be specific, a never ending learning journey I have come to love and specialize in.
@@ -47,7 +47,7 @@ const LinkComponent = () => {
                     not that they wanted me to be one but I do love what they do so much i just started teaching about... drum roll ... technology!
                 </p>
       </div>
-      <div className='text-center justify-center align-middle items-center flex'>
+      <div className='hidden md:inline text-center justify-center align-middle items-center flex'>
           <Image className="rounded-xl shadow-inner"
                         src={"/images/Integrations.png"}
                         alt="my_intro_image"
