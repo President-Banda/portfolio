@@ -34,22 +34,28 @@
         margin: 20px;
       }
 
-      .background-image-div-one {
-        background-image: url('/images/code.png');
+      .background-image-div-casual {
+        background-image: url('/images/casual_image.jpg');
         background-size: cover;
         background-position: center;
       }
 
       
 
-      .background-image-div-two {
-        background-image: url('/images/gym.png');
+      .background-image-div-physical {
+        background-image: url('/images/physical_image.jpg');
         background-size: cover;
         background-position: center;
       }
 
-      .background-image-div-three {
-        background-image: url('/images/casual.png');
+      .background-image-div-misc {
+        background-image: url('/images/misc_image.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .background-image-div-intellectual {
+        background-image: url('/images/intellectual_image.jpg');
         background-size: cover;
         background-position: center;
       }
