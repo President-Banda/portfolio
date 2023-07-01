@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Info } from "../../components/_icons/info";
 import Link from "next/link";
+import styles from './page.module.css'
 
 const Work = () => {
   return (
@@ -48,7 +49,7 @@ const Work = () => {
               <span className="font-extrabold grid md:font-medium md:text-4xl justify-start">Projects</span>
               <hr class="border-t-4 border-red-700 my-5 w-10 h-10 ml-5"></hr>
 
-              <article className="flex justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
+              {/* <article className="flex justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
                 <div className="rotate-180 p-2 [writing-mode:_vertical-lr] ">
                   <time
                     datetime="2022-10-10"
@@ -175,8 +176,8 @@ const Work = () => {
                   <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
                       src={"/images/portfolio.png"}
                       alt="this portforlio interface"
-                      width={500}
-                      height={500}
+                      width={1000}
+                      height={1000}
                       loading="lazy"
 
                       sizes="(max-width: 768px) 100vw,
@@ -210,7 +211,124 @@ const Work = () => {
                     </Link>
                   </div>
                 </div>
-            </article>
+            </article> */}
+
+            <article className="grid justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
+              <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
+                        src={"/images/innovate.png"}
+                        alt="this portforlio interface"
+                        width={800}
+                        height={700}
+                        loading="lazy"
+
+                        sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
+                    />
+
+                  <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                    <a href="#">
+                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
+                        UNDP INNOVATE 265
+                      </h3>
+                    </a>
+
+                    <p className="hidden md:inline mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
+                    UNDP Innovate 265 is an Android app designed for gathering, storing, and overseeing grassroots-level 
+                    innovation data. I initially focused on backend development, including APIs, databases, and AWS 
+                    infrastructure, I later took the initiative to enhance it further by incorporating a web interface as
+                    an additional feature, serving as the icing on the cake for UNDP.
+                    </p>
+                  </div>
+
+                  <div className="sm:flex sm:items-end sm:justify-end">
+                    <Link
+                      href="https://chiweto.ch/undp"
+                      target="_blank"
+                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
+                    >
+                      Visit
+                    </Link>
+                  </div>
+              </article>
+
+              <article className="grid justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
+              <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150"
+                        src={"/images/sms_platform.png"}
+                        alt="this portforlio interface"
+                        width={800}
+                        height={700}
+                        loading="lazy"
+
+                        sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
+                    />
+                <div className="flex flex-1 flex-col justify-between">
+                  <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                    <a href="#">
+                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
+                        SMS Platform 2.0
+                      </h3>
+                    </a>
+
+                    <p className="hidden md:inline mt-2 line-clamp-6 text-sm/relaxed text-gray-700 text-justify dark:text-white">
+                    SMS Platform represents a substantial upgrade to an SMS-based system dedicated to 
+                    disseminating bulk messages and facilitating Q&A interactions via a user-friendly 
+                    web interface. Developed in collaboration with Francis Ganya, this project employed a 
+                    plethora of technologies too numerous to enumerate. Notably, it stands as the most extensive 
+                    and intricate system I have had the opportunity to work on thus far.
+                    </p>
+                  </div>
+
+                  <div className="sm:flex sm:items-end sm:justify-end">
+                    <Link
+                      href="https://chiweto.ch/"
+                      target="_blank"
+                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
+                    >
+                      Visit
+                    </Link>
+                  </div>
+                </div>
+              </article>
+
+            <article className="grid justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
+              <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
+                        src={"/images/portfolio.png"}
+                        alt="this portforlio interface"
+                        width={800}
+                        height={700}
+                        loading="lazy"
+
+                        sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
+                    />
+                <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                    <a href="#">
+                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
+                        This Portfolio
+                      </h3>
+                    </a>
+
+                    <p className="hidden md:inline mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
+                    This Portfolio is a distinct showcase of my design techniques, featuring unconventional color choices. 
+                    It embodies the concept of crafting an unparalleled creation, one that cannot be replicated elsewhere
+                     online. Despite not being a front-end developer, I ventured into uncharted territory to experiment 
+                     and push my boundaries.
+                    </p>
+                  </div>
+
+                  <div className="sm:flex sm:items-end sm:justify-end">
+                    <Link
+                      href="#this"
+                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
+                    >
+                      Visit
+                    </Link>
+                  </div>
+              </article>
 
 
             </div>

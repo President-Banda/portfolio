@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.container img {
+  width: 100%;
+}
+.inner_container {
+  position: absolute;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  padding: 15px 0;
+  background: #fff;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+.icons_container {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  width: 500px;
+  padding: 10px 0 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: all 0.3s ease;
+}
+.icons {
+  transform: translateY(50%);
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  transition: all 0.3s ease;
+}
+.icons i {
+  font-size: 20px;
+  color: grey;
+}
+.icons i a {
+  color: grey;
+}
+.container:hover .icons_container,
+.container:hover .inner_container {
+  transform: scaleY(1);
+  background: blueviolet;
+  color: #fff;
+}
+.container:hover .icons {
+  transform: translateY(-70%);
+  background: #fff;
+  color: grey;
+}
+.container:hover .icons > a {
+  color: grey;
+}
+.icons a:hover i {
+  color: blueviolet;
+}
