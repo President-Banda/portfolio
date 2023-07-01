@@ -4,6 +4,7 @@ import { Hobbies } from "./_icons/hobbies";
 import { Info } from "./_icons/info";
 import { Links } from "./_icons/links";
 import { Work } from "./_icons/work";
+import { Blog } from "./_icons/blog"
 import { AlbertBandaIntro } from "./images/Intro_image";
 import Link from "next/link";
 
@@ -54,7 +55,7 @@ const Menu = () => {
 
                 <Link href='blog' className="intro-button p-1 m-1 md:intro-button flex w-10 md:w-full">
                     <div className="flex items-center justify-center">
-                        <Links className="m-1" />
+                        <Blog className="m-1" />
                     </div>
                     <span className="hidden md:flex text-center items-center justify-center flex-grow">Blog</span>
                 </Link>
