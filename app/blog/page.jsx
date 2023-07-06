@@ -14,7 +14,7 @@ const getPostsMetaData = () => {
 const Blog = () => {
   const postMetaData = getPostsMetaData();
   const postPreviews = postMetaData.map((slugs)  => (
-    <div>
+    <div key={""}>
       <h2>
         {slugs}
       </h2>
@@ -23,7 +23,7 @@ const Blog = () => {
 
   return (
     <div>
-      
+      {postPreviews}
     </div>    
   )
 }
