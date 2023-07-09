@@ -16,7 +16,7 @@ const Blog = () => {
   const postMetaData = getPostsMetaData();
   const postPreviews = postMetaData.map((slugs)  => (
     <div key={""}>
-      <Link href={`/posts/${slugs}`}>
+      <Link href={`/blog/posts/${slugs}`}>
         <h2>
           {slugs}
         </h2>
