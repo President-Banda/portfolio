@@ -1,6 +1,7 @@
 import React from 'react'
 import fs from 'fs';
 import BlogLayout from './layout'
+import Link from 'next/link';
 
 const getPostsMetaData = () => {
   const folder = "posts/";
@@ -15,9 +16,11 @@ const Blog = () => {
   const postMetaData = getPostsMetaData();
   const postPreviews = postMetaData.map((slugs)  => (
     <div key={""}>
-      <h2>
-        {slugs}
-      </h2>
+      <Link>
+        <h2>
+          {slugs}
+        </h2>
+      </Link>
     </div>
   ));
 
