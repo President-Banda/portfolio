@@ -1,8 +1,9 @@
 import React from 'react'
 
-const page = () => {
+const page = ( {params} ) => {
+    const slug = params.slug;
   return (
-    <div>page</div>
+    <div>page : {slug }</div>
   )
 }
 
