@@ -1,4 +1,5 @@
 import fs from 'fs';
+import Markdown from 'markdown-to-jsx';
 
 const getPostContent = ( slug ) => {
   console.log(slug);
@@ -14,7 +15,9 @@ const page = ( {params} ) => {
   return (
     <div>
       page : {slug }
-      <p>{content}</p>
+      <div>
+        <Markdown>{content}</Markdown>
+      </div>
     </div>
     
   )
