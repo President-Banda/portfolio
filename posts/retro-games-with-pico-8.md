@@ -11,7 +11,7 @@ It turned out to be a pretty fun experience, and something I'd recommend as a we
 
 In this post, I'll be discussing why you should try your hand at retro-game development, and explain some of the technical limitations you'll be facing.
 
-![images/pico-8 demo](/images/jelpi_demo.gif)
+![images/pico-8 demo](/images/blog/jelpi_demo.gif)
 
 ## Why you should build a retro game
 
@@ -37,7 +37,7 @@ Basically, it's a program that pretends to be a console. It costs $15 to buy. Yo
 
 You write code for it in [Lua](https://www.lua.org/) (if you haven't used that language before, don't worry — you'll pick it up in a day). The art and sound can be created directly in the console's editor, to be used in your game.
 
-![images/pico-8-code-editor](/images/pico-8-code-editor.png)
+![images/pico-8-code-editor](/images/blog/pico-8-code-editor.png)
 
 Finally, you can even export them to HTML so your friends (and recruiters?) can check it out from their phone.
 
@@ -80,7 +80,7 @@ end
 
 You can draw sprites (images) with the pixel art editor directly in the console. In PICO-8, you have 16 colors to choose from.
 
-![images/pico-8-sprite-editor](/images/pico-8-sprite-editor.png)
+![images/pico-8-sprite-editor](/images/blog/pico-8-sprite-editor.png)
 
 Each sprite has an ID, which can then be used to render it on the screen at the x and y position you specify. Another special in-built function of PICO-8 is `_draw()`, which also executes at 30 FPS, but is guaranteed to execute after `_update()`.
 
@@ -96,13 +96,13 @@ end
 
 This will draw the above sprite (ID 1) at (64, 64) at the centre of the screen.
 
-![images/pico-8-draw-sprite](/images/pico-8-draw-sprite.png)
+![images/pico-8-draw-sprite](/images/blog/pico-8-draw-sprite.png)
 
 ### Capturing player input
 
 PICO-8 detects user input via the `btn(k)` function, which returns true with the button with ID `k` is being pressed by the player. `k` ranges from 0 to 6 for a single player, and each number represents either the arrow keys, or two arbitrary game-play buttons like the `A` and `B` on a NES controller.
 
-![images/nes_controller](/images/classic_nes_controller.jpg)
+![images/nes_controller](/images/blog/classic_nes_controller.jpg)
 
 Adding this snippet to the rendering one above will allow us to move the character.
 
@@ -113,7 +113,7 @@ function _update()
 end
 ```
 
-![images/pico-8-movement](/images/pico-8-movement.gif)
+![images/pico-8-movement](/images/blog/pico-8-movement.gif)
 
 ## Ideas to get started
 
