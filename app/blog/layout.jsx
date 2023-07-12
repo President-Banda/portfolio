@@ -1,26 +1,38 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const header = (
-    <header className='bg-sakura-light'>
-        <div>
-            <Link href="/blog">
-            <h1>
-                Albert Bandas blog
+    <header className='grid bg-sakura-light rounded-lg'>
+        <div className='flex items-center'>
+            <Image className='' src="/animated.png" width={100} height={100} alt='logo' />
+            <div className='ml-4 items-center justify-center'>
+          <Link href="/blog">
+            <h1 className='text-lg font-bold'>
+              My Personal blog
+            </h1>
+          </Link>
+          <h1 className='text-sm'>
+            A mixture of thought and experiences...
+          </h1>
+        </div>
+            {/* <Link href="/blog">
+            <h1 className=''>
+                My Personal blog
             </h1>
             </Link>
-            <h1>
-                Welcome to the Presidents blog
-            </h1>
+            <h1 className=''>
+                A mixture of thought and experiences...
+            </h1> */}
         </div>
     </header>
 )
 
 const footer = (
-    <footer>
+    <footer className='grid border-t border-sakura justify-center items-center rounded-lg mt-12 py-12'>
         <div>
             <p>
-                Developed by Albert Banda
+                Developed  and Written by Albert Banda
             </p>
         </div>
     </footer>

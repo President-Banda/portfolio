@@ -1,16 +1,16 @@
 import Link from "next/link";
 
 const PostPreview = ( props ) => {
-    return <div>
+    return <div className="grid border border-sakura m-2 p-5 items-center justify-center shadow-xl rounded-lg glassmorphic-container transition hover:scale-150">
     <Link href={`/blog/posts/${props.slug}`}>
-      <h2>
+      <h2 className="font-bold text-sakura hover:underline">
         {props.title}
       </h2>
-      <p>
-        {props.subtitle}
+      <p className="text-xs text-gray-600">
+        {props.date}
       </p>
       <p>
-        {props.date}
+        {props.subtitle}
       </p>
     </Link>
   </div>
