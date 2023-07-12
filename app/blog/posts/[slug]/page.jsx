@@ -16,9 +16,9 @@ const getPostContent = ( slug ) => {
 export const generateStaticParams = async() => {
   const posts = getPostMetaData();
 
-  return posts.map((post) => {
-    slug: post.slug;
-  })
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
 const page = ( {params} ) => {
