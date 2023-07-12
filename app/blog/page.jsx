@@ -1,8 +1,3 @@
-import React from 'react'
-import fs from 'fs';
-import BlogLayout from './layout'
-import Link from 'next/link';
-import matter from 'gray-matter';
 import getPostMetaData from '../../components/getPostMetaData';
 import PostPreview from '../../components/PostPreview';
 
