@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const header = (
-    <header>
+    <header className='bg-sakura-light'>
         <div>
             <Link href="/blog">
             <h1>
@@ -30,7 +30,7 @@ const BlogLayout = ({ children }) => {
 
     
   return (
-    <div>
+    <div className='grid col-span-3'>
         { header }
         { children }
         { footer }
