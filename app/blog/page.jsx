@@ -2,24 +2,24 @@ import React from 'react'
 import fs from 'fs';
 import BlogLayout from './layout'
 import Link from 'next/link';
+import matter from 'gray-matter';
+import getPostMetaData from '../../components/getPostMetaData'
 
-const getPostsMetaData = () => {
-  const folder = "posts/";
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) => file.endsWith(".md"));
-  const slugs = markdownPosts.map((file) => file.replace(".md", ""));
-
-  return slugs;
-};
 
 const Blog = () => {
-  const postMetaData = getPostsMetaData();
-  const postPreviews = postMetaData.map((slugs)  => (
+  const postMetaData = getPostMetaData();
+  const postPreviews = postMetaData.map((post)  => (
     <div key={""}>
-      <Link href={`/blog/posts/${slugs}`}>
+      <Link href={`/blog/posts/${post.slug}`}>
         <h2>
-          {slugs}
+          {post.title}
         </h2>
+        <p>
+          {post.subtitle}
+        </p>
+        <p>
+          {post.date}
+        </p>
       </Link>
     </div>
   ));
