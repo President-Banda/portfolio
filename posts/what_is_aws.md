@@ -36,7 +36,10 @@ These are technology focused resources, and I do say technology because they cov
 ![images/cli](/images/blog/awscli.png)
 
 
- * AWS SDKs > I have to explore these further, if you are a developer writing code and applications that use AWS as a backbone whether it is to store files, interact with resources or something fancier, SDKs provide you with the option to call AWS resources using different programming languages.
+ * AWS SDKs 
+
+ 
+> I have to explore these further, if you are a developer writing code and applications that use AWS as a backbone whether it is to store files, interact with resources or something fancier, SDKs provide you with the option to call AWS resources using different programming languages.
 
 ![images/sdk](/images/blog/aws_sdks.png)
  
