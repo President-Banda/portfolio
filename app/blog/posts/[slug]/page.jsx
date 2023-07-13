@@ -25,18 +25,18 @@ const page = ( {params} ) => {
     const slug = params.slug;
     const post = getPostContent(slug);
   return (
-    <div className=''>
+    <div className='dark:text-white'>
       {/* page : {post.data.title } */}
-      <div className="my-12 text-center">
-        <h1 className='text-4xl font-extrabold'>
+      <div className="my-12 text-center dark:text-white">
+        <h1 className='text-4xl font-extrabold dark:text-white'>
           {post.data.title }
         </h1>
-        <p className='text-slate-400 text-xs mt-2'>
+        <p className='text-slate-400 text-xs mt-2 dark:text-white'>
           {post.data.date}
         </p>
       </div>
-      <article className='prose lg:prose-xl'>
-        <Markdown>{ post.content }</Markdown>
+      <article className='prose lg:prose-xl dark:text-white'>
+        <Markdown className="dark:text-white">{ post.content }</Markdown>
       </article>
     </div>
     

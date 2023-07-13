@@ -8,11 +8,11 @@ const header = (
             <Image className='' src="/animated.png" width={100} height={100} alt='logo' />
             <div className='ml-4 items-center justify-center'>
           <Link href="/blog">
-            <h1 className='text-lg font-bold'>
+            <h1 className='text-lg font-bold dark:text-slate-950'>
               My Personal blog
             </h1>
           </Link>
-          <h1 className='text-sm'>
+          <h1 className='text-sm dark:text-slate-950'>
             A mixture of thought and experiences...
           </h1>
         </div>
