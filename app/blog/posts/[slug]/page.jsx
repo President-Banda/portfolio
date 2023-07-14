@@ -24,6 +24,20 @@ export const generateStaticParams = async() => {
 const page = ( {params} ) => {
     const slug = params.slug;
     const post = getPostContent(slug);
+
+    const MyArticle = ({ children, ...props }) => (
+      <div {...props}>{children}</div>
+    );
+
+    const Links = ({ children, ...props }) => (
+      <a {...props}>{children}</a>
+    );
+
+    const Emphasis = ({ children, ...props }) => (
+      <strong {...props}>{children}</strong>
+    );
+
+
   return (
     <div className='dark:text-white'>
       {/* page : {post.data.title } */}
@@ -36,7 +50,57 @@ const page = ( {params} ) => {
         </p>
       </div>
       <article className='prose lg:prose-xl dark:text-white'>
-        <Markdown className="dark:text-white">{ post.content }</Markdown>
+        <Markdown
+          options={{
+            overrides: {
+                h1: {
+                    component: MyArticle,
+                    props: {
+                        className: 'text-4xl dark:text-white ',
+                    },
+                },
+                p: {
+                  component: MyArticle,
+                    props: {
+                        className: 'dark:text-white',
+                    },
+                },
+
+                h2: {
+                  component: MyArticle,
+                    props: {
+                        className: 'text-2xl dark:text-white',
+                    },
+                },
+                h3: {
+                  component: MyArticle,
+                    props: {
+                        className: 'text-4xl dark:text-white',
+                    },
+                },
+                p: {
+                  component: MyArticle,
+                    props: {
+                        className: 'dark:text-white',
+                    },
+                },
+                a: {
+                  component: Links,
+                    props: {
+                        className: 'dark:text-white',
+                    },
+                },
+                strong: {
+                  component: Emphasis,
+                    props: {
+                        className: 'dark:text-white',
+                    },
+                }
+            },
+        }} 
+        >
+          { post.content }
+        </Markdown>
       </article>
     </div>
     
