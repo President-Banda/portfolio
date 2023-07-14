@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Intro from '../components/Intro';
 import Wrapper from '../components/Wrapper';
 import Menu from '../components/Menu';
+import { Analytics } from '@vercel/analytics/react';
 
 // export const metadata = {
 //   title: 'Create Next App',
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <Menu />
           {children}
         </Wrapper>
+        <Analytics />
       </body>
     </html>
   )
