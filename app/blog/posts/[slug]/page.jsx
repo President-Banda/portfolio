@@ -2,6 +2,7 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import getPostMetaData from '../../../../components/getPostMetaData';
+import Scroll from '../../../../components/Scroll';
 
 const getPostContent = ( slug ) => {
   // console.log(slug);
@@ -21,7 +22,8 @@ export const generateStaticParams = async() => {
   }));
 }
 
-const page = ( {params} ) => {
+const Article = ( {params} ) => {
+
     const slug = params.slug;
     const post = getPostContent(slug);
 
@@ -40,6 +42,7 @@ const page = ( {params} ) => {
 
   return (
     <div className='dark:text-white'>
+      <Scroll />
       {/* page : {post.data.title } */}
       <div className="my-12 text-center dark:text-white">
         <h1 className='text-4xl font-extrabold dark:text-white'>
@@ -107,4 +110,4 @@ const page = ( {params} ) => {
   )
 }
 
-export default page
+export default Article
