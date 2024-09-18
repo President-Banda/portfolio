@@ -41,7 +41,7 @@ const Article = ( {params} ) => {
 
 
   return (
-    <div className='dark:text-white'>
+    <div className='dark:text-white mb-5'>
       <Scroll />
       {/* page : {post.data.title } */}
       <div className="my-12 text-center dark:text-white">
