@@ -11,6 +11,8 @@
     html{
         /* @apply bg-gray-600 text-white; */
         font-family: 'Dosis','Roboto', sans-serif;
+        max-width: 1440px;
+        margin: 0 auto;
     }
     .intro-button{
         @apply transition text-xl bg-sakura-light h-10 shadow-inner shadow-sakura 

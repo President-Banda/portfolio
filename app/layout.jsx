@@ -13,7 +13,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 export default function RootLayout({ children }) {
   return (
-    <html 
+    <html
     lang="en"
     //className={localStorage.getItem("darkMode")=== "true" ? "dark" : "light"}
     //className={typeof window !== 'undefined' && localStorage.getItem("darkMode") === "true" ? "dark" : "light"}
