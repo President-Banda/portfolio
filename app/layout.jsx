@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     //className={localStorage.getItem("darkMode")=== "true" ? "dark" : "light"}
     //className={typeof window !== 'undefined' && localStorage.getItem("darkMode") === "true" ? "dark" : "light"}
     >
-      <body className='dark:bg-dark-color dark:text-white'>
+      <body className='dark:bg-dark-color dark:text-white max-w-[1080p]'>
         <Header />
         <Wrapper>
           <Menu />
