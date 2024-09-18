@@ -6,7 +6,7 @@ import Scroll from '../../../../components/Scroll';
 
 const getPostContent = ( slug ) => {
   // console.log(slug);
-  const folder = "posts/";
+  const folder = "posts/aws/";
   const file = `${folder}${slug}.md`
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import matter from 'gray-matter';
 
 const getPostMetaData = ()=> {
-  const folder = "posts/";
+  const folder = "posts/aws/";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
   // const slugs = markdownPosts.map((file) => file.replace(".md", ""));
@@ -14,7 +14,7 @@ const getPostMetaData = ()=> {
   // Get front end matter from the markdown files
 
   const posts = markdownPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`posts/${fileName}`, "utf-8");
+    const fileContents = fs.readFileSync(`posts/aws/${fileName}`, "utf-8");
     const matterResult = matter(fileContents);
 
     return {
