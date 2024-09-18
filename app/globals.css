@@ -13,7 +13,8 @@
         font-family: 'Dosis','Roboto', sans-serif;
     }
     body{
-      max-width: 1600px;
+      /* max-width: 1200px; */
+      margin: 0 auto;
     }
     .intro-button{
         @apply transition text-xl bg-sakura-light h-10 shadow-inner shadow-sakura 
