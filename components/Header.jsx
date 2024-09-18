@@ -37,7 +37,7 @@ export default function Header(){
     }, [darkMode]);
 
     return(
-        <div className="flex flex-row pt-5 bg-sakura max-w-screen-xl">
+        <div className="flex flex-row pt-5 bg-sakura">
             
             <div className="flex basis-3/4 justify-start text-5xl font-light tracking-wide ml-10 font-[Merriweather]">
             <Link href='/' className="flex justify-center align-middle m-1">
