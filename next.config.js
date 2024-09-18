@@ -6,7 +6,8 @@ const nextConfig = {
   plugins: [
       "postcss-import",
       "tailwindcss",
-      "autoprefixer"
+      "autoprefixer",
+      "framer-motion"
     ],
 }
 
