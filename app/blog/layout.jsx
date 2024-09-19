@@ -29,7 +29,7 @@ const header = (
 )
 
 const footer = (
-    <footer className='grid border-t border-sakura justify-center items-center rounded-lg mt-12 py-12'>
+    <footer className='grid border-t border-sakura justify-center items-center rounded-lg'>
         <div>
             <p>
                 Developed  and Written by Albert Banda

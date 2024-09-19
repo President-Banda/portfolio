@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className='dark:bg-dark-color dark:text-white'>
         <Header />
         <Wrapper>
-          <Menu />
+          <Menu className="sm:fixed" />
           {children}
         </Wrapper>
         <Analytics />

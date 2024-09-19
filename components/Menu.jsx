@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Menu = () => {
   return (
-    <div className="container mx-auto items-center divide-y divide-black">
+    <div className="sticky container mx-auto items-center divide-y divide-black">
                 <Link href='/' className="intro-button p-1 m-1 md:intro-button flex w-10 md:w-full">
                     <div className="flex items-center justify-center">
                         <Info className="m-1" />
