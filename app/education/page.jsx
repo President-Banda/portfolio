@@ -152,6 +152,149 @@ const Education = () => {
 
 <div className="grid grid-cols-4 col-span-3 text-justify text-lg m-2 border border-solid border-sakura-light rounded-lg p-1 leading-snug">
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical col-span-4 m-5">
+
+<li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-start mb-10 md:text-end">
+      <time className="font-mono italic">Jan 2024</time>
+      <div className="text-lg font-black">Freelance AAI, Discoverer International</div>
+      Delivery of Amazon Authorised courses on behalf of AWS via Discoverer International
+    </div>
+    <hr />
+  </li>
+
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-end mb-10">
+      <time className="font-mono italic">May 2022</time>
+      <div className="text-lg font-black">AWS Trainer, Azubi Africa (GIBT)</div>
+      Provide training on various topics all across Africa and beyond, with a 
+      specific focus on Cloud and DevOps technologies including AWS Cloud, Linux, 
+      Python, Terraform, Docker, Git and GitHub.
+    </div>
+    <hr />
+  </li>
+  
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-start mb-10 md:text-end">
+      <time className="font-mono italic">Apr 2022</time>
+      <div className="text-lg font-black">AgriBizHub Website, LUANAR AgriBizHub</div>
+      Redesign of the LUANAR AgriBizHub website to TACE website.
+    </div>
+    <hr />
+  </li>
+
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-end mb-10">
+      <time className="font-mono italic">Dec 2021</time>
+      <div className="text-lg font-black">UNDP Innovate 265 (UNIPOD App), UNDP </div>
+      Development of the Backend database, application logic 
+      and API logic for the mobile innovation collection app. Set
+      up hosting infrastructure according to technical requirements
+      and cost in mind while maintaining scalability, relaiability
+      and high availability.
+    </div>
+    <hr />
+  </li>
+  
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-start mb-10 md:text-end">
+      <time className="font-mono italic">Dec 2020</time>
+      <div className="text-lg font-black">ICT Consultant, Saidi Consulting Engineering</div>
+      Ad hoc requests to provide troubleshooting, maintenace, installation and upgrade
+      of IT devices either software or hardware based as well as network maintenance. 
+      Perform any other requested services to support day-to-day business operations
+    </div>
+    <hr />
+  </li>
+
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-end mb-10">
+      <time className="font-mono italic">Oct 2020</time>
+      <div className="text-lg font-black">System Administrator / Web Developer, EIH Chiweto</div>
+      Responsible for hosting and development of in-house systems and third party systems
+      through consultancy. In charge of VPS, CPanel based, Backend and Shared hosting 
+      environments. Managament of overall AWS environment. 
+    </div>
+    <hr />
+  </li>
+
   <li>
     <div className="timeline-middle">
       <svg
@@ -167,110 +310,14 @@ const Education = () => {
     </div>
     <div className="timeline-start mb-10 md:text-end">
       <time className="font-mono italic">April 2020</time>
-      <div className="text-lg font-black">First Macintosh computer</div>
-      The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh
-      personal computer. It played a pivotal role in establishing desktop publishing as a general
-      office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed
-      in a beige case with integrated carrying handle; it came with a keyboard and single-button
-      mouse.
+      <div className="text-lg font-black">BSc Information Technology, University of Malawi - The Polytechnic</div>
+        Awarded a degree with credit / upper second-class equivalent. Project focus was
+         the Development of a software monitoring tool for the campus network with a
+         focus on the ICT directorate
     </div>
     <hr />
   </li>
-  <li>
-    <hr />
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <div className="timeline-end mb-10">
-      <time className="font-mono italic">1998</time>
-      <div className="text-lg font-black">iMac</div>
-      iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has
-      been the primary part of Apple's consumer desktop offerings since its debut in August 1998,
-      and has evolved through seven distinct forms
-    </div>
-    <hr />
-  </li>
-  <li>
-    <hr />
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <div className="timeline-start mb-10 md:text-end">
-      <time className="font-mono italic">2001</time>
-      <div className="text-lg font-black">iPod</div>
-      The iPod is a discontinued series of portable media players and multi-purpose mobile devices
-      designed and marketed by Apple Inc. The first version was released on October 23, 2001, about
-      8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450
-      million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At
-      over 20 years, the iPod brand is the oldest to be discontinued by Apple
-    </div>
-    <hr />
-  </li>
-  <li>
-    <hr />
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <div className="timeline-end mb-10">
-      <time className="font-mono italic">2007</time>
-      <div className="text-lg font-black">iPhone</div>
-      iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile
-      operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on
-      January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As
-      of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone
-      accounts for 15.6% of global smartphone market share
-    </div>
-    <hr />
-  </li>
-  <li>
-    <hr />
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <div className="timeline-start mb-10 md:text-end">
-      <time className="font-mono italic">2015</time>
-      <div className="text-lg font-black">Apple Watch</div>
-      The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
-      tracking, health-oriented capabilities, and wireless telecommunication, and integrates with
-      iOS and other Apple products and services
-    </div>
-  </li>
+  
 </ul>
 </div>
     
