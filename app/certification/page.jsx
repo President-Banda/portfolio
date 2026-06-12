@@ -1,9 +1,9 @@
 'use client'
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 const certifications = [
-  // AWS Professional / Specialty
   {
     name: "AWS Certified Machine Learning Engineer – Associate",
     issuer: "Amazon Web Services",
@@ -12,7 +12,7 @@ const certifications = [
     level: "Intermediate",
     category: "aws",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-orange-400 to-amber-500",
+    badgeImage: "https://images.credly.com/images/1a634b4e-3d6b-4a74-b118-c0dcb429e8d2/image.png",
   },
   {
     name: "AWS Certified AI Practitioner",
@@ -22,7 +22,7 @@ const certifications = [
     level: "Foundational",
     category: "aws",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-orange-400 to-amber-500",
+    badgeImage: "https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png",
   },
   {
     name: "AWS Certified Developer – Associate",
@@ -32,7 +32,7 @@ const certifications = [
     level: "Intermediate",
     category: "aws",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-orange-400 to-amber-500",
+    badgeImage: "https://images.credly.com/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png",
   },
   {
     name: "AWS Certified Solutions Architect – Professional",
@@ -42,7 +42,7 @@ const certifications = [
     level: "Advanced",
     category: "aws",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-orange-500 to-red-500",
+    badgeImage: "https://images.credly.com/images/2d84e428-9078-49b6-a804-13c15383d0de/image.png",
   },
   {
     name: "AWS Certified Machine Learning – Specialty",
@@ -52,7 +52,7 @@ const certifications = [
     level: "Advanced",
     category: "aws",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-orange-500 to-red-500",
+    badgeImage: "https://images.credly.com/images/778bde6c-ad1c-4312-ac33-2fa40d50a147/image.png",
   },
   {
     name: "AWS Certified SysOps Administrator – Associate",
@@ -62,7 +62,7 @@ const certifications = [
     level: "Intermediate",
     category: "aws",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-orange-400 to-amber-500",
+    badgeImage: "https://images.credly.com/images/f0d3fbb9-bfa7-4017-9989-7bde8eaf42b1/image.png",
   },
   {
     name: "AWS Certified Solutions Architect – Associate",
@@ -72,7 +72,7 @@ const certifications = [
     level: "Intermediate",
     category: "aws",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-orange-400 to-amber-500",
+    badgeImage: "https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
   },
   {
     name: "AWS Certified Cloud Practitioner",
@@ -82,9 +82,8 @@ const certifications = [
     level: "Foundational",
     category: "aws",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-sky-400 to-blue-500",
+    badgeImage: "https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
   },
-  // AWS Instructor / Experience
   {
     name: "Champion – AWS Authorized Instructor",
     issuer: "Amazon Web Services",
@@ -93,7 +92,7 @@ const certifications = [
     level: "Champion",
     category: "aws-instructor",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-red-500 to-rose-600",
+    badgeImage: "https://images.credly.com/images/6a23d249-d0c4-4bfb-9920-f7f6700c283e/image.png",
   },
   {
     name: "AI/ML Guide",
@@ -103,7 +102,7 @@ const certifications = [
     level: "Advanced",
     category: "aws-instructor",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-violet-400 to-purple-500",
+    badgeImage: "https://images.credly.com/images/6ba64e1e-42da-41e6-bbb4-af8ba7e8559c/blob",
   },
   {
     name: "AAI Industry Cohort: Automotive",
@@ -113,7 +112,7 @@ const certifications = [
     level: "Advanced",
     category: "aws-instructor",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-violet-400 to-purple-500",
+    badgeImage: "https://images.credly.com/images/fda9a38a-af90-4919-9524-9bd18093cf4b/blob",
   },
   {
     name: "AWS re/Start Graduate",
@@ -123,9 +122,8 @@ const certifications = [
     level: "Foundational",
     category: "aws-instructor",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-sky-400 to-blue-500",
+    badgeImage: "https://images.credly.com/images/44e2c252-5d19-4574-9646-005f7225bf53/image.png",
   },
-  // Linux Foundation
   {
     name: "KCNA: Kubernetes and Cloud Native Associate",
     issuer: "The Linux Foundation",
@@ -134,7 +132,7 @@ const certifications = [
     level: "Foundational",
     category: "linux",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-teal-400 to-cyan-500",
+    badgeImage: "https://images.credly.com/images/f28f1d88-428a-47f6-95b5-7da1dd6c1000/KCNA_badge.png",
   },
   {
     name: "LFS250: Kubernetes and Cloud Native Essentials",
@@ -144,9 +142,8 @@ const certifications = [
     level: "Foundational",
     category: "linux",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-teal-400 to-cyan-500",
+    badgeImage: "https://images.credly.com/images/7404ca0d-98e1-48b6-a2a3-de8d7dcd85b5/blob",
   },
-  // Other
   {
     name: "Front End Development Libraries",
     issuer: "freeCodeCamp",
@@ -155,7 +152,8 @@ const certifications = [
     level: "Intermediate",
     category: "other",
     credlyUrl: "https://www.freecodecamp.org/certification/albertbanda/front-end-development-libraries",
-    color: "from-green-400 to-emerald-500",
+    badgeImage: null,
+    badgeEmoji: "🟢",
   },
   {
     name: "ALX-T Cloud Developer Nanodegree",
@@ -165,7 +163,8 @@ const certifications = [
     level: "Intermediate",
     category: "other",
     credlyUrl: "https://www.credly.com/users/albert-banda/badges",
-    color: "from-blue-400 to-indigo-500",
+    badgeImage: null,
+    badgeEmoji: "🔵",
   },
   {
     name: "SQL Basic",
@@ -175,7 +174,8 @@ const certifications = [
     level: "Foundational",
     category: "other",
     credlyUrl: "https://www.hackerrank.com/certificates",
-    color: "from-lime-400 to-green-500",
+    badgeImage: null,
+    badgeEmoji: "🟩",
   },
 ]
 
@@ -189,31 +189,9 @@ const categories = [
 
 const levelBadge = {
   "Foundational": "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-200",
-  "Intermediate": "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200",
-  "Advanced":     "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200",
-  "Champion":     "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
-}
-
-const CategoryIcon = ({ category }) => {
-  if (category === "aws" || category === "aws-instructor") {
-    return (
-      <svg viewBox="0 0 80 80" className="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <text x="50%" y="55%" dominantBaseline="middle" textAnchor="middle" fontSize="36" fill="white">☁</text>
-      </svg>
-    )
-  }
-  if (category === "linux") {
-    return (
-      <svg viewBox="0 0 80 80" className="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <text x="50%" y="55%" dominantBaseline="middle" textAnchor="middle" fontSize="36" fill="white">⚙</text>
-      </svg>
-    )
-  }
-  return (
-    <svg viewBox="0 0 80 80" className="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <text x="50%" y="55%" dominantBaseline="middle" textAnchor="middle" fontSize="36" fill="white">🏅</text>
-    </svg>
-  )
+  "Intermediate":  "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200",
+  "Advanced":      "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200",
+  "Champion":      "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
 }
 
 const Certification = () => {
@@ -225,42 +203,33 @@ const Certification = () => {
 
   return (
     <>
-      {/* Header */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-5 font-['Roboto']">
-        <span className="font-extrabold text-xl md:text-5xl leading-snug font-[Dosis] block mb-3">
-          My <span className="text-red-700">Certifications</span>
-        </span>
-        <p className="font-[Dosis] leading-relaxed text-gray-700 dark:text-gray-300">
-          A collection of certifications earned across AWS, Kubernetes, and web development — reflecting a commitment
-          to continuous learning and mastery in cloud and infrastructure technologies.
-        </p>
+      {/* Filter Tabs */}
+      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 mx-2 mt-2 flex flex-wrap gap-2 items-center justify-between">
+        <div className="flex flex-wrap gap-2">
+          {categories.map(cat => (
+            <button
+              key={cat.id}
+              onClick={() => setActiveCategory(cat.id)}
+              className={`text-xs md:text-sm font-[Dosis] font-semibold px-3 py-1.5 rounded-full transition-all duration-200
+                ${activeCategory === cat.id
+                  ? "bg-red-700 text-white shadow-md"
+                  : "bg-sakura-light hover:bg-sakura text-gray-800"
+                }`}
+            >
+              {cat.label}
+              <span className="ml-1 text-xs opacity-70">
+                ({cat.id === "all" ? certifications.length : certifications.filter(c => c.category === cat.id).length})
+              </span>
+            </button>
+          ))}
+        </div>
         <Link
           href="https://www.credly.com/users/albert-banda/badges"
           target="_blank"
-          className="inline-block mt-3 bg-sakura-light hover:bg-sakura text-gray-900 text-xs font-bold uppercase px-4 py-2 rounded-lg transition-all duration-300 font-[Dosis]"
+          className="text-xs font-[Dosis] font-semibold text-red-700 hover:underline whitespace-nowrap"
         >
-          View All on Credly →
+          View all on Credly →
         </Link>
-      </div>
-
-      {/* Filter Tabs */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 mx-2 flex flex-wrap gap-2">
-        {categories.map(cat => (
-          <button
-            key={cat.id}
-            onClick={() => setActiveCategory(cat.id)}
-            className={`text-xs md:text-sm font-[Dosis] font-semibold px-3 py-1.5 rounded-full transition-all duration-200
-              ${activeCategory === cat.id
-                ? "bg-red-700 text-white shadow-md"
-                : "bg-sakura-light hover:bg-sakura text-gray-800"
-              }`}
-          >
-            {cat.label}
-            <span className="ml-1 text-xs opacity-70">
-              ({cat.id === "all" ? certifications.length : certifications.filter(c => c.category === cat.id).length})
-            </span>
-          </button>
-        ))}
       </div>
 
       {/* Certifications Grid */}
@@ -275,24 +244,40 @@ const Certification = () => {
             >
               <div className="glassmorphic-container overflow-hidden rounded-xl border border-sakura-light
                               hover:border-red-700 transition-all duration-300 hover:shadow-xl h-full flex flex-col">
-                {/* Gradient banner */}
-                <div className={`bg-gradient-to-r ${cert.color} p-5 flex items-center gap-3`}>
-                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <CategoryIcon category={cert.category} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-white text-xs font-semibold opacity-90 font-[Dosis] truncate">{cert.issuer}</p>
-                    <span className={`text-xs px-2 py-0.5 rounded-full font-[Dosis] font-semibold mt-1 inline-block ${levelBadge[cert.level]}`}>
-                      {cert.level}
-                    </span>
-                  </div>
+
+                {/* Badge image area */}
+                <div className="flex items-center justify-center bg-white dark:bg-gray-950 p-5 border-b border-sakura-light">
+                  {cert.badgeImage ? (
+                    <Image
+                      src={cert.badgeImage}
+                      alt={cert.name}
+                      width={96}
+                      height={96}
+                      className="w-24 h-24 object-contain group-hover:scale-105 transition-transform duration-300"
+                      unoptimized
+                    />
+                  ) : (
+                    <div className="w-24 h-24 flex items-center justify-center text-5xl">
+                      {cert.badgeEmoji}
+                    </div>
+                  )}
                 </div>
 
                 {/* Card body */}
                 <div className="p-4 flex-1 flex flex-col justify-between">
-                  <h3 className="text-sm md:text-base font-bold text-gray-900 dark:text-white font-[Dosis] leading-snug mb-3">
-                    {cert.name}
-                  </h3>
+                  <div>
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 font-[Dosis] font-semibold truncate">
+                        {cert.issuer}
+                      </p>
+                      <span className={`text-xs px-2 py-0.5 rounded-full font-[Dosis] font-semibold flex-shrink-0 ${levelBadge[cert.level]}`}>
+                        {cert.level}
+                      </span>
+                    </div>
+                    <h3 className="text-sm md:text-base font-bold text-gray-900 dark:text-white font-[Dosis] leading-snug mb-3">
+                      {cert.name}
+                    </h3>
+                  </div>
                   <div className="space-y-1">
                     <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 font-[Dosis]">
                       <span>Issued</span>
@@ -304,9 +289,9 @@ const Certification = () => {
                         {cert.expires}
                       </span>
                     </div>
-                  </div>
-                  <div className="mt-3 text-xs text-red-700 font-[Dosis] font-semibold group-hover:underline">
-                    View Credential →
+                    <div className="mt-3 text-xs text-red-700 font-[Dosis] font-semibold group-hover:underline pt-1">
+                      View Credential →
+                    </div>
                   </div>
                 </div>
               </div>

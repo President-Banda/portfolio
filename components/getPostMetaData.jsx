@@ -1,31 +1,38 @@
-import React from 'react'
 import fs from 'fs';
-import Link from 'next/link';
 import matter from 'gray-matter';
 
-const getPostMetaData = ()=> {
-  const folder = "posts/aws/";
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) => file.endsWith(".md"));
-  // const slugs = markdownPosts.map((file) => file.replace(".md", ""));
-
-  // return slugs;
-
-  // Get front end matter from the markdown files
-
-  const posts = markdownPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`posts/aws/${fileName}`, "utf-8");
-    const matterResult = matter(fileContents);
-
-    return {
-      title : matterResult.data.title,
-      date : matterResult.data.date,
-      subtitle: matterResult.data.subtitle,
-      slug: fileName.replace(".md","")
-    };
-  });
-
-  return posts;
+const deriveCategory = (title = '', slug = '') => {
+  const t = (title + ' ' + slug).toLowerCase();
+  if (t.includes('machine learning') || t.includes('ai_vs') || t.includes('ai vs') || t.includes('deep learning')) return 'ML & AI';
+  if (t.includes('cloudformation') || t.includes('infrastructure') || t.includes('terraform')) return 'Infrastructure';
+  if (t.includes('what is') || t.includes('introduction') || t.includes('what_is')) return 'Fundamentals';
+  return 'AWS';
 };
 
-export default getPostMetaData
+const readTime = (content = '') => {
+  const words = content.trim().split(/\s+/).length;
+  return Math.max(1, Math.ceil(words / 200));
+};
+
+const getPostMetaData = () => {
+  const folder = 'posts/aws/';
+  const files = fs.readdirSync(folder);
+  const markdownPosts = files.filter(f => f.endsWith('.md'));
+
+  return markdownPosts.map(fileName => {
+    const fileContents = fs.readFileSync(`${folder}${fileName}`, 'utf-8');
+    const { data, content } = matter(fileContents);
+    const slug = fileName.replace('.md', '');
+
+    return {
+      title:    data.title    ?? slug,
+      date:     data.date     ?? '',
+      subtitle: data.subtitle ?? '',
+      category: data.category ?? deriveCategory(data.title, slug),
+      readTime: readTime(content),
+      slug,
+    };
+  });
+};
+
+export default getPostMetaData;

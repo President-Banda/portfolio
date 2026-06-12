@@ -1,4 +1,3 @@
-'use client';
 import './globals.css'
 import Header from '../components/Header';
 import Intro from '../components/Intro';
@@ -13,15 +12,11 @@ import { Analytics } from '@vercel/analytics/react';
 
 export default function RootLayout({ children }) {
   return (
-    <html 
-    lang="en"
-    //className={localStorage.getItem("darkMode")=== "true" ? "dark" : "light"}
-    //className={typeof window !== 'undefined' && localStorage.getItem("darkMode") === "true" ? "dark" : "light"}
-    >
+    <html lang="en" suppressHydrationWarning>
       <body className='dark:bg-dark-color dark:text-white'>
         <Header />
         <Wrapper>
-          <Menu />
+          <Menu className="sm:fixed" />
           {children}
         </Wrapper>
         <Analytics />

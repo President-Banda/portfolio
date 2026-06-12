@@ -144,18 +144,6 @@ const typeColors = {
 const Work = () => {
   return (
     <>
-      {/* Page Header */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-5 font-['Roboto']">
-        <span className="font-extrabold text-xl md:text-5xl leading-snug font-[Dosis] block mb-3">
-          Work <span className="text-red-700">Experience</span>
-        </span>
-        <p className="font-[Dosis] leading-relaxed text-gray-700 dark:text-gray-300">
-          System Administrator, Backend Engineer, AWS Cloud Specialist, and Authorized AWS Instructor
-          with 5+ years of experience building and managing cloud infrastructure, web systems, and training programs
-          across Malawi, Ghana, and London.
-        </p>
-      </div>
-
       {/* Experience Timeline */}
       <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
         <span className="font-extrabold text-2xl font-[Dosis] block mb-1">
