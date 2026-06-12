@@ -7,9 +7,9 @@ export default function Intro(){
     return(
         <>
             <div className="col-span-3 text-justify m-2 border border-solid border-sakura-light rounded-lg p-1 leading-relaxed border-b-0">
-                 <span className="font-medium text-xl flex-wrap md:font-medium md:text-6xl md:flex-wrap">
-                 Tech Enthusiast, System <span className=" text-red-700">Admin</span>, Web <span className=" text-red-700">Developer</span>, 
-                 AWS Cloud Specialist, and <span className=" text-red-700">Trainer</span>
+                 <span className="font-medium text-xl flex-wrap md:font-medium md:text-5xl md:flex-wrap">
+                 System <span className="text-red-700">Admin</span>, Backend <span className="text-red-700">Engineer</span>,
+                 AWS <span className="text-red-700">Specialist</span> &amp; Champion <span className="text-red-700">Instructor</span>
                  </span>
                 <br />
                 <hr className="border-t-4 border-gray-700 my-10 w-52 h-10 ml-5"></hr>
@@ -18,23 +18,22 @@ export default function Intro(){
             <div className="col-span-4 col-start-2 text-justify p-1 leading-tight md:col-start-2 md:text-justify md:m-2 md:border md:border-solid md:border-sakura-light md:rounded-lg md:leading-relaxed md:p-4 md:-mt-20 md:font-['Roboto'] md:col-span-2">
                  <span className=" text-lg flex-wrap">
                   <p>
-                    I am a tech enthusiast with a passion for learning and teaching about technology. I have a
-                   wide range of skills and experience in the tech industry, including Linux system administration, 
-                   web development, and AWS cloud computing. I am also a certified instructor and enjoy sharing my knowledge 
-                   of technology with others.
+                    A technology researcher and practitioner with expertise in Linux system administration,
+                    AWS cloud technologies, web development, backend engineering, and system deployment.
+                    Highly skilled in managing and maintaining complex systems across both Linux and Windows
+                    environments — ensuring stability, security, and performance.
                    <br />
                    <br />
 
-                    I am a highly motivated and results-oriented individual with a strong work ethic. I am always willing 
-                    to go the extra mile and I am always looking for new challenges. I am confident that I can make a significant 
-                    contribution to any team or organization.
+                    Champion AWS Authorized Instructor delivering training across in-person, virtual, and
+                    self-paced formats. Holder of 14+ industry certifications including AWS Solutions Architect
+                    Professional, Machine Learning Specialty, KCNA, and more. Passionate about translating
+                    complex technical concepts into clear, accessible knowledge for teams and organizations.
                     <br />
                     <br />
 
-                    I love working in a position where I can use my arsenal of skills and experience to make a positive impact on the world. 
-                    I am excited about the future of technology and I am eager to be a part of it.
-
-                    
+                    Currently based in Lilongwe, Malawi — working on cloud infrastructure, backend systems,
+                    and training programs that drive real-world impact across Africa and beyond.
                   </p>
                   <br />
 

@@ -1,339 +1,299 @@
 import Image from "next/image";
-import { Info } from "../../components/_icons/info";
 import Link from "next/link";
-import styles from './page.module.css'
+
+const experiences = [
+  {
+    period: "Nov 2025 – Present",
+    role: "Backend Engineer",
+    company: "Visio-Dei",
+    location: "Remote",
+    type: "Contract",
+    description: "Architected the end-to-end system topology for a Stock Trading online KYC system, defining scalable backend modules, microservices boundaries, and secure REST API contracts. Implemented backend services in .NET, engineered CI/CD pipelines with Jenkins and GitHub Actions, and defined AWS cloud architecture.",
+    tags: [".NET", "REST API", "Jenkins", "GitHub Actions", "AWS", "Microservices"]
+  },
+  {
+    period: "Jan 2024 – Present",
+    role: "Freelance Authorized AWS Instructor (AAI)",
+    company: "Discoverer International",
+    location: "Orpington, London (Remote)",
+    type: "Part Time",
+    description: "Deliver Amazon-authorised courses on behalf of AWS. Conduct in-person, virtual classroom and self-paced workshops with live labs and demos. Stay current with AWS newest features and integrate real-world use cases into training content.",
+    tags: ["AWS Training", "Cloud", "DevOps", "Virtual Labs", "Curriculum Design"]
+  },
+  {
+    period: "Aug 2024 – Aug 2025",
+    role: "Consultant – Community Led Monitoring System",
+    company: "Chiweto / Action Aid Malawi",
+    location: "Lilongwe, Malawi",
+    type: "Contract",
+    description: "Architected full system topology for community data collection, developing RESTful APIs, enforcing input validation and authentication, and engineering CI/CD pipelines. Provisioned AWS infrastructure with cost/performance analysis, implemented VPC, IAM, SSL/TLS, container isolation, and Docker orchestration.",
+    tags: ["Docker", "AWS", "CI/CD", "REST API", "Security", "PostgreSQL"]
+  },
+  {
+    period: "Nov 2024 – Apr 2025",
+    role: "Consultant – National Nutrition Information System",
+    company: "Imagivation Tech / Nutrition International",
+    location: "Lilongwe, Malawi",
+    type: "Contract",
+    description: "Conducted comprehensive system reviews of the NNIS architecture using WHO-UNICEF guidance. Led system design evaluations, facilitated stakeholder workshops with Ministry of Health personnel, and developed actionable recommendations for operational efficiency.",
+    tags: ["System Design", "Health IT", "Stakeholder Management", "HMIS"]
+  },
+  {
+    period: "May 2024 – Jul 2025",
+    role: "Consultant – Digital Library System",
+    company: "OBI / Imagivation Tech / Ministry of Education",
+    location: "Lilongwe, Malawi",
+    type: "Contract",
+    description: "Designed and delivered targeted training on Linux, Docker/Docker-Compose, Islandora, and Drupal for Ministry of Education staff. Configured end-to-end digital library systems on-premises and in cloud environments with Fedora/Islandora/Drupal stacks.",
+    tags: ["Linux", "Docker", "Drupal", "Islandora", "AWS", "Training"]
+  },
+  {
+    period: "May 2022 – Aug 2025",
+    role: "AWS Trainer",
+    company: "GIBT – Ghana Institute of Business & Technology",
+    location: "Accra, Ghana (Remote)",
+    type: "Part Time",
+    description: "Designed and delivered comprehensive cloud and DevOps training including AWS fundamentals (EC2, S3, IAM, VPC), Linux administration, Python scripting, Infrastructure-as-Code (Terraform), Docker containerization, and Git/GitHub workflows. Prepared students for AWS and DevOps certifications.",
+    tags: ["AWS", "DevOps", "Terraform", "Docker", "Python", "Linux"]
+  },
+  {
+    period: "Oct 2020 – Present",
+    role: "System Administrator / Web Developer",
+    company: "EIH Chiweto",
+    location: "Lilongwe, Malawi",
+    type: "Full Time",
+    description: "Design, deploy and maintain systems across physical, virtual, cloud, and mobile environments. Manage AWS resources (EC2, S3, databases, VPCs, DNS), implement security policies (VPNs, SELinux, TLS), and automate with Bash/Python/Terraform. Develop and maintain web applications and ODK/Kobo survey platforms.",
+    tags: ["Linux", "AWS", "Terraform", "Web Dev", "Security", "Bash", "Python"]
+  },
+  {
+    period: "Dec 2021 – May 2022",
+    role: "Backend Engineer – Innovate 265",
+    company: "UNDP",
+    location: "Lilongwe, Malawi",
+    type: "Contract",
+    description: "Designed mobile-first backend architecture with robust databases, business logic, and secure RESTful APIs. Implemented enterprise-grade security protocols including HTTPS/TLS, input validation, JWT authentication, and encrypted data storage. Deployed scalable hosting solutions on AWS.",
+    tags: ["REST API", "AWS", "Mobile Backend", "JWT", "Security", "MySQL"]
+  },
+  {
+    period: "Dec 2020 – Jan 2022",
+    role: "ICT Consultant",
+    company: "Sajdi Consulting Engineering Centre",
+    location: "Lilongwe, Malawi",
+    type: "Contract",
+    description: "Responded swiftly to ad-hoc service requests for troubleshooting, maintenance, configuration, and management of hardware, software, and network infrastructure. Performed urgent patch management and provided first and second-line support.",
+    tags: ["IT Support", "Networking", "Hardware", "Patch Management"]
+  },
+  {
+    period: "Dec 2020 – Mar 2021",
+    role: "SMS Platform Web Application",
+    company: "EIH Chiweto",
+    location: "Lilongwe, Malawi",
+    type: "Project",
+    description: "Development of a dashboard for sending and receiving SMS-based communications. Architected API endpoints for integration with a mobile application and provisioned, managed, and maintained the hosting infrastructure.",
+    tags: ["Web Dev", "API", "SMS", "Laravel", "Kannel"]
+  },
+  {
+    period: "Jan 2018 – Feb 2019",
+    role: "Coding Tutor",
+    company: "Huawei Kids Coding Club",
+    location: "Blantyre, Malawi",
+    type: "Part Time",
+    description: "Tutored students in coding fundamentals, planned lessons tailored to individual learning styles, and developed engaging learning materials. Collaborated with parents to track progress and strengthen weak areas.",
+    tags: ["Teaching", "Coding", "Mentorship", "Curriculum Design"]
+  },
+];
+
+const projects = [
+  {
+    name: "UNDP Innovate 265",
+    description: "Android app for gathering, storing, and overseeing grassroots-level innovation data. Built backend APIs, databases, and AWS infrastructure, plus a web interface dashboard.",
+    image: "/images/innovate.png",
+    link: "https://chiweto.ch/undp",
+    year: "2022"
+  },
+  {
+    name: "Chiweto SMS Platform 2.0",
+    description: "SMS-based system for bulk messaging and Q&A interactions via a web interface. Architected API endpoints for mobile integration and managed all hosting infrastructure.",
+    image: "/images/sms_platform.png",
+    link: "https://chiweto.ch/",
+    year: "2021"
+  },
+  {
+    name: "Community Led Monitoring System",
+    description: "Full-stack community data collection platform for Action Aid Malawi with microservices architecture, Docker, CI/CD pipelines, and AWS infrastructure.",
+    image: "/images/innovate.png",
+    link: "#",
+    year: "2025"
+  },
+  {
+    name: "This Portfolio",
+    description: "Anime-themed developer portfolio built with Next.js and Tailwind CSS, featuring dark mode, glassmorphic UI, and interactive design elements.",
+    image: "/images/portfolio.png",
+    link: "#this",
+    year: "2023"
+  },
+];
+
+const typeColors = {
+  "Full Time": "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
+  "Part Time": "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
+  "Contract": "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200",
+  "Project": "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
+};
 
 const Work = () => {
   return (
     <>
-            <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-2 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
-                 <span className=" text-lg flex-wrap">
-                 <span className="font-extrabold text-xl md:font-medium md:text-6xl flex-wrap mb-10 leading-snug font-[Dosis]">
-                  Take a peek at my most <span className=" text-red-700">Recent</span> Projects
-                 </span>
-                  <p className="font-[Dosis] leading-tight mt-20 md:leading-relaxed md:font-['Roboto'] ">
-                  I am a developer, (amongst many things) with three years of work experience, specializing in Laravel, MySQL, 
-                  React, Next.js, MySQL, and Linux. I have honed my skills in building robust web applications
-                  using Laravels powerful framework and efficiently managing databases with MySQL. I am also 
-                  proficient in frontend development, leveraging React and Next.js to create dynamic user interfaces.
-                  With my solid understanding of Linux, I possess the expertise to deploy and maintain applications
-                  in a Linux environment.
-                   <br />
-                  </p>
-                  <br />
+      {/* Page Header */}
+      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-5 font-['Roboto']">
+        <span className="font-extrabold text-xl md:text-5xl leading-snug font-[Dosis] block mb-3">
+          Work <span className="text-red-700">Experience</span>
+        </span>
+        <p className="font-[Dosis] leading-relaxed text-gray-700 dark:text-gray-300">
+          System Administrator, Backend Engineer, AWS Cloud Specialist, and Authorized AWS Instructor
+          with 5+ years of experience building and managing cloud infrastructure, web systems, and training programs
+          across Malawi, Ghana, and London.
+        </p>
+      </div>
 
-                 </span>
-                
-                
-            </div>
+      {/* Experience Timeline */}
+      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
+        <span className="font-extrabold text-2xl font-[Dosis] block mb-1">
+          Experience <span className="text-red-700">Timeline</span>
+        </span>
+        <hr className="border-t-4 border-red-700 mb-8 w-10" />
 
-            <div className="hidden md:inline col-start-4 col-span-1">
-            <div className="bg-sakura rounded-xl scale-90 bg-opacity-50">
-                <div className="bg-sakura rounded-xl bg-opacity-50">
-                    <Image className="transition duration-100 rounded-xl shadow-inner scale-90 origin-center hover:rotate-45 hover:origin-top "
-                        src={"/images/albert_banda_image.jpg"}
-                        alt="my_projects_image"
-                        width={500}
-                        height={500}
-                        loading="lazy"
+        <div className="relative">
+          {/* Vertical line */}
+          <div className="absolute left-3 md:left-5 top-2 bottom-2 w-0.5 bg-sakura"></div>
 
-                        sizes="(max-width: 768px) 100vw,
-                        (max-width: 1200px) 50vw,
-                        33vw"
-                    />
-                </div>
-            </div>
-            </div>
-            
-            <div className="grid justify-center items-center col-start-2 col-span-4 text-justify m-2 border border-solid border-sakura-light rounded-lg leading-relaxed p-4 font-['Roboto']">
-              <span className="font-extrabold grid md:font-medium md:text-4xl justify-start">Projects</span>
-              <hr class="border-t-4 border-red-700 my-5 w-10 h-10 ml-5"></hr>
+          {experiences.map((exp, idx) => (
+            <div key={idx} className="relative pl-10 md:pl-16 mb-6 group">
+              {/* Timeline dot */}
+              <div
+                className="absolute left-0 md:left-2 top-2 w-6 h-6 bg-sakura-light border-2 border-sakura rounded-full
+                           group-hover:bg-red-700 group-hover:border-red-700 transition-all duration-300 flex items-center justify-center"
+              >
+                <div className="w-2 h-2 bg-red-700 group-hover:bg-white rounded-full transition-colors duration-300"></div>
+              </div>
 
-              {/* <article className="flex justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
-                <div className="rotate-180 p-2 [writing-mode:_vertical-lr] ">
-                  <time
-                    datetime="2022-10-10"
-                    className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900 dark:text-white"
-                  >
-                    <span>2023</span>
-                    <span className="w-px flex-1 bg-gray-900/10"></span>
-                    <span>Jan 30</span>
-                  </time>
-                </div>
-
-                <div className="hidden sm:block sm:basis-56 mt-14">
-                  <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
-                      src={"/images/innovate.png"}
-                      alt="innovate 265 interface"
-                      width={1280}
-                      height={720}
-                      loading="lazy"
-
-                      // sizes="(max-width: 768px) 100vw,
-                      // (max-width: 1200px) 50vw,
-                      // 33vw"
-                  />
-                </div>
-
-                <div className="flex flex-1 flex-col justify-between">
-                  <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                    <a href="#">
-                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
-                        UNDP INNOVATE 265
-                      </h3>
-                    </a>
-
-                    <p className="hidden md:inline mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
-                    UNDP Innovate 265 is an Android app designed for gathering, storing, and overseeing grassroots-level 
-                    innovation data. I initially focused on backend development, including APIs, databases, and AWS 
-                    infrastructure, I later took the initiative to enhance it further by incorporating a web interface as
-                    an additional feature, serving as the icing on the cake for UNDP.
-                    </p>
+              <div className="border border-sakura-light dark:border-gray-700 rounded-xl p-4 glassmorphic-container
+                              group-hover:border-red-700 transition-all duration-300">
+                <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+                  <div>
+                    <h3 className="text-base md:text-lg font-bold text-gray-900 dark:text-white font-[Dosis]">
+                      {exp.role}
+                    </h3>
+                    <p className="text-sm font-semibold text-red-700 font-[Dosis]">{exp.company}</p>
                   </div>
+                  <div className="flex flex-col items-end gap-1">
+                    <span className="text-xs font-bold text-red-700 font-[Dosis] whitespace-nowrap">{exp.period}</span>
+                    <span className={`text-xs px-2 py-0.5 rounded-full font-[Dosis] font-semibold ${typeColors[exp.type]}`}>
+                      {exp.type}
+                    </span>
+                  </div>
+                </div>
 
-                  <div className="sm:flex sm:items-end sm:justify-end">
-                    <Link
-                      href="https://chiweto.ch/undp"
-                      target="_blank"
-                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
+                <p className="text-xs text-gray-500 dark:text-gray-400 italic mb-2">{exp.location}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-300 text-justify leading-relaxed mb-3">
+                  {exp.description}
+                </p>
+
+                <div className="flex flex-wrap gap-1">
+                  {exp.tags.map((tag, tidx) => (
+                    <span
+                      key={tidx}
+                      className="text-xs bg-sakura dark:bg-sakura text-gray-800 px-2 py-0.5 rounded-full font-[Dosis]"
                     >
-                      Visit
-                    </Link>
-                  </div>
+                      {tag}
+                    </span>
+                  ))}
                 </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Projects Section */}
+      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
+        <span className="font-extrabold text-2xl font-[Dosis] block mb-1">
+          Reference <span className="text-red-700">Projects</span>
+        </span>
+        <hr className="border-t-4 border-red-700 mb-6 w-10" />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {projects.map((project, idx) => (
+            <article
+              key={idx}
+              id={project.link === "#this" ? "this" : undefined}
+              className="glassmorphic-container overflow-hidden group hover:shadow-xl transition-all duration-300 rounded-xl"
+            >
+              <div className="overflow-hidden rounded-t-xl">
+                <Image
+                  className="w-full h-44 object-cover transition duration-500 group-hover:scale-110"
+                  src={project.image}
+                  alt={project.name}
+                  width={800}
+                  height={400}
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-4">
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="font-bold text-gray-900 dark:text-white font-[Dosis] text-base md:text-lg">
+                    {project.name}
+                  </h3>
+                  <span className="text-xs text-red-700 font-[Dosis] font-bold bg-sakura-light px-2 py-0.5 rounded-full">
+                    {project.year}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600 dark:text-gray-300 text-justify leading-relaxed mb-3">
+                  {project.description}
+                </p>
+                <Link
+                  href={project.link}
+                  target={project.link !== "#" && project.link !== "#this" ? "_blank" : undefined}
+                  className="inline-block bg-sakura-light hover:bg-sakura text-gray-900 text-xs font-bold uppercase
+                             px-4 py-2 rounded-lg transition-all duration-300 font-[Dosis]"
+                >
+                  View Project
+                </Link>
+              </div>
             </article>
+          ))}
+        </div>
 
-
-            <article className="flex justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
-                <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
-                  <time
-                    datetime="2022-10-10"
-                    className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900 dark:text-white"
-                  >
-                    <span>2021</span>
-                    <span className="w-px flex-1 bg-gray-900/10"></span>
-                    <span>May 10</span>
-                  </time>
+        {/* Additional Projects List */}
+        <div className="mt-6">
+          <span className="font-semibold text-lg font-[Dosis] block mb-3 text-gray-700 dark:text-gray-300">
+            More Projects
+          </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            {[
+              { name: "Palgnet Website", desc: "Pan African Learning and Growth Network web platform" },
+              { name: "Business Growth Community (BGC)", desc: "Community website for business growth initiatives" },
+              { name: "ISPA Website", desc: "Institute of Security Professionals Africa website" },
+              { name: "LGR Website", desc: "Learning and Growth Resources web platform" },
+              { name: "IEA Website", desc: "Institute of Executive Assistants web presence" },
+              { name: "Chiweto SMS Box (Kannel)", desc: "SMS gateway integration with Kannel SMSC platform" },
+            ].map((p, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-3 p-3 border border-sakura-light rounded-lg hover:border-red-700 transition-colors duration-200"
+              >
+                <div className="w-2 h-2 bg-red-700 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <span className="text-sm font-semibold text-gray-900 dark:text-white font-[Dosis] block">{p.name}</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">{p.desc}</span>
                 </div>
-
-                <div className="hidden sm:block sm:basis-56 mt-14">
-                  <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
-                      src={"/images/sms_platform.png"}
-                      alt="sms platform interface"
-                      width={500}
-                      height={500}
-                      loading="lazy"
-
-                      sizes="(max-width: 768px) 100vw,
-                      (max-width: 1200px) 50vw,
-                      33vw"
-                  />
-                </div>
-
-                <div className="flex flex-1 flex-col justify-between">
-                  <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                    <a href="#">
-                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
-                        SMS Platform 2.0
-                      </h3>
-                    </a>
-
-                    <p className="hidden md:inline mt-2 line-clamp-6 text-sm/relaxed text-gray-700 text-justify dark:text-white">
-                    SMS Platform represents a substantial upgrade to an SMS-based system dedicated to 
-                    disseminating bulk messages and facilitating Q&A interactions via a user-friendly 
-                    web interface. Developed in collaboration with Francis Ganya, this project employed a 
-                    plethora of technologies too numerous to enumerate. Notably, it stands as the most extensive 
-                    and intricate system I have had the opportunity to work on thus far.
-                    </p>
-                  </div>
-
-                  <div className="sm:flex sm:items-end sm:justify-end">
-                    <Link
-                      href="https://chiweto.ch/"
-                      target="_blank"
-                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
-                    >
-                      Visit
-                    </Link>
-                  </div>
-                </div>
-            </article>
-
-
-            <article className="flex justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
-                <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
-                  <time
-                    datetime="2022-10-10"
-                    className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900 dark:text-white"
-                  >
-                    <span>2023</span>
-                    <span className="w-px flex-1 bg-gray-900/10"></span>
-                    <span>Jun 10</span>
-                  </time>
-                </div>
-
-                <div className="hidden sm:block sm:basis-56 mt-14">
-                  <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
-                      src={"/images/portfolio.png"}
-                      alt="this portforlio interface"
-                      width={1000}
-                      height={1000}
-                      loading="lazy"
-
-                      sizes="(max-width: 768px) 100vw,
-                      (max-width: 1200px) 50vw,
-                      33vw"
-                  />
-                </div>
-
-                <div className="flex flex-1 flex-col justify-between" id="this">
-                  <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                    <a href="#">
-                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
-                        This Portfolio
-                      </h3>
-                    </a>
-
-                    <p className="hidden md:inline mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
-                    This Portfolio is a distinct showcase of my design techniques, featuring unconventional color choices. 
-                    It embodies the concept of crafting an unparalleled creation, one that cannot be replicated elsewhere
-                     online. Despite not being a front-end developer, I ventured into uncharted territory to experiment 
-                     and push my boundaries.
-                    </p>
-                  </div>
-
-                  <div className="sm:flex sm:items-end sm:justify-end">
-                    <Link
-                      href="#this"
-                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
-                    >
-                      Visit
-                    </Link>
-                  </div>
-                </div>
-            </article> */}
-
-            <article className="grid justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
-              <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
-                        src={"/images/innovate.png"}
-                        alt="this portforlio interface"
-                        width={800}
-                        height={700}
-                        loading="lazy"
-
-                        sizes="(max-width: 768px) 100vw,
-                        (max-width: 1200px) 50vw,
-                        33vw"
-                    />
-
-                  <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                    <a href="#">
-                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
-                        UNDP INNOVATE 265
-                      </h3>
-                    </a>
-
-                    <p className="hidden md:inline mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
-                    UNDP Innovate 265 is an Android app designed for gathering, storing, and overseeing grassroots-level 
-                    innovation data. I initially focused on backend development, including APIs, databases, and AWS 
-                    infrastructure, I later took the initiative to enhance it further by incorporating a web interface as
-                    an additional feature, serving as the icing on the cake for UNDP.
-                    </p>
-                  </div>
-
-                  <div className="sm:flex sm:items-end sm:justify-end">
-                    <Link
-                      href="https://chiweto.ch/undp"
-                      target="_blank"
-                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
-                    >
-                      Visit
-                    </Link>
-                  </div>
-              </article>
-
-              <article className="grid justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
-              <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150"
-                        src={"/images/sms_platform.png"}
-                        alt="this portforlio interface"
-                        width={800}
-                        height={700}
-                        loading="lazy"
-
-                        sizes="(max-width: 768px) 100vw,
-                        (max-width: 1200px) 50vw,
-                        33vw"
-                    />
-                <div className="flex flex-1 flex-col justify-between">
-                  <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                    <a href="#">
-                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
-                        SMS Platform 2.0
-                      </h3>
-                    </a>
-
-                    <p className="hidden md:inline mt-2 line-clamp-6 text-sm/relaxed text-gray-700 text-justify dark:text-white">
-                    SMS Platform represents a substantial upgrade to an SMS-based system dedicated to 
-                    disseminating bulk messages and facilitating Q&A interactions via a user-friendly 
-                    web interface. Developed in collaboration with Francis Ganya, this project employed a 
-                    plethora of technologies too numerous to enumerate. Notably, it stands as the most extensive 
-                    and intricate system I have had the opportunity to work on thus far.
-                    </p>
-                  </div>
-
-                  <div className="sm:flex sm:items-end sm:justify-end">
-                    <Link
-                      href="https://chiweto.ch/"
-                      target="_blank"
-                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
-                    >
-                      Visit
-                    </Link>
-                  </div>
-                </div>
-              </article>
-
-            <article className="grid justify-center self-center text-center bg-white transition hover:shadow-xl w-2/3 mb-5 glassmorphic-container">
-              <Image className="transition duration-100 rounded-sm shadow-inner scale-90 origin-center hover:scale-150 "
-                        src={"/images/portfolio.png"}
-                        alt="this portforlio interface"
-                        width={800}
-                        height={700}
-                        loading="lazy"
-
-                        sizes="(max-width: 768px) 100vw,
-                        (max-width: 1200px) 50vw,
-                        33vw"
-                    />
-                <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                    <a href="#">
-                      <h3 className="font-bold uppercase text-gray-900 dark:text-white">
-                        This Portfolio
-                      </h3>
-                    </a>
-
-                    <p className="hidden md:inline mt-2 line-clamp-5 text-sm/relaxed text-gray-700 text-justify dark:text-white">
-                    This Portfolio is a distinct showcase of my design techniques, featuring unconventional color choices. 
-                    It embodies the concept of crafting an unparalleled creation, one that cannot be replicated elsewhere
-                     online. Despite not being a front-end developer, I ventured into uncharted territory to experiment 
-                     and push my boundaries.
-                    </p>
-                  </div>
-
-                  <div className="sm:flex sm:items-end sm:justify-end">
-                    <Link
-                      href="#this"
-                      className="block bg-sakura-light px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-sakura hover:scale-110 dark:bg-sakura dark:hover:bg-sakura-light"
-                    >
-                      Visit
-                    </Link>
-                  </div>
-              </article>
-
-
-            </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;
