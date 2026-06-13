@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { motion } from 'framer-motion'
 import { Certificates } from './_icons/certificates'
 import { Education } from './_icons/education'
 import { Hobbies } from './_icons/hobbies'
@@ -81,23 +82,31 @@ const Menu = () => {
           {navItems.map(({ href, Icon, label }) => {
             const active = pathname === href || (href !== '/' && pathname.startsWith(href))
             return (
-              <Link
+              <motion.div
                 key={href}
-                href={href}
-                className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-xl
-                            transition-colors duration-150 min-w-0
-                            ${active
-                              ? 'text-red-700'
-                              : 'text-gray-500 dark:text-gray-400 hover:text-red-700'
-                            }`}
+                whileTap={{ scale: 0.72 }}
+                transition={{ type: 'spring', stiffness: 500, damping: 20 }}
               >
-                <span className={`transition-transform duration-150 ${active ? 'scale-110' : ''}`}>
-                  <Icon />
-                </span>
-                <span className="text-[9px] font-[Dosis] font-bold leading-none truncate">
-                  {label}
-                </span>
-              </Link>
+                <Link
+                  href={href}
+                  className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-xl
+                              transition-colors duration-150 min-w-0
+                              ${active
+                                ? 'text-red-700'
+                                : 'text-gray-500 dark:text-gray-400 hover:text-red-700'
+                              }`}
+                >
+                  <motion.span
+                    animate={active ? { scale: 1.2 } : { scale: 1 }}
+                    transition={{ type: 'spring', stiffness: 400, damping: 18 }}
+                  >
+                    <Icon />
+                  </motion.span>
+                  <span className="text-[9px] font-[Dosis] font-bold leading-none truncate">
+                    {label}
+                  </span>
+                </Link>
+              </motion.div>
             )
           })}
         </div>

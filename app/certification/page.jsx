@@ -2,6 +2,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const certifications = [
   {
@@ -233,72 +234,83 @@ const Certification = () => {
       </div>
 
       {/* Certifications Grid */}
-      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2">
+      <motion.div
+        className="col-span-4 md:col-start-2 md:col-span-3 m-2"
+        initial="hidden"
+        animate="visible"
+        variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.07 } } }}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filtered.map((cert, idx) => (
-            <Link
+            <motion.div
               key={idx}
-              href={cert.credlyUrl}
-              target="_blank"
-              className="group block"
+              variants={{
+                hidden:  { opacity: 0, y: 24, scale: 0.96 },
+                visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.4, ease: 'easeOut' } },
+              }}
+              whileHover={{ y: -5 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              className="h-full"
             >
-              <div className="glassmorphic-container overflow-hidden rounded-xl border border-sakura-light
-                              hover:border-red-700 transition-all duration-300 hover:shadow-xl h-full flex flex-col">
+              <Link href={cert.credlyUrl} target="_blank" className="group block h-full">
+                <div className="glassmorphic-container overflow-hidden rounded-xl border border-sakura-light
+                                hover:border-red-700 transition-all duration-300 hover:shadow-xl h-full flex flex-col">
 
-                {/* Badge image area */}
-                <div className="flex items-center justify-center bg-white dark:bg-gray-950 p-5 border-b border-sakura-light">
-                  {cert.badgeImage ? (
-                    <Image
-                      src={cert.badgeImage}
-                      alt={cert.name}
-                      width={96}
-                      height={96}
-                      className="w-24 h-24 object-contain group-hover:scale-105 transition-transform duration-300"
-                      unoptimized
-                    />
-                  ) : (
-                    <div className="w-24 h-24 flex items-center justify-center text-5xl">
-                      {cert.badgeEmoji}
-                    </div>
-                  )}
-                </div>
+                  {/* Badge image area */}
+                  <div className="flex items-center justify-center bg-white dark:bg-gray-950 p-5 border-b border-sakura-light">
+                    {cert.badgeImage ? (
+                      <Image
+                        src={cert.badgeImage}
+                        alt={cert.name}
+                        width={96}
+                        height={96}
+                        className="w-24 h-24 object-contain group-hover:scale-105 transition-transform duration-300"
+                        unoptimized
+                      />
+                    ) : (
+                      <div className="w-24 h-24 flex items-center justify-center text-5xl">
+                        {cert.badgeEmoji}
+                      </div>
+                    )}
+                  </div>
 
-                {/* Card body */}
-                <div className="p-4 flex-1 flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center justify-between gap-2 mb-2">
-                      <p className="text-xs text-gray-500 dark:text-gray-400 font-[Dosis] font-semibold truncate">
-                        {cert.issuer}
-                      </p>
-                      <span className={`text-xs px-2 py-0.5 rounded-full font-[Dosis] font-semibold flex-shrink-0 ${levelBadge[cert.level]}`}>
-                        {cert.level}
-                      </span>
+                  {/* Card body */}
+                  <div className="p-4 flex-1 flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-2">
+                        <p className="text-xs text-gray-500 dark:text-gray-400 font-[Dosis] font-semibold truncate">
+                          {cert.issuer}
+                        </p>
+                        <span className={`text-xs px-2 py-0.5 rounded-full font-[Dosis] font-semibold flex-shrink-0 ${levelBadge[cert.level]}`}>
+                          {cert.level}
+                        </span>
+                      </div>
+                      <h3 className="text-sm md:text-base font-bold text-gray-900 dark:text-white font-[Dosis] leading-snug mb-3">
+                        {cert.name}
+                      </h3>
                     </div>
-                    <h3 className="text-sm md:text-base font-bold text-gray-900 dark:text-white font-[Dosis] leading-snug mb-3">
-                      {cert.name}
-                    </h3>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 font-[Dosis]">
-                      <span>Issued</span>
-                      <span className="font-semibold text-gray-700 dark:text-gray-300">{cert.issued}</span>
-                    </div>
-                    <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 font-[Dosis]">
-                      <span>Expires</span>
-                      <span className={`font-semibold ${cert.expires === "No expiry" ? "text-green-600" : "text-gray-700 dark:text-gray-300"}`}>
-                        {cert.expires}
-                      </span>
-                    </div>
-                    <div className="mt-3 text-xs text-red-700 font-[Dosis] font-semibold group-hover:underline pt-1">
-                      View Credential →
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 font-[Dosis]">
+                        <span>Issued</span>
+                        <span className="font-semibold text-gray-700 dark:text-gray-300">{cert.issued}</span>
+                      </div>
+                      <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 font-[Dosis]">
+                        <span>Expires</span>
+                        <span className={`font-semibold ${cert.expires === "No expiry" ? "text-green-600" : "text-gray-700 dark:text-gray-300"}`}>
+                          {cert.expires}
+                        </span>
+                      </div>
+                      <div className="mt-3 text-xs text-red-700 font-[Dosis] font-semibold group-hover:underline pt-1">
+                        View Credential →
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

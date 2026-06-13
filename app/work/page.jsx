@@ -1,5 +1,7 @@
-﻿import Image from "next/image";
+﻿'use client'
+import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const experiences = [
   {
@@ -173,7 +175,13 @@ const Work = () => {
               <div key={idx}>
                 {/* Year marker */}
                 {showYear && (
-                  <div className="relative pl-10 md:pl-16 mb-3 mt-1 flex items-center">
+                  <motion.div
+                    className="relative pl-10 md:pl-16 mb-3 mt-1 flex items-center"
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true, margin: '-40px' }}
+                    transition={{ type: 'spring', stiffness: 360, damping: 22 }}
+                  >
                     <div className="absolute left-0 md:left-1.5 top-1/2 -translate-y-1/2
                                     w-6 h-6 bg-red-700 rounded-full z-10 flex items-center justify-center shadow-md">
                       <div className="w-2 h-2 bg-white rounded-full" />
@@ -182,18 +190,28 @@ const Work = () => {
                                      px-4 py-1.5 rounded-full shadow-md tracking-wide">
                       {year}
                     </span>
-                  </div>
+                  </motion.div>
                 )}
 
                 {/* Timeline entry */}
-                <div className="relative pl-10 md:pl-16 mb-5 group">
+                <motion.div
+                  className="relative pl-10 md:pl-16 mb-5 group"
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: '-40px' }}
+                  transition={{ duration: 0.45, ease: 'easeOut', delay: showYear ? 0.1 : 0 }}
+                >
                   <div className="absolute left-0 md:left-2 top-3 w-5 h-5 bg-sakura-light border-2 border-sakura rounded-full
                                   group-hover:bg-red-700 group-hover:border-red-700 transition-all duration-300 flex items-center justify-center">
                     <div className="w-1.5 h-1.5 bg-red-700 group-hover:bg-white rounded-full transition-colors duration-300" />
                   </div>
 
-                  <div className="border border-sakura-light dark:border-gray-700 rounded-xl p-4 glassmorphic-container
-                                  group-hover:border-red-700 transition-all duration-300">
+                  <motion.div
+                    className="border border-sakura-light dark:border-gray-700 rounded-xl p-4 glassmorphic-container
+                                group-hover:border-red-700 transition-colors duration-300"
+                    whileHover={{ y: -3 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+                  >
                     <div className="flex flex-wrap items-start justify-between gap-2 mb-1">
                       <div className="min-w-0">
                         <h3 className="text-base md:text-lg font-bold text-gray-900 dark:text-white font-[Dosis] leading-snug">
@@ -222,8 +240,8 @@ const Work = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
-                </div>
+                  </motion.div>
+                </motion.div>
               </div>
             );
           })}
