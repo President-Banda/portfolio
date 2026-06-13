@@ -1,9 +1,14 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const BlogLayout = ({ children }) => {
+  const pathname = usePathname()
+  const isBlogPost = pathname.startsWith('/blog/posts/')
+
   return (
-    <div className="col-span-4 md:col-start-2 md:col-span-3">
+    <div className={isBlogPost ? 'col-start-2' : 'col-span-4 md:col-start-2 md:col-span-3'}>
       {/* Blog header */}
       <header className="flex items-center gap-4 bg-gradient-to-r from-sakura to-sakura-light dark:from-dark-color dark:to-dark-color
                          border border-sakura-light rounded-2xl px-5 py-4 mb-4 shadow-sm">

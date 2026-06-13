@@ -2,6 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,28 +12,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/oxide": "^0.0.0-insiders.8fb9ae8f",
     "@vercel/analytics": "^1.4.1",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.38.0",
-    "eslint-config-next": "13.3.0",
     "framer-motion": "^11.18.2",
-    "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.2.1",
     "next": "^15.3.3",
-    "postcss": "8.4.21",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwindcss": "3.3.1"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "github:tailwindcss/typography",
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.35",
+    "@tailwindcss/typography": "^0.5.20",
+    "@types/node": "^24.13.2",
+    "@types/react": "^18.3.31",
     "@wixc3/react-board": "^2.1.3",
     "autoprefixer": "^10.4.14",
     "daisyui": "^4.12.10",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^15.3.3",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
     "typescript": "5.8.2"
