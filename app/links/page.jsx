@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion, useAnimationControls } from 'framer-motion'
@@ -153,7 +153,7 @@ const LinkComponent = () => {
   return (
     <>
       {/* ── Profile card ── */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-2xl p-5 glassmorphic-container">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-2xl p-5 glassmorphic-container">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-5">
           <div className="relative flex-shrink-0">
             <div className="w-24 h-24 md:w-28 md:h-28 rounded-2xl overflow-hidden border-4 border-sakura shadow-lg">
@@ -192,7 +192,7 @@ const LinkComponent = () => {
       </div>
 
       {/* ── Social links ── */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2">
         <div className="mb-4">
           <span className="font-extrabold text-2xl font-[Dosis]">
             Connect <span className="text-red-700">With Me</span>
@@ -246,7 +246,7 @@ const LinkComponent = () => {
       </div>
 
       {/* ── About blurb ── */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-2xl p-5">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-2xl p-5">
         <span className="font-extrabold text-xl font-[Dosis] block mb-3">
           A little <span className="text-red-700">about me</span>
         </span>

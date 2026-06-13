@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 const education = [
   { year: "2026", title: "KCNA: Kubernetes and Cloud Native Associate", institution: "The Linux Foundation", detail: "Cloud-native technologies and Kubernetes ecosystem" },
@@ -48,7 +48,7 @@ const Education = () => {
   return (
     <>
       {/* Tree Timeline */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-4 md:p-6">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-4 md:p-6">
         <span className="font-extrabold text-2xl font-[Dosis] block mb-1">
           Academic &amp; Certification <span className="text-red-700">Timeline</span>
         </span>
@@ -134,7 +134,7 @@ const Education = () => {
       </div>
 
       {/* Core Skills */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
         <span className="font-extrabold text-2xl font-[Dosis] block mb-1">
           Core <span className="text-red-700">Skills</span>
         </span>

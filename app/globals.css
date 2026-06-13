@@ -33,7 +33,24 @@
         border-radius: 15px;
         padding: 10px;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        margin: 20px;
+        margin: 8px;
+      }
+
+      @media (min-width: 768px) {
+        .glassmorphic-container {
+          margin: 20px;
+        }
+      }
+
+      .progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: #b91c1c;
+        transform-origin: 0%;
+        z-index: 9999;
       }
 
       .background-image-div-casual {

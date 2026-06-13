@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 
 const experiences = [
@@ -141,11 +141,20 @@ const typeColors = {
   "Project": "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
 };
 
+const getYear = period => {
+  const m = period.match(/\d{4}/);
+  return m ? m[0] : '';
+};
+
+const sortedExperiences = [...experiences].sort(
+  (a, b) => parseInt(getYear(b.period)) - parseInt(getYear(a.period))
+);
+
 const Work = () => {
   return (
     <>
       {/* Experience Timeline */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
         <span className="font-extrabold text-2xl font-[Dosis] block mb-1">
           Experience <span className="text-red-700">Timeline</span>
         </span>
@@ -155,56 +164,74 @@ const Work = () => {
           {/* Vertical line */}
           <div className="absolute left-3 md:left-5 top-2 bottom-2 w-0.5 bg-sakura"></div>
 
-          {experiences.map((exp, idx) => (
-            <div key={idx} className="relative pl-10 md:pl-16 mb-6 group">
-              {/* Timeline dot */}
-              <div
-                className="absolute left-0 md:left-2 top-2 w-6 h-6 bg-sakura-light border-2 border-sakura rounded-full
-                           group-hover:bg-red-700 group-hover:border-red-700 transition-all duration-300 flex items-center justify-center"
-              >
-                <div className="w-2 h-2 bg-red-700 group-hover:bg-white rounded-full transition-colors duration-300"></div>
-              </div>
+          {sortedExperiences.map((exp, idx) => {
+            const year     = getYear(exp.period);
+            const prevYear = idx > 0 ? getYear(sortedExperiences[idx - 1].period) : null;
+            const showYear = year !== prevYear;
 
-              <div className="border border-sakura-light dark:border-gray-700 rounded-xl p-4 glassmorphic-container
-                              group-hover:border-red-700 transition-all duration-300">
-                <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
-                  <div>
-                    <h3 className="text-base md:text-lg font-bold text-gray-900 dark:text-white font-[Dosis]">
-                      {exp.role}
-                    </h3>
-                    <p className="text-sm font-semibold text-red-700 font-[Dosis]">{exp.company}</p>
-                  </div>
-                  <div className="flex flex-col items-end gap-1">
-                    <span className="text-xs font-bold text-red-700 font-[Dosis] whitespace-nowrap">{exp.period}</span>
-                    <span className={`text-xs px-2 py-0.5 rounded-full font-[Dosis] font-semibold ${typeColors[exp.type]}`}>
-                      {exp.type}
+            return (
+              <div key={idx}>
+                {/* Year marker */}
+                {showYear && (
+                  <div className="relative pl-10 md:pl-16 mb-3 mt-1 flex items-center">
+                    <div className="absolute left-0 md:left-1.5 top-1/2 -translate-y-1/2
+                                    w-6 h-6 bg-red-700 rounded-full z-10 flex items-center justify-center shadow-md">
+                      <div className="w-2 h-2 bg-white rounded-full" />
+                    </div>
+                    <span className="bg-red-700 text-white text-xs font-[Dosis] font-extrabold
+                                     px-4 py-1.5 rounded-full shadow-md tracking-wide">
+                      {year}
                     </span>
                   </div>
-                </div>
+                )}
 
-                <p className="text-xs text-gray-500 dark:text-gray-400 italic mb-2">{exp.location}</p>
-                <p className="text-sm text-gray-600 dark:text-gray-300 text-justify leading-relaxed mb-3">
-                  {exp.description}
-                </p>
+                {/* Timeline entry */}
+                <div className="relative pl-10 md:pl-16 mb-5 group">
+                  <div className="absolute left-0 md:left-2 top-3 w-5 h-5 bg-sakura-light border-2 border-sakura rounded-full
+                                  group-hover:bg-red-700 group-hover:border-red-700 transition-all duration-300 flex items-center justify-center">
+                    <div className="w-1.5 h-1.5 bg-red-700 group-hover:bg-white rounded-full transition-colors duration-300" />
+                  </div>
 
-                <div className="flex flex-wrap gap-1">
-                  {exp.tags.map((tag, tidx) => (
-                    <span
-                      key={tidx}
-                      className="text-xs bg-sakura dark:bg-sakura text-gray-800 px-2 py-0.5 rounded-full font-[Dosis]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  <div className="border border-sakura-light dark:border-gray-700 rounded-xl p-4 glassmorphic-container
+                                  group-hover:border-red-700 transition-all duration-300">
+                    <div className="flex flex-wrap items-start justify-between gap-2 mb-1">
+                      <div className="min-w-0">
+                        <h3 className="text-base md:text-lg font-bold text-gray-900 dark:text-white font-[Dosis] leading-snug">
+                          {exp.role}
+                        </h3>
+                        <p className="text-sm font-semibold text-red-700 font-[Dosis]">{exp.company}</p>
+                      </div>
+                      <div className="flex flex-col items-end gap-1 flex-shrink-0">
+                        <span className="text-xs font-bold text-red-700 font-[Dosis] whitespace-nowrap">{exp.period}</span>
+                        <span className={`text-xs px-2 py-0.5 rounded-full font-[Dosis] font-semibold ${typeColors[exp.type]}`}>
+                          {exp.type}
+                        </span>
+                      </div>
+                    </div>
+
+                    <p className="text-xs text-gray-500 dark:text-gray-400 italic mb-2">{exp.location}</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 text-justify leading-relaxed mb-3">
+                      {exp.description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-1">
+                      {exp.tags.map((tag, tidx) => (
+                        <span key={tidx}
+                          className="text-xs bg-sakura dark:bg-sakura text-gray-800 px-2 py-0.5 rounded-full font-[Dosis]">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
       {/* Projects Section */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
         <span className="font-extrabold text-2xl font-[Dosis] block mb-1">
           Reference <span className="text-red-700">Projects</span>
         </span>

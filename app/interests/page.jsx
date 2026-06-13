@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 const categories = [
   {
@@ -65,7 +65,7 @@ const Interests = () => {
   return (
     <>
       {/* Category cards grid */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {categories.map((cat, catIdx) => (
             <div
@@ -101,7 +101,7 @@ const Interests = () => {
       </div>
 
       {/* Tech I play with */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5">
         <span className="font-extrabold text-xl font-[Dosis] block mb-1">
           Tech I <span className="text-red-700">Play With</span>
         </span>
@@ -120,7 +120,7 @@ const Interests = () => {
       </div>
 
       {/* Fun fact */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5 bg-gradient-to-r from-sakura to-sakura-light dark:from-dark-color dark:to-dark-color">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2 border border-solid border-sakura-light rounded-lg p-5 bg-gradient-to-r from-sakura to-sakura-light dark:from-dark-color dark:to-dark-color">
         <div className="flex items-start gap-3">
           <span className="text-2xl flex-shrink-0">💡</span>
           <div>

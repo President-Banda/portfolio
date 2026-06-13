@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
@@ -204,7 +204,7 @@ const Certification = () => {
   return (
     <>
       {/* Filter Tabs */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 mx-2 mt-2 flex flex-wrap gap-2 items-center justify-between">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 mx-2 mt-2 flex flex-wrap gap-2 items-center justify-between">
         <div className="flex flex-wrap gap-2">
           {categories.map(cat => (
             <button
@@ -233,7 +233,7 @@ const Certification = () => {
       </div>
 
       {/* Certifications Grid */}
-      <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-3 m-2">
+      <div className="col-span-4 md:col-start-2 md:col-span-3 m-2">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filtered.map((cert, idx) => (
             <Link

@@ -10,61 +10,99 @@ import { Work } from './_icons/work'
 import { Blog } from './_icons/blog'
 
 const navItems = [
-  { href: '/',              Icon: Info,         label: 'About Me'               },
-  { href: '/work',          Icon: Work,         label: 'Projects'               },
-  { href: '/education',     Icon: Education,    label: 'Education / Experience' },
-  { href: '/certification', Icon: Certificates, label: 'Certifications'         },
-  { href: '/interests',     Icon: Hobbies,      label: 'Interests & Hobbies'    },
-  { href: '/links',         Icon: Links,        label: 'Links'                  },
-  { href: '/blog',          Icon: Blog,         label: 'Blog'                   },
+  { href: '/',              Icon: Info,         label: 'About'          },
+  { href: '/work',          Icon: Work,         label: 'Work'           },
+  { href: '/education',     Icon: Education,    label: 'Education'      },
+  { href: '/certification', Icon: Certificates, label: 'Certs'          },
+  { href: '/interests',     Icon: Hobbies,      label: 'Interests'      },
+  { href: '/links',         Icon: Links,        label: 'Links'          },
+  { href: '/blog',          Icon: Blog,         label: 'Blog'           },
 ]
 
 const Menu = () => {
   const pathname = usePathname()
   const collapsed = pathname.startsWith('/blog/posts/')
 
-  if (collapsed) {
-    return (
-      <div className="sticky top-4 flex flex-col items-center gap-1 pt-1">
-        {navItems.map(({ href, Icon, label }) => (
-          <Link
-            key={href}
-            href={href}
-            title={label}
-            className="relative group flex items-center justify-center w-10 h-10 rounded-xl
-                       bg-sakura-light hover:bg-red-700 dark:bg-sakura dark:hover:bg-red-700
-                       text-gray-800 hover:text-white dark:text-black dark:hover:text-white
-                       transition-all duration-200 shadow-sm hover:shadow-md hover:scale-110"
-          >
-            <Icon />
-            <span className="pointer-events-none absolute left-full ml-2 hidden group-hover:block
-                             text-xs bg-gray-900 dark:bg-gray-700 text-white px-2 py-1 rounded-lg
-                             whitespace-nowrap z-50 font-[Dosis] shadow-lg">
-              {label}
-            </span>
-          </Link>
-        ))}
-      </div>
-    )
-  }
-
   return (
-    <div className="sticky container mx-auto items-center divide-y divide-black">
-      {navItems.map(({ href, Icon, label }) => (
-        <Link
-          key={href}
-          href={href}
-          className="intro-button p-1 m-1 md:intro-button flex w-10 md:w-full"
-        >
-          <div className="flex items-center justify-center">
-            <Icon className="m-1" />
-          </div>
-          <span className="hidden md:flex text-center items-center justify-center flex-grow">
-            {label}
-          </span>
-        </Link>
-      ))}
-    </div>
+    <>
+      {/* ── Desktop sidebar ── */}
+      {collapsed ? (
+        /* Blog post: icon-only strip */
+        <div className="hidden md:flex sticky top-4 flex-col items-center gap-1 pt-1">
+          {navItems.map(({ href, Icon, label }) => (
+            <Link
+              key={href}
+              href={href}
+              title={label}
+              className="relative group flex items-center justify-center w-10 h-10 rounded-xl
+                         bg-sakura-light hover:bg-red-700 dark:bg-sakura dark:hover:bg-red-700
+                         text-gray-800 hover:text-white dark:text-black dark:hover:text-white
+                         transition-all duration-200 shadow-sm hover:scale-110"
+            >
+              <Icon />
+              <span className="pointer-events-none absolute left-full ml-2 hidden group-hover:block
+                               text-xs bg-gray-900 dark:bg-gray-700 text-white px-2 py-1 rounded-lg
+                               whitespace-nowrap z-50 font-[Dosis] shadow-lg">
+                {label}
+              </span>
+            </Link>
+          ))}
+        </div>
+      ) : (
+        /* Normal pages: full sidebar with labels */
+        <div className="hidden md:flex flex-col sticky top-0">
+          {navItems.map(({ href, Icon, label }) => {
+            const active = pathname === href || (href !== '/' && pathname.startsWith(href))
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={`flex items-center gap-1.5 px-2 py-2 rounded-r-xl border-l-4 transition-all duration-150 font-[Dosis] font-semibold text-xs
+                  ${active
+                    ? 'border-red-700 bg-sakura text-gray-900 dark:bg-sakura dark:text-black'
+                    : 'border-transparent hover:border-sakura hover:bg-sakura-light dark:hover:bg-sakura text-gray-700 dark:text-gray-300'
+                  }`}
+              >
+                <span className="flex-shrink-0"><Icon /></span>
+                <span className="truncate">
+                  {label === 'About' ? 'About Me' : label}
+                </span>
+              </Link>
+            )
+          })}
+        </div>
+      )}
+
+      {/* ── Mobile bottom tab bar ── */}
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50
+                      bg-white dark:bg-dark-color border-t-2 border-sakura
+                      px-1 py-2 shadow-[0_-4px_16px_rgba(0,0,0,0.08)]">
+        <div className="flex justify-around items-center max-w-lg mx-auto">
+          {navItems.map(({ href, Icon, label }) => {
+            const active = pathname === href || (href !== '/' && pathname.startsWith(href))
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-xl
+                            transition-colors duration-150 min-w-0
+                            ${active
+                              ? 'text-red-700'
+                              : 'text-gray-500 dark:text-gray-400 hover:text-red-700'
+                            }`}
+              >
+                <span className={`transition-transform duration-150 ${active ? 'scale-110' : ''}`}>
+                  <Icon />
+                </span>
+                <span className="text-[9px] font-[Dosis] font-bold leading-none truncate">
+                  {label}
+                </span>
+              </Link>
+            )
+          })}
+        </div>
+      </nav>
+    </>
   )
 }
 
